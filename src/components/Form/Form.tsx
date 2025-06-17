@@ -4,7 +4,6 @@ import { yupResolver } from '@hookform/resolvers/yup';
 import { InferType } from 'yup';
 import { schemaContact } from './Schema';
 import { PhoneInputComponent } from '../Input/PhoneInput';
-import CheckboxInput from '../Checkbox/Checkbox';
 import { TextareaComponent } from '../Textarea/Textarea';
 import { ButtonComponent } from '../Button/Button';
 import { InputComponent } from '../Input/Input';
@@ -89,27 +88,7 @@ export function MyForm() {
             <div>
               <PhoneInputComponent />
             </div>
-            <div>
-              <CheckboxInput id="accountingBookkeeping" />
-            </div>
-            <div>
-              <CheckboxInput id="taxReturns" />
-            </div>
-            <div>
-              <CheckboxInput id="financialPlanning" />
-            </div>
-            <div>
-              <CheckboxInput id="companyRegistration" />
-            </div>
-            <div>
-              <CheckboxInput id="loansBusiness" />
-            </div>
-            <div>
-              <CheckboxInput id="legalContract" />
-            </div>
-            <div>
-              <CheckboxInput id="other" />
-            </div>
+          
 
             <div>
               <TextareaComponent id="description" />
