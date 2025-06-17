@@ -1,7 +1,10 @@
-// // src/app/api/contact/route.ts
+// src/app/api/contact/route.ts
 // import { google } from 'googleapis';
 // import nodemailer from 'nodemailer';
 // import { NextRequest, NextResponse } from 'next/server';
+
+import { NextResponse } from 'next/server';
+
 
 // // pull in your OAuth2 creds from .env.local
 // const {
@@ -68,6 +71,14 @@
 // export function GET() {
 //   return NextResponse.json({ ok: true });
 // }
+
+export function GET() {
+  return NextResponse.json({ ok: true });
+}
+
+export function POST() {
+  return NextResponse.json({ success: false, error: 'Not implemented' }, { status: 501 });
+}
 
 // export async function POST(req: NextRequest) {
 //   try {
