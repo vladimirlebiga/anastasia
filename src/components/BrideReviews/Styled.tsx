@@ -32,7 +32,7 @@ export const StyledList = styled('ul')(() => ({
     gridTemplateColumns: 'repeat(3, 1fr)',
     gap: '50px',
     marginTop: '60px',
-    marginBottom: '10px',
+    marginBottom: '12px',
 }));
 
 export const StyledItem = styled('li')(() => ({
