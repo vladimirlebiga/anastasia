@@ -1,5 +1,4 @@
 'use client';
-
 import * as React from 'react';
 import { CacheProvider } from '@emotion/react';
 import { useServerInsertedHTML } from 'next/navigation';

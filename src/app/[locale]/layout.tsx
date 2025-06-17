@@ -1,5 +1,6 @@
 import { notFound } from 'next/navigation';
 import { supportedLocales } from '@/utils/languageNegotiator';
+import { Header } from '@/components/Header/Header';
 
 export default async function LocaleLayout({
   children,
@@ -25,7 +26,10 @@ export default async function LocaleLayout({
         />
         <link rel="icon" href="/favicon.ico" />
       </head>
-      <body>{children}</body>
+      <body>
+        <Header />
+        {children}
+      </body>
     </html>
   );
 }

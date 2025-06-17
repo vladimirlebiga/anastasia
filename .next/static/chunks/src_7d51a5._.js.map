@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file:///Users/lebiga/Desktop/ITMap/anastasia/src/components/Pages/HomePage/HomePage.tsx"],"sourcesContent":["'use client';\nimport { Container } from '@mui/material';\nimport React from 'react';\n\n\n\nexport const HomePage = () => {\n\n  return (\n    <div>\n      <Container>\n       \n      </Container>\n    </div>\n  );\n};\n"],"names":[],"mappings":";;;;AACA;AADA;;;AAMO,MAAM,WAAW;IAEtB,qBACE,6LAAC;kBACC,cAAA,6LAAC,sMAAA,CAAA,YAAS;;;;;;;;;;AAKhB;KATa"}},
+    {"offset": {"line": 34, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}

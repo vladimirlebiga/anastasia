@@ -1,5 +1,4 @@
 'use client';
-
 import { ThemeProvider } from '@mui/material/styles';
 import theme from '../styles/theme';
 import ThemeRegistry from './ThemeRegistry';

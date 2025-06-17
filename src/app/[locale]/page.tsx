@@ -1,6 +1,6 @@
 import { notFound } from 'next/navigation';
 import { supportedLocales } from '@/utils/languageNegotiator';
-import { HomePage } from '@/components/Pages/HomePage';
+import { HomePage } from '@/components/Pages/HomePage/HomePage';
 
 export default async function Page({
   params,
