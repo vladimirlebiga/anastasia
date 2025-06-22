@@ -672,7 +672,7 @@ const StyledList = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modu
         gridTemplateColumns: 'repeat(3, 1fr)',
         gap: '50px',
         marginTop: '60px',
-        marginBottom: '10px'
+        marginBottom: '12px'
     }));
 const StyledItem = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__["styled"])('li')(()=>({
         display: 'flex',

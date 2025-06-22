@@ -14,7 +14,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$mat
 const theme = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$createTheme$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__createTheme$3e$__["createTheme"])({
     palette: {
         primary: {
-            dark: '#feea00',
+            dark: '#B29584',
             main: '#feea00',
             light: 'rgba(254, 234, 0, 0.6)',
             contrastText: 'rgba(254, 234, 0, 0.4)'
@@ -85,6 +85,13 @@ const theme = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2
             letterSpacing: '6%',
             lineHeight: '120%',
             marginBottom: 0
+        },
+        h4: {
+            fontFamily: 'Great Vibes',
+            fontSize: 60,
+            fontWeight: 400,
+            lineHeight: '120%',
+            letterSpacing: '6%'
         },
         h6: {
             fontFamily: 'Great Vibes',

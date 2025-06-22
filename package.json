@@ -55,6 +55,7 @@
     "react-imask": "^7.6.1",
     "react-redux": "^9.2.0",
     "redux-mock-store": "^1.5.5",
+    "swiper": "^11.2.8",
     "typescript-eslint": "^8.24.1",
     "yup": "^1.6.1"
   },

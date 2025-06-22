@@ -70,7 +70,7 @@ declare module '@mui/material/Typography' {
 const theme = createTheme({
   palette: {
     primary: {
-      dark: '#feea00',
+      dark: '#B29584',
       main: '#feea00',
       light: 'rgba(254, 234, 0, 0.6)',
       contrastText: 'rgba(254, 234, 0, 0.4)',
@@ -144,6 +144,13 @@ const theme = createTheme({
       marginBottom: 0,
       // color: '#000000',
       // textAlign: 'right',
+    },
+    h4: {
+      fontFamily: 'Great Vibes',
+      fontSize: 60,
+      fontWeight: 400,
+      lineHeight: '120%',
+      letterSpacing: '6%',
     },
     h6: {
       fontFamily: 'Great Vibes',
