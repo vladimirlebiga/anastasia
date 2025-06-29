@@ -22,7 +22,6 @@ export const StyledParagraph = styled('p')(() => ({
 export const StyledGridContainer = styled('div')(() => ({
   display: 'flex',
   justifyContent: 'space-between',
-  alignItems: 'center',
   textAlign: 'center',
   width: '100%',
 }));
@@ -30,15 +29,20 @@ export const StyledGridContainer = styled('div')(() => ({
 export const StyledFooterLogo = styled('div')(() => ({
   display: 'flex',
   flexDirection: 'column',
-  justifyContent: 'center',
   alignItems: 'center',
   // maxWidth: '250px',
   width: '100%',
 }));
 
 export const StyledH1 = styled(Typography)(() => ({
-  maxWidth: '250px',
+  maxWidth: '239px',
   color: '#fff',
+  fontSize: '18px',
+  fontFamily: 'Montserrat',
+  fontWeight: '400',
+  letterSpacing: '0.05em',
+  marginTop: '10px',
+  lineHeight: '30px',
 }));
 
 export const StyledFooterMenu = styled('div')(() => ({
@@ -51,13 +55,14 @@ export const StyledFooterMenu = styled('div')(() => ({
 }));
 
 export const StyledFooterMenuItem = styled(Typography)(() => ({
-  // display: 'flex',
-  // flexDirection: 'column',
-  // justifyContent: 'center',
-  // alignItems: 'center',
-  // width: '100%',
+  color: '#fff',
+  fontSize: '18px',
+  fontFamily: 'Montserrat',
+  fontWeight: '500',
   textTransform: 'uppercase',
   textAlign: 'left',
+  marginBottom: '20px',
+  letterSpacing: '0.05em',
 }));
 
 export const StyledFooterMenuItemLink = styled(Link)(() => ({    
@@ -70,7 +75,6 @@ export const StyledFooterMenuItemLink = styled(Link)(() => ({
 export const StyledFooterSocial = styled('div')(() => ({
   display: 'flex',
   flexDirection: 'column',
-  justifyContent: 'center',
   alignItems: 'center',
   width: '100%',
 }));
@@ -83,7 +87,7 @@ export const StyledFooterSocialItem = styled('div')(() => ({
   width: '100%',
 }));
 
-export const StyledFooterSocialItemLink = styled('a')(() => ({  
+export const StyledFooterSocialItemLink = styled('div')(() => ({  
   color: '#fff',
   textDecoration: 'none',
   fontSize: '0.8rem',
@@ -91,7 +95,10 @@ export const StyledFooterSocialItemLink = styled('a')(() => ({
 
 export const StyledSocialText = styled(Typography)(() => ({
   color: '#fff',
-
+  fontSize: '18px',
+  fontFamily: 'Montserrat',
+  fontWeight: '500',
+  letterSpacing: '0.05em',
 }));
 
 export const StyledIconWrapper = styled('div')(() => ({

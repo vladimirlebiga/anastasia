@@ -1,5 +1,6 @@
 import React from 'react';
 import { StyledNav, StyledUl, StyledLi, StyledLink } from './Styled';
+import { Container } from '@mui/material';
 
 const navItems = [
   {
@@ -30,6 +31,7 @@ const navItems = [
 
 export const Nav = () => {
   return (
+    <Container>
     <StyledNav>
       <StyledUl>
         {navItems.map((item) => (
@@ -39,5 +41,6 @@ export const Nav = () => {
         ))}
       </StyledUl>
     </StyledNav>
+    </Container>
   );
 };

@@ -1350,21 +1350,25 @@ const StyledParagraph = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node
 const StyledGridContainer = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__["styled"])('div')(()=>({
         display: 'flex',
         justifyContent: 'space-between',
-        alignItems: 'center',
         textAlign: 'center',
         width: '100%'
     }));
 const StyledFooterLogo = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__["styled"])('div')(()=>({
         display: 'flex',
         flexDirection: 'column',
-        justifyContent: 'center',
         alignItems: 'center',
         // maxWidth: '250px',
         width: '100%'
     }));
 const StyledH1 = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__["styled"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"])(()=>({
-        maxWidth: '250px',
-        color: '#fff'
+        maxWidth: '239px',
+        color: '#fff',
+        fontSize: '18px',
+        fontFamily: 'Montserrat',
+        fontWeight: '400',
+        letterSpacing: '0.05em',
+        marginTop: '10px',
+        lineHeight: '30px'
     }));
 const StyledFooterMenu = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__["styled"])('div')(()=>({
         display: 'grid',
@@ -1375,13 +1379,14 @@ const StyledFooterMenu = (0, __TURBOPACK__imported__module__$5b$project$5d2f$nod
         margin: '0 auto'
     }));
 const StyledFooterMenuItem = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__["styled"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"])(()=>({
-        // display: 'flex',
-        // flexDirection: 'column',
-        // justifyContent: 'center',
-        // alignItems: 'center',
-        // width: '100%',
+        color: '#fff',
+        fontSize: '18px',
+        fontFamily: 'Montserrat',
+        fontWeight: '500',
         textTransform: 'uppercase',
-        textAlign: 'left'
+        textAlign: 'left',
+        marginBottom: '20px',
+        letterSpacing: '0.05em'
     }));
 const StyledFooterMenuItemLink = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__["styled"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"])(()=>({
         color: '#fff'
@@ -1389,7 +1394,6 @@ const StyledFooterMenuItemLink = (0, __TURBOPACK__imported__module__$5b$project$
 const StyledFooterSocial = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__["styled"])('div')(()=>({
         display: 'flex',
         flexDirection: 'column',
-        justifyContent: 'center',
         alignItems: 'center',
         width: '100%'
     }));
@@ -1406,7 +1410,11 @@ const StyledFooterSocialItemLink = (0, __TURBOPACK__imported__module__$5b$projec
         fontSize: '0.8rem'
     }));
 const StyledSocialText = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__["styled"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"])(()=>({
-        color: '#fff'
+        color: '#fff',
+        fontSize: '18px',
+        fontFamily: 'Montserrat',
+        fontWeight: '500',
+        letterSpacing: '0.05em'
     }));
 const StyledIconWrapper = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__["styled"])('div')(()=>({
         display: 'flex',
@@ -1575,20 +1583,20 @@ const config = [
         link: '/'
     },
     {
-        title: 'About',
-        link: '/about'
-    },
-    {
-        title: 'Services',
-        link: '/services'
-    },
-    {
         title: 'Portfolio',
         link: '/portfolio'
     },
     {
+        title: 'About',
+        link: '/about'
+    },
+    {
         title: 'FAQs',
         link: '/faqs'
+    },
+    {
+        title: 'Services',
+        link: '/services'
     },
     {
         title: 'Contact',

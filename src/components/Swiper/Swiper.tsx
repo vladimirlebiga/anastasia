@@ -49,9 +49,9 @@ export const SwiperComponent = ({
         className='mySwiper'
       >
         {config.map((item: any) => (
-          <SwiperSlide key={item.id}>
-            <StyledItem>
-              <StyledImage src={item.image} alt={item.title} />
+          <SwiperSlide key={item.title}>
+            <StyledItem isRound={item.isRound}>
+              <StyledImage isRound={item.isRound} src={item.image} alt={item.title} />
               <StyledTextTitle variant='h2'>{item.textTitle}</StyledTextTitle>
               <StyledText variant='body2'>{item.text}</StyledText>
             </StyledItem>

@@ -16,9 +16,10 @@ import {
 } from './Styled';
 import { Container } from '@mui/material';
 import { Union } from '@/assets/icons/Union';
-import InstagramIcon from '@mui/icons-material/Instagram';
-import FacebookIcon from '@mui/icons-material/Facebook';
-import TelegramIcon from '@mui/icons-material/Telegram';
+import { InstagramIcon } from '@/assets/icons/InstagramIcon';
+import { FacebookIcon } from '@/assets/icons/FacebookIcon';
+import { TelegramIcon } from '@/assets/icons/TelegramIcon';
+
 
 const config = [
   {
@@ -26,20 +27,20 @@ const config = [
     link: '/',
   },
   {
-    title: 'About',
-    link: '/about',
-  },
-  {
-    title: 'Services',
-    link: '/services',
-  },
-  {
     title: 'Portfolio',
     link: '/portfolio',
   },
   {
+    title: 'About',
+    link: '/about',
+  },
+  {
     title: 'FAQs',
     link: '/faqs',
+  },
+  {
+    title: 'Services',
+    link: '/services',
   },
   {
     title: 'Contact',
@@ -74,15 +75,20 @@ export const Footer = () => {
                   SERVING AMSTERDAM
                 </StyledSocialText>
                 <StyledIconWrapper>
-                  <TelegramIcon />
-                  <FacebookIcon />
-                  <InstagramIcon />
+                  <a href='https://t.me/Muachaos' target='_blank' rel='noopener noreferrer'>
+                    <TelegramIcon />
+                  </a>
+                  <a href='https://www.facebook.com/PyzhikMakeup' target='_blank' rel='noopener noreferrer'>
+                    <FacebookIcon />
+                  </a>
+                  <a href='https://www.instagram.com/wed_makeup_nl' target='_blank' rel='noopener noreferrer'>
+                    <InstagramIcon />
+                  </a>
                 </StyledIconWrapper>
               </StyledFooterSocialItemLink>
             </StyledFooterSocialItem>
           </StyledFooterSocial>
         </StyledGridContainer>
-
         <StyledParagraph>
           &copy; 2025 Lebiga. All rights reserved.
         </StyledParagraph>

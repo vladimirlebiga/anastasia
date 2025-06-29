@@ -10,36 +10,42 @@ const config = [
       image: '/img/homepage/Homepage6.jpg',
       textTitle: 'Anna',
       text: 'Anastasia! OMG thank you so much for an AMAIZING wedding day hair and make-up. I have never felt more beautiful in my life. You truly worked some magic haha.',
+      isRound: true
     },
     {
       title: 'Review 2',
       image: '/img/homepage/Homepage7.jpg',
       textTitle: 'Reciel',
       text: 'My hair lasted ALLL NIGHTTTT - you’re the best. And everyone complimented my makeup, you made me really feel like a princess.',
+      isRound: true
     },
     {
       title: 'Review 3',
       image: '/img/homepage/Homepage8.jpg',
       textTitle: 'Jaqueline',
       text: 'INCREDIBLE TEAM AND STAFF AND YOU made my weekend!! I love you and your girls so much!!! Thank you, thank you, thank you!',
+      isRound: true
     },
     {
       title: 'Review 4',
       image: '/img/homepage/Homepage6.jpg',
       textTitle: 'Anna',
       text: 'Anastasia! OMG thank you so much for an AMAIZING wedding day hair and make-up. I have never felt more beautiful in my life. You truly worked some magic haha.',
+      isRound: true
     },
     {
       title: 'Review 5',
       image: '/img/homepage/Homepage7.jpg',
       textTitle: 'Reciel',
       text: 'My hair lasted ALLL NIGHTTTT - you’re the best. And everyone complimented my makeup, you made me really feel like a princess.',
+      isRound: true
     },
     {
       title: 'Review 6',
       image: '/img/homepage/Homepage8.jpg',
       textTitle: 'Jaqueline',
       text: 'INCREDIBLE TEAM AND STAFF AND YOU made my weekend!! I love you and your girls so much!!! Thank you, thank you, thank you!',
+      isRound: true
     },
   ];
 

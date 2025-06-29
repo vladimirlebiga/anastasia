@@ -673,20 +673,20 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$mat
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@mui/material/Typography/Typography.js [app-ssr] (ecmascript)");
 ;
 ;
-const StyledItem = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__["styled"])('div')(()=>({
+const StyledItem = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__["styled"])('div')(({ isRound })=>({
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
         justifyContent: 'space-between',
-        height: '562px',
-        gap: '25px'
+        height: isRound ? '562px' : '240px',
+        gap: isRound ? '25px' : '10px'
     }));
-const StyledImage = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__["styled"])('img')(()=>({
-        width: '260px',
-        height: '260px',
+const StyledImage = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__["styled"])('img')(({ isRound })=>({
+        width: isRound ? '260px' : '350px',
+        height: isRound ? '260px' : '200px',
         objectFit: 'cover',
         objectPosition: 'center',
-        borderRadius: '100%'
+        borderRadius: isRound ? '100%' : '10px'
     }));
 const StyledTextTitle = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__["styled"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"])(()=>({
         fontFamily: 'Great Vibes',
@@ -758,8 +758,10 @@ const SwiperComponent = ({ config, id })=>{
             className: "mySwiper",
             children: config.map((item)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$swiper$2f$swiper$2d$react$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["SwiperSlide"], {
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Swiper$2f$Styled$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["StyledItem"], {
+                        isRound: item.isRound,
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Swiper$2f$Styled$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["StyledImage"], {
+                                isRound: item.isRound,
                                 src: item.image,
                                 alt: item.title
                             }, void 0, false, {
@@ -789,7 +791,7 @@ const SwiperComponent = ({ config, id })=>{
                         lineNumber: 53,
                         columnNumber: 13
                     }, this)
-                }, item.id, false, {
+                }, item.title, false, {
                     fileName: "[project]/src/components/Swiper/Swiper.tsx",
                     lineNumber: 52,
                     columnNumber: 11
@@ -828,37 +830,43 @@ const config = [
         title: 'Review 1',
         image: '/img/homepage/Homepage6.jpg',
         textTitle: 'Anna',
-        text: 'Anastasia! OMG thank you so much for an AMAIZING wedding day hair and make-up. I have never felt more beautiful in my life. You truly worked some magic haha.'
+        text: 'Anastasia! OMG thank you so much for an AMAIZING wedding day hair and make-up. I have never felt more beautiful in my life. You truly worked some magic haha.',
+        isRound: true
     },
     {
         title: 'Review 2',
         image: '/img/homepage/Homepage7.jpg',
         textTitle: 'Reciel',
-        text: 'My hair lasted ALLL NIGHTTTT - you’re the best. And everyone complimented my makeup, you made me really feel like a princess.'
+        text: 'My hair lasted ALLL NIGHTTTT - you’re the best. And everyone complimented my makeup, you made me really feel like a princess.',
+        isRound: true
     },
     {
         title: 'Review 3',
         image: '/img/homepage/Homepage8.jpg',
         textTitle: 'Jaqueline',
-        text: 'INCREDIBLE TEAM AND STAFF AND YOU made my weekend!! I love you and your girls so much!!! Thank you, thank you, thank you!'
+        text: 'INCREDIBLE TEAM AND STAFF AND YOU made my weekend!! I love you and your girls so much!!! Thank you, thank you, thank you!',
+        isRound: true
     },
     {
         title: 'Review 4',
         image: '/img/homepage/Homepage6.jpg',
         textTitle: 'Anna',
-        text: 'Anastasia! OMG thank you so much for an AMAIZING wedding day hair and make-up. I have never felt more beautiful in my life. You truly worked some magic haha.'
+        text: 'Anastasia! OMG thank you so much for an AMAIZING wedding day hair and make-up. I have never felt more beautiful in my life. You truly worked some magic haha.',
+        isRound: true
     },
     {
         title: 'Review 5',
         image: '/img/homepage/Homepage7.jpg',
         textTitle: 'Reciel',
-        text: 'My hair lasted ALLL NIGHTTTT - you’re the best. And everyone complimented my makeup, you made me really feel like a princess.'
+        text: 'My hair lasted ALLL NIGHTTTT - you’re the best. And everyone complimented my makeup, you made me really feel like a princess.',
+        isRound: true
     },
     {
         title: 'Review 6',
         image: '/img/homepage/Homepage8.jpg',
         textTitle: 'Jaqueline',
-        text: 'INCREDIBLE TEAM AND STAFF AND YOU made my weekend!! I love you and your girls so much!!! Thank you, thank you, thank you!'
+        text: 'INCREDIBLE TEAM AND STAFF AND YOU made my weekend!! I love you and your girls so much!!! Thank you, thank you, thank you!',
+        isRound: true
     }
 ];
 const BrideReviews = ()=>{
@@ -870,7 +878,7 @@ const BrideReviews = ()=>{
                     children: "Bride Reviews"
                 }, void 0, false, {
                     fileName: "[project]/src/components/BrideReviews/BrideReviews.tsx",
-                    lineNumber: 50,
+                    lineNumber: 56,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Swiper$2f$Swiper$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["SwiperComponent"], {
@@ -878,7 +886,7 @@ const BrideReviews = ()=>{
                     id: "review"
                 }, void 0, false, {
                     fileName: "[project]/src/components/BrideReviews/BrideReviews.tsx",
-                    lineNumber: 51,
+                    lineNumber: 57,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$BrideReviews$2f$Styled$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["StyledWrapper"], {
@@ -887,23 +895,23 @@ const BrideReviews = ()=>{
                         children: "let's work together"
                     }, void 0, false, {
                         fileName: "[project]/src/components/BrideReviews/BrideReviews.tsx",
-                        lineNumber: 53,
+                        lineNumber: 59,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/components/BrideReviews/BrideReviews.tsx",
-                    lineNumber: 52,
+                    lineNumber: 58,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/BrideReviews/BrideReviews.tsx",
-            lineNumber: 49,
+            lineNumber: 55,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/components/BrideReviews/BrideReviews.tsx",
-        lineNumber: 48,
+        lineNumber: 54,
         columnNumber: 5
     }, this);
 };
@@ -1332,33 +1340,33 @@ const HomePage = ()=>{
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$PersonalStylist$2f$PersonalStylist$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["PersonalStylist"], {}, void 0, false, {
                 fileName: "[project]/src/components/Pages/HomePage/HomePage.tsx",
-                lineNumber: 13,
+                lineNumber: 14,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$TrustedBy$2f$TrustedBy$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TrustedBy"], {}, void 0, false, {
                 fileName: "[project]/src/components/Pages/HomePage/HomePage.tsx",
-                lineNumber: 14,
+                lineNumber: 15,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$SomeOf$2f$SomeOf$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["SomeOf"], {}, void 0, false, {
                 fileName: "[project]/src/components/Pages/HomePage/HomePage.tsx",
-                lineNumber: 15,
+                lineNumber: 16,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$BrideReviews$2f$BrideReviews$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["BrideReviews"], {}, void 0, false, {
                 fileName: "[project]/src/components/Pages/HomePage/HomePage.tsx",
-                lineNumber: 16,
+                lineNumber: 17,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$AccordionSection$2f$AccordionSection$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["AccordionSection"], {}, void 0, false, {
                 fileName: "[project]/src/components/Pages/HomePage/HomePage.tsx",
-                lineNumber: 17,
+                lineNumber: 18,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/Pages/HomePage/HomePage.tsx",
-        lineNumber: 12,
+        lineNumber: 13,
         columnNumber: 5
     }, this);
 };
