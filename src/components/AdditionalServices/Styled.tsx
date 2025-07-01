@@ -12,7 +12,7 @@ export const StyledH1 = styled(Typography)(() => ({
   // textTransform: 'uppercase',
   color: '#000000',
   textAlign: 'center',
-  marginBottom: '60px',
+  marginBottom: '10px',
 }));
 
 export const StyledWrapper = styled('div')(() => ({
@@ -23,11 +23,31 @@ export const StyledWrapper = styled('div')(() => ({
   // justifyContent: 'center',
 }));
 
-export const StyledP = styled(Typography)(() => ({
+export const StyledP1 = styled(Typography)(() => ({
   fontFamily: 'Montserrat',
-  lineHeight: '136%',
+  lineHeight: '180%',
   color: '#000000',
   textAlign: 'left',
   position: 'relative',
   paddingLeft: '2rem',
+}));
+
+export const StyledP2 = styled(Typography)(() => ({
+  fontFamily: 'Montserrat',
+  lineHeight: '180%',
+  color: '#000000',
+  textAlign: 'left',
+  position: 'relative',
+  paddingLeft: '2rem',
+  maxWidth: '100px',
+}));
+
+export const StyledP3 = styled(Typography)(() => ({
+  fontFamily: 'Montserrat',
+  lineHeight: '180%',
+  color: '#000000',
+  textAlign: 'left',
+  position: 'relative',
+  paddingLeft: '2rem',
+  maxWidth: '150px',
 }));
