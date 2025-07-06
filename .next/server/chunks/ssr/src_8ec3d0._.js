@@ -992,7 +992,8 @@ const StyledP1 = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_module
         color: '#000000',
         textAlign: 'left',
         position: 'relative',
-        paddingLeft: '2rem'
+        paddingLeft: '2rem',
+        maxWidth: '400px'
     }));
 const StyledP2 = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__["styled"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"])(()=>({
         fontFamily: 'Montserrat',
@@ -1207,51 +1208,23 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 const MakeItOfficial = ()=>{
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
-            width: "129",
-            height: "129",
-            viewBox: "0 0 129 129",
+            width: "124",
+            height: "124",
+            viewBox: "0 0 124 124",
             fill: "none",
             xmlns: "http://www.w3.org/2000/svg",
-            children: [
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("rect", {
-                    width: "129",
-                    height: "129",
-                    fill: "url(#pattern0_1083_1171)"
-                }, void 0, false, {
-                    fileName: "[project]/src/assets/icons/MakeItOfficial.tsx",
-                    lineNumber: 13,
-                    columnNumber: 9
-                }, this),
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("defs", {
-                    children: [
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("pattern", {
-                            id: "pattern0_1083_1171",
-                            patternContentUnits: "objectBoundingBox",
-                            width: "1",
-                            height: "1"
-                        }, void 0, false, {
-                            fileName: "[project]/src/assets/icons/MakeItOfficial.tsx",
-                            lineNumber: 15,
-                            columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("image", {
-                            id: "image0_1083_1171",
-                            width: "360",
-                            height: "360",
-                            preserveAspectRatio: "none"
-                        }, void 0, false, {
-                            fileName: "[project]/src/assets/icons/MakeItOfficial.tsx",
-                            lineNumber: 21,
-                            columnNumber: 11
-                        }, this)
-                    ]
-                }, void 0, true, {
-                    fileName: "[project]/src/assets/icons/MakeItOfficial.tsx",
-                    lineNumber: 14,
-                    columnNumber: 9
-                }, this)
-            ]
-        }, void 0, true, {
+            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                d: "M103.333 77.4987V51.6654M20.6661 77.4987V36.1654C20.6661 26.421 20.6661 21.554 23.6937 18.5264C26.7214 15.4987 31.5884 15.4987 41.3327 15.4987H59.4161M72.3327 30.9987C72.3327 30.9987 77.4994 30.9987 82.6661 41.332C82.6661 41.332 99.0806 15.4987 113.666 10.332M18.0724 82.7429L20.7694 77.4987H103.085L105.926 82.7429C113.382 96.4965 115.242 103.373 112.405 108.519C109.569 113.665 102.062 113.665 87.0371 113.665H36.9617C21.9319 113.665 14.4196 113.665 11.5882 108.519C8.75173 103.373 10.6117 96.4965 18.0724 82.7429Z",
+                stroke: "black",
+                strokeWidth: "4",
+                strokeLinecap: "round",
+                strokeLinejoin: "round"
+            }, void 0, false, {
+                fileName: "[project]/src/assets/icons/MakeItOfficial.tsx",
+                lineNumber: 13,
+                columnNumber: 9
+            }, this)
+        }, void 0, false, {
             fileName: "[project]/src/assets/icons/MakeItOfficial.tsx",
             lineNumber: 6,
             columnNumber: 7
@@ -1309,42 +1282,26 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 const BridalPreviewExp = ()=>{
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
-            width: "143",
-            height: "139",
-            viewBox: "0 0 143 139",
+            width: "124",
+            height: "124",
+            viewBox: "0 0 124 124",
             fill: "none",
             xmlns: "http://www.w3.org/2000/svg",
-            children: [
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("rect", {
-                    width: "142.075",
-                    height: "139",
-                    fill: "url(#pattern0_1083_1173)"
-                }, void 0, false, {
-                    fileName: "[project]/src/assets/icons/BridalPreviewExp.tsx",
-                    lineNumber: 13,
-                    columnNumber: 9
-                }, this),
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("defs", {
-                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("pattern", {
-                        id: "pattern0_1083_1173",
-                        patternContentUnits: "objectBoundingBox",
-                        width: "1",
-                        height: "1"
-                    }, void 0, false, {
-                        fileName: "[project]/src/assets/icons/BridalPreviewExp.tsx",
-                        lineNumber: 15,
-                        columnNumber: 11
-                    }, this)
-                }, void 0, false, {
-                    fileName: "[project]/src/assets/icons/BridalPreviewExp.tsx",
-                    lineNumber: 14,
-                    columnNumber: 9
-                }, this)
-            ]
-        }, void 0, true, {
+            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                d: "M103.333 77.4987V51.6654M20.6661 77.4987V36.1654C20.6661 26.421 20.6661 21.554 23.6937 18.5264C26.7214 15.4987 31.5884 15.4987 41.3327 15.4987H59.4161M72.3327 30.9987C72.3327 30.9987 77.4994 30.9987 82.6661 41.332C82.6661 41.332 99.0806 15.4987 113.666 10.332M18.0724 82.7429L20.7694 77.4987H103.085L105.926 82.7429C113.382 96.4965 115.242 103.373 112.405 108.519C109.569 113.665 102.062 113.665 87.0371 113.665H36.9617C21.9319 113.665 14.4196 113.665 11.5882 108.519C8.75173 103.373 10.6117 96.4965 18.0724 82.7429Z",
+                stroke: "black",
+                strokeWidth: "4",
+                strokeLinecap: "round",
+                strokeLinejoin: "round"
+            }, void 0, false, {
+                fileName: "[project]/src/assets/icons/BridalPreviewExp.tsx",
+                lineNumber: 13,
+                columnNumber: 9
+            }, this)
+        }, void 0, false, {
             fileName: "[project]/src/assets/icons/BridalPreviewExp.tsx",
             lineNumber: 6,
-            columnNumber: 7
+            columnNumber: 6
         }, this)
     }, void 0, false);
 };

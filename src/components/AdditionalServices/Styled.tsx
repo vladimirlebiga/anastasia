@@ -30,6 +30,7 @@ export const StyledP1 = styled(Typography)(() => ({
   textAlign: 'left',
   position: 'relative',
   paddingLeft: '2rem',
+  maxWidth: '400px',
 }));
 
 export const StyledP2 = styled(Typography)(() => ({

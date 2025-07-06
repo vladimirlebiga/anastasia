@@ -2,10 +2,9 @@
 import React, { useState, useEffect, useId } from 'react';
 import { Controller, useFormContext } from 'react-hook-form';
 import { StyledTelInput } from './Styled';
-import { useTranslation } from '@/hooks/useTranslation';
+
 
 export const PhoneInputComponent = () => {
-  const { t } = useTranslation();
   // 1. Ensure hooks are always called in the same order
   const [mounted, setMounted] = useState(false);
   const reactId = useId();
@@ -22,7 +21,7 @@ export const PhoneInputComponent = () => {
     <Controller
       name="phone"
       control={control}
-      rules={{ required: t('contactForm.phoneRequired') }}
+      rules={{ required: 'phoneRequired' }}
       render={({ field, fieldState: { error } }) => (
         <div>
           {/* Use the stable ID for both label and input */}
@@ -30,8 +29,9 @@ export const PhoneInputComponent = () => {
           <StyledTelInput
             {...field}
             defaultCountry="NL"
-            label={t('contactForm.phone')}
+            label={'Phone:(WhatsApp)'}
             id={`phone-${reactId}`}
+            fullWidth
           />
           {error && <p style={{ color: 'red' }}>{error.message}</p>}
         </div>

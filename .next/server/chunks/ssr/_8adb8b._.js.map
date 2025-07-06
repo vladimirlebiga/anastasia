@@ -2,7 +2,7 @@
   "version": 3,
   "sources": [],
   "sections": [
-    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file:///Users/lebiga/Desktop/ITMap/anastasia/src/components/Pages/PortfolioPage/PortfolioPage.tsx"],"sourcesContent":["import React from 'react'\n\nexport const PortofolioPage = () => {\n  return (\n    <div>PortofolioPage</div>\n  )\n}"],"names":[],"mappings":";;;;;AAEO,MAAM,iBAAiB;IAC5B,qBACE,8OAAC;kBAAI;;;;;;AAET"}},
+    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file:///Users/lebiga/Desktop/ITMap/anastasia/src/components/Pages/PortfolioPage/PortfolioPage.tsx"],"sourcesContent":["import React from 'react'\n\nexport const PortofolioPage = () => {\n  return (\n    <main>PortofolioPage</main>\n  )\n}"],"names":[],"mappings":";;;;;AAEO,MAAM,iBAAiB;IAC5B,qBACE,8OAAC;kBAAK;;;;;;AAEV"}},
     {"offset": {"line": 21, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}},
     {"offset": {"line": 27, "column": 0}, "map": {"version":3,"sources":["file:///Users/lebiga/Desktop/ITMap/anastasia/src/app/%5Blocale%5D/portfolio/page.tsx"],"sourcesContent":["import { PortofolioPage } from '@/components/Pages/PortfolioPage/PortfolioPage'\nimport React from 'react'\n\nexport default function Portofolio() {\n  return (\n    <div>\n      <PortofolioPage />\n    </div>\n  )\n}\n"],"names":[],"mappings":";;;;AAAA;;;AAGe,SAAS;IACtB,qBACE,8OAAC;kBACC,cAAA,8OAAC,6JAAA,CAAA,iBAAc;;;;;;;;;;AAGrB"}},
     {"offset": {"line": 47, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}},

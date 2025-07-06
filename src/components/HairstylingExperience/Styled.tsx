@@ -39,6 +39,7 @@ export const StyledH3 = styled(Typography)(() => ({
   color: '#F49D6A',
   textAlign: 'center',
   textTransform: 'lowercase',
+  marginBottom: '30px',
 }));
 
 export const StyledP = styled(Typography)(() => ({
@@ -50,26 +51,25 @@ export const StyledP = styled(Typography)(() => ({
   marginTop: '10px',
   marginBottom: '30px',
   letterSpacing: '1px',
+  maxWidth: '200px',
 }));
 
-export const StyledIconGrid = styled('div')(() => ({
+
+export const StyledUl = styled('ul')(() => ({
   display: 'grid',
   gridTemplateColumns: 'repeat(15, 1fr)',
-  gridTemplateRows: 'repeat(auto-fit, minmax(200px, 1fr))',
-  gap: '20px',
-  width: '100%',
-  marginTop: '30px',
+  gridTemplateRows: 'repeat(2, 1fr)',
+  rowGap: '30px',
+  columnGap: '40px',
   marginBottom: '30px',
 }));
 
-export const StyledUl = styled('ul')(() => ({
+export const StyledLi = styled('li')<{ gridArea: string }>(({ gridArea }) => ({
   display: 'flex',
   flexDirection: 'column',
-  gap: '20px',
-}));
-
-export const StyledLi = styled('li')(() => ({
-  display: 'flex',
-  flexDirection: 'column',
-  gap: '20px',
+  alignItems: 'center',
+  justifyContent: 'center',
+  columnGap: '40px',
+  gridArea: gridArea,
+  maxHeight: '300px',
 }));

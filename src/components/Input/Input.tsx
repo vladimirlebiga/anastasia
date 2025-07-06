@@ -2,7 +2,6 @@
 import React, { useEffect, useState, useId } from 'react';
 import { Controller, useFormContext } from 'react-hook-form';
 import { StyledTextField } from './Styled';
-import { useTranslation } from '@/hooks/useTranslation';
 
 interface InputConfig {
   name: string;
@@ -16,20 +15,32 @@ interface InputProps {
 }
 
 export const InputComponent = ({ id }: InputProps) => {
-  const { t } = useTranslation();
   const config: Record<string, InputConfig> = {
     name: {
       name: 'name',
-      label: t('contactForm.name'),
+      label: 'Full Name',
       type: 'text',
-      placeholder: t('contactForm.namePlaceholder'),
+      placeholder: 'Provide your full name',
     },
     email: {
       name: 'email',
-      label: t('contactForm.email'),
+      label: 'Email',
       type: 'email',
-      placeholder: t('contactForm.emailPlaceholder'),
+      placeholder: 'Enter your email',
     },
+    ceremonyLocation: {
+      name: 'ceremonyLocation',
+      label: 'Ceremony Location',
+      type: 'text',
+      placeholder: 'Enter your ceremony location',
+    },
+    notice: {
+      name: 'notice',
+      label: 'Notice',
+      type: 'text',
+      placeholder: 'Leave your comment',
+    },
+    
   };
 
   // 1. Always call your Hooks unconditionally at the top
@@ -66,6 +77,9 @@ export const InputComponent = ({ id }: InputProps) => {
             label={label}
             placeholder={placeholder}
             fullWidth
+            InputLabelProps={{
+              shrink: true,
+            }}
           />
         </div>
       )}
