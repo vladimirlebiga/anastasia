@@ -39,7 +39,7 @@ export const BookBHCNow = () => {
     <StyledSection>
       <Container>
         <StyledWrapper>
-          <StyledH2 variant='h2'>book bhc now</StyledH2>
+          <StyledH2 variant='h2'>book now</StyledH2>
           <StyledH3 variant='h3'>check your date!</StyledH3>
           <StyledH4 variant='body1'>
             Book your dream wedding hair experience

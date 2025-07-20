@@ -81,7 +81,7 @@ export const HairstylingExperience = () => {
               </StyledLi>
             ))}
           </StyledUl>
-          <Button variant='contained'>ok, let’s do this</Button>
+          <Button variant='contained' href='/contact#form'>ok, let's do this</Button>
         </StyledWrapper>
       </Container>
     </StyledSection>

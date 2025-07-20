@@ -25,7 +25,7 @@ export const PersonalStylist = () => {
           professional approach. You’ll get an on-trend hairstyle that is
           guaranteed to last all day and night!
         </StyledP>
-        <Button variant='contained'>learn more</Button>
+        <Button variant='contained' href='/contact#form'>learn more</Button>
       </StyledWrapper>
     </Container>
     </StyledSection>

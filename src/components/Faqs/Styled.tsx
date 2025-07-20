@@ -28,7 +28,7 @@ export const StyledUl = styled('ul')(() => ({
   display: 'flex',
   flexDirection: 'column',
   margin: '30px 0',
-  gap: '10px',
+  gap: '20px',
   listStyle: 'none',
   padding: 0,
 }));
@@ -37,7 +37,6 @@ export const StyledLi = styled('li')<{ isActive: boolean }>(({ isActive }) => ({
   display: 'grid',
   gridTemplateColumns: '1fr 25px',
   maxWidth: '1085px',
-
 }));
 
 export const StyledHiddenContainer = styled('div')(() => ({

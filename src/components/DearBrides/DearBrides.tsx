@@ -52,7 +52,7 @@ export const DearBrides = () => {
         </Container>
       </StyledSection>
       <StyledButtonWrapper>
-        <StyledButton variant='contained'>inquire now</StyledButton>
+        <StyledButton variant='contained' href='#form'>inquire now</StyledButton>
       </StyledButtonWrapper>
     </section>
   );

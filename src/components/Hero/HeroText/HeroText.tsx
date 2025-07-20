@@ -3,19 +3,23 @@ import React from 'react'
 import { StyledH1, StyledH3, StyledHeroTextWrapper } from './Styled';
 
 const config = {
-    homepage: {
+    home: {
         title: 'bridal hair',
         description: 'for the modern bride',
     },
-    servicespage: {
+    about: {
+        title: '',
+        description: '',
+    },
+    services: {
         title: 'turning brides past hair struggles around',
         description: 'with frizz free, long lasting buns and waves',
     },
-    portfoliopage: {
+    portfolio: {
         title: 'portfolio',
         description: 'gallery',
     },
-    contactpage: {
+    contact: {
         title: 'submit inquiry',
         description: 'get in touch',
     },

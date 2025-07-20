@@ -1,6 +1,7 @@
 export enum Page {
-    HOMEPAGE = 'homepage',
-    SERVICEPAGE = 'servicespage',
-    PORTFOLIOPAGE = 'portfoliopage',
-    CONTACTPAGE = 'contactpage',
+    HOMEPAGE = 'home',
+    ABOUTPAGE = 'about',
+    SERVICEPAGE = 'services',
+    PORTFOLIOPAGE = 'portfolio',
+    CONTACTPAGE = 'contact',
 }

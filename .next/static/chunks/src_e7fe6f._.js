@@ -106,7 +106,6 @@ __turbopack_esm__({
     "StyledSection": (()=>StyledSection)
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__ = __turbopack_import__("[project]/node_modules/@mui/material/styles/styled.js [app-client] (ecmascript) <locals> <export default as styled>");
-'use client';
 ;
 const StyledSection = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__["styled"])('section')(({ url })=>({
         position: 'relative',
@@ -181,19 +180,23 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Hero$2f
 ;
 ;
 const config = {
-    homepage: {
+    home: {
         title: 'bridal hair',
         description: 'for the modern bride'
     },
-    servicespage: {
+    about: {
+        title: '',
+        description: ''
+    },
+    services: {
         title: 'turning brides past hair struggles around',
         description: 'with frizz free, long lasting buns and waves'
     },
-    portfoliopage: {
+    portfolio: {
         title: 'portfolio',
         description: 'gallery'
     },
-    contactpage: {
+    contact: {
         title: 'submit inquiry',
         description: 'get in touch'
     }
@@ -207,7 +210,7 @@ const HeroText = ({ page })=>{
                 children: title
             }, void 0, false, {
                 fileName: "[project]/src/components/Hero/HeroText/HeroText.tsx",
-                lineNumber: 30,
+                lineNumber: 34,
                 columnNumber: 9
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Hero$2f$HeroText$2f$Styled$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["StyledH3"], {
@@ -215,13 +218,13 @@ const HeroText = ({ page })=>{
                 children: description
             }, void 0, false, {
                 fileName: "[project]/src/components/Hero/HeroText/HeroText.tsx",
-                lineNumber: 31,
+                lineNumber: 35,
                 columnNumber: 9
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/Hero/HeroText/HeroText.tsx",
-        lineNumber: 29,
+        lineNumber: 33,
         columnNumber: 5
     }, this);
 };
@@ -241,10 +244,11 @@ __turbopack_esm__({
     "Page": (()=>Page)
 });
 var Page = /*#__PURE__*/ function(Page) {
-    Page["HOMEPAGE"] = "homepage";
-    Page["SERVICEPAGE"] = "servicespage";
-    Page["PORTFOLIOPAGE"] = "portfoliopage";
-    Page["CONTACTPAGE"] = "contactpage";
+    Page["HOMEPAGE"] = "home";
+    Page["ABOUTPAGE"] = "about";
+    Page["SERVICEPAGE"] = "services";
+    Page["PORTFOLIOPAGE"] = "portfolio";
+    Page["CONTACTPAGE"] = "contact";
     return Page;
 }({});
 if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
@@ -264,6 +268,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Hero$2f
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Hero$2f$HeroText$2f$HeroText$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/components/Hero/HeroText/HeroText.tsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$types$2f$enum$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/types/enum.ts [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Container$2f$Container$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Container$3e$__ = __turbopack_import__("[project]/node_modules/@mui/material/Container/Container.js [app-client] (ecmascript) <export default as Container>");
+'use client';
 ;
 ;
 ;
@@ -271,29 +276,43 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$mat
 ;
 const config = {
     [__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$types$2f$enum$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Page"].HOMEPAGE]: {
-        url: '/img/homepage/HomepageBackground.jpg'
+        url: '/img/hero/img_1.jpg'
+    },
+    [__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$types$2f$enum$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Page"].ABOUTPAGE]: {
+        url: '/img/hero/img_2.jpg'
+    },
+    [__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$types$2f$enum$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Page"].SERVICEPAGE]: {
+        url: '/img/hero/img_3.jpg'
+    },
+    [__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$types$2f$enum$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Page"].PORTFOLIOPAGE]: {
+        url: '/img/hero/img_4.jpg'
+    },
+    [__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$types$2f$enum$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Page"].CONTACTPAGE]: {
+        url: '/img/hero/img_5.jpg'
     }
 };
 const Hero = ({ page })=>{
+    console.log(page, 1);
     const { url } = config[page];
+    console.log(url);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Hero$2f$Styled$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["StyledSection"], {
         url: url,
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Container$2f$Container$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Container$3e$__["Container"], {
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Hero$2f$HeroText$2f$HeroText$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["HeroText"], {
-                page: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$types$2f$enum$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Page"].HOMEPAGE
+                page: page
             }, void 0, false, {
                 fileName: "[project]/src/components/Hero/Hero.tsx",
-                lineNumber: 17,
+                lineNumber: 24,
                 columnNumber: 9
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/components/Hero/Hero.tsx",
-            lineNumber: 16,
+            lineNumber: 23,
             columnNumber: 8
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/components/Hero/Hero.tsx",
-        lineNumber: 15,
+        lineNumber: 22,
         columnNumber: 5
     }, this);
 };
@@ -437,6 +456,9 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Header$
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Hero$2f$Hero$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/components/Hero/Hero.tsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$types$2f$enum$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/types/enum.ts [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Nav$2f$Nav$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/components/Nav/Nav.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/navigation.js [app-client] (ecmascript)");
+;
+var _s = __turbopack_refresh__.signature();
 'use client';
 ;
 ;
@@ -445,32 +467,41 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Nav$2f$
 ;
 ;
 const Header = ()=>{
+    _s();
+    const pathname = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["usePathname"])();
+    const page = pathname.split('/')[2] || __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$types$2f$enum$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Page"].HOMEPAGE;
+    console.log(page);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Header$2f$Styled$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["StyledHeader"], {
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Logo$2f$Logo$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Logo"], {}, void 0, false, {
                 fileName: "[project]/src/components/Header/Header.tsx",
-                lineNumber: 14,
+                lineNumber: 19,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Hero$2f$Hero$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Hero"], {
-                page: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$types$2f$enum$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Page"].HOMEPAGE
+                page: page
             }, void 0, false, {
                 fileName: "[project]/src/components/Header/Header.tsx",
-                lineNumber: 15,
+                lineNumber: 20,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Nav$2f$Nav$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Nav"], {}, void 0, false, {
                 fileName: "[project]/src/components/Header/Header.tsx",
-                lineNumber: 16,
+                lineNumber: 21,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/Header/Header.tsx",
-        lineNumber: 13,
+        lineNumber: 18,
         columnNumber: 5
     }, this);
 };
+_s(Header, "xbyQPtUVMO7MNj7WjJlpdWqRcTo=", false, function() {
+    return [
+        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["usePathname"]
+    ];
+});
 _c = Header;
 var _c;
 __turbopack_refresh__.register(_c, "Header");

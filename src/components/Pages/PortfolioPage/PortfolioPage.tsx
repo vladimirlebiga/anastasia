@@ -1,7 +1,13 @@
-import React from 'react'
+'use client';
+import React from 'react';
+import { GetInTouch } from '@/components/GetInTouch/GetInTouch';
+import { EveryBrideDeserves } from '@/components/EveryBrideDeserves/EveryBrideDeserves';
 
-export const PortofolioPage = () => {
+export const PortfolioPage = () => {
   return (
-    <main>PortofolioPage</main>
-  )
-}
+    <main>
+      <EveryBrideDeserves />
+      <GetInTouch />
+    </main>
+  );
+};

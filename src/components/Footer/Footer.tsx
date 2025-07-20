@@ -50,7 +50,7 @@ const config = [
 
 export const Footer = () => {
   return (
-    <StyledFooter>
+    <StyledFooter id='footer'>
       <Container>
         <StyledGridContainer>
           <StyledFooterLogo>

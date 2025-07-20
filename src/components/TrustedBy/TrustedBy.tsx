@@ -65,7 +65,7 @@ export const TrustedBy = () => {
               truly seen, incredibly beautiful, and completely supported.
             </StyledP>
             <br />
-            <Button variant='text'>BOOK VIDEO CONSULTATION</Button>
+            <Button variant='text' href='/contact#form' component='a'>BOOK VIDEO CONSULTATION</Button>
           </StyledWrapperLeft>
           <StyledWrapperRight>
             <StyledImage src='/img/homepage/Homepage2.jpg' alt='Homepage2' />

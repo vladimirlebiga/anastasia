@@ -2,7 +2,7 @@ import { styled } from '@mui/material/styles';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 
-export const StyledSection = styled('section')(() => ({
+export const StyledSection = styled('div')(() => ({
   backgroundColor: '#E8D1C5',
   paddingBottom: '20px',
   paddingTop: '40px',

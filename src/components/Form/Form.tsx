@@ -19,17 +19,19 @@ export const Form = () => {
   const onSubmit = (data: any) => {
     emailjs
       .send(
-        'your_service_id',    // Replace with your actual service ID
-        'your_template_id',   // Replace with your actual template ID
+        'your_service_id', // Replace with your actual service ID
+        'your_template_id', // Replace with your actual template ID
         {
           name: data.name,
           email: data.email,
           phone: data.phone,
-          date: data.date ? new Date(data.date).toLocaleDateString('en-GB') : '',
+          date: data.date
+            ? new Date(data.date).toLocaleDateString('en-GB')
+            : '',
           ceremonyLocation: data.ceremonyLocation,
           notice: data.notice,
         },
-        'your_public_key'     // Replace with your actual EmailJS public key
+        'your_public_key' // Replace with your actual EmailJS public key
       )
       .then(
         (result) => {
@@ -45,23 +47,23 @@ export const Form = () => {
   };
 
   return (
-    <FormProvider {...methods}>
-      <StyledSection>
-        <Container>
-          <StyledH1 variant='h2'>Wedding Day Details</StyledH1>
-          <StyledFormWrapper>
-            <InputComponent id='name' />
-            <InputComponent id='email' />
-            <PhoneInputComponent />
-            <DateInput name='date' control={control} />
-            <InputComponent id='ceremonyLocation' />
-            <InputComponent id='notice' />
-          </StyledFormWrapper>
-          <StyledButtonWrapper>
-            <Button variant='outlined'>send</Button>
-          </StyledButtonWrapper>
-        </Container>
-      </StyledSection>
-    </FormProvider>
+      <FormProvider {...methods}>
+        <StyledSection id='form'>
+          <Container>
+            <StyledH1 variant='h2'>Wedding Day Details</StyledH1>
+            <StyledFormWrapper>
+              <InputComponent id='name' />
+              <InputComponent id='email' />
+              <PhoneInputComponent />
+              <DateInput name='date' control={control} />
+              <InputComponent id='ceremonyLocation' />
+              <InputComponent id='notice' />
+            </StyledFormWrapper>
+            <StyledButtonWrapper>
+              <Button variant='outlined'>send</Button>
+            </StyledButtonWrapper>
+          </Container>
+        </StyledSection>
+      </FormProvider>
   );
 };
