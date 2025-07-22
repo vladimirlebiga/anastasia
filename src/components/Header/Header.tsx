@@ -10,10 +10,7 @@ import { usePathname } from 'next/navigation';
 export const Header = () => {
   const pathname = usePathname();
   const page = pathname.split('/')[2] as Page || Page.HOMEPAGE;
-  console.log(page);
-
  
-
   return (
     <StyledHeader>
       <Logo />

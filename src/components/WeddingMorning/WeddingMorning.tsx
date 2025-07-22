@@ -33,7 +33,7 @@ export const WeddingMorning = () => {
             stylist only takes one wedding per day, ensuring that you have their
             full attention throughout the entire process!
           </StyledP>
-          <Button variant='contained'>lets's chat</Button>
+          <Button variant='contained' href='/contact#form'>lets's chat</Button>
         </StyledWrapper>
       </Container>
     </StyledSection>

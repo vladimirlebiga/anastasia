@@ -47,7 +47,7 @@ export const Process = () => {
             <StyledH2 variant='h2'>my favorite part</StyledH2>
             <SwiperComponent config={config} id='review' />
             <StyledWrapper>
-              <Button variant='contained'>let's work together</Button>
+              <Button variant='contained' href='/contact#form'>let's work together</Button>
             </StyledWrapper>
           </Container>
         </StyledSection>

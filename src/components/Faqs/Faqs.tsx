@@ -74,7 +74,7 @@ export const Faqs = () => {
   };
 
   return (
-    <section>
+    <section id='faqs'>
       <StyledSection>
         <Container>
           <StyledH1 variant='h2'>FAQs</StyledH1>

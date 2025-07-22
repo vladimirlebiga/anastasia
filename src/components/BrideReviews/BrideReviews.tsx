@@ -56,7 +56,7 @@ export const BrideReviews = () => {
         <StyledH1 variant='h2'>Bride Reviews</StyledH1>
         <SwiperComponent config={config} id='review' />
         <StyledWrapper>
-          <Button variant='contained'>let's work together</Button>
+          <Button variant='contained' href='/contact#form'>let's work together</Button>
         </StyledWrapper>
       </Container>
     </StyledSection>

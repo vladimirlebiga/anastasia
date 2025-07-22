@@ -76,7 +76,7 @@ export const WhatYouCanExpect = () => {
               the atmosphere we create together.  
             </StyledSixthItem>
             <StyledButtonWrapper>
-              <Button variant='contained'>i'm here to help you</Button>
+              <Button variant='contained' href='/contact#form'>i'm here to help you</Button>
             </StyledButtonWrapper>
           </StyledTextContainer>
           <StyledImgWrapper>

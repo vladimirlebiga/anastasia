@@ -145,6 +145,7 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
 var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, k: __turbopack_refresh__, m: module, z: __turbopack_require_stub__ } = __turbopack_context__;
 {
 __turbopack_esm__({
+    "StyledButtonContainer": (()=>StyledButtonContainer),
     "StyledH1": (()=>StyledH1),
     "StyledH3": (()=>StyledH3),
     "StyledHeroTextWrapper": (()=>StyledHeroTextWrapper)
@@ -153,14 +154,38 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$mat
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@mui/material/Typography/Typography.js [app-client] (ecmascript)");
 ;
 ;
-const StyledHeroTextWrapper = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__["styled"])('div')(()=>({
+const StyledHeroTextWrapper = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__["styled"])('div', {
+    shouldForwardProp: (prop)=>prop !== 'services'
+})(({ services })=>({
         position: 'absolute',
-        paddingTop: '300px',
-        left: '-10%'
+        paddingTop: services ? '150px' : '300px',
+        // top: services ? '50px' : '150px', // Alternative using top instead of paddingTop
+        // bottom: services ? '0' : '200px',
+        left: '-10%',
+        width: services ? '600px' : 'auto'
     }));
-const StyledH1 = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__["styled"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"])(()=>({
+const StyledH1 = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__["styled"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+    shouldForwardProp: (prop)=>prop !== 'services'
+})(({ services })=>({
+        fontSize: services ? '40px' : '64px',
+        textAlign: services ? 'center' : 'left',
+        marginBottom: services ? '20px' : '0',
+        letterSpacing: services ? '2px' : '0'
     }));
-const StyledH3 = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__["styled"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"])(()=>({
+const StyledH3 = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__["styled"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+    shouldForwardProp: (prop)=>prop !== 'services'
+})(({ services })=>({
+        fontSize: services ? '40px' : '48px',
+        textAlign: services ? 'center' : 'right',
+        letterSpacing: services ? '1px' : '0',
+        width: services ? '520px' : 'auto',
+        // // left: services ? '-20%' : '0',
+        paddingLeft: services ? '60px' : '0'
+    }));
+const StyledButtonContainer = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__["styled"])('div')(()=>({
+        display: 'flex',
+        justifyContent: 'center',
+        marginTop: '50px'
     }));
 if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
     __turbopack_refresh__.registerExports(module, globalThis.$RefreshHelpers$);
@@ -176,55 +201,82 @@ __turbopack_esm__({
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Hero$2f$HeroText$2f$Styled$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/components/Hero/HeroText/Styled.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Button$2f$Button$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Button$3e$__ = __turbopack_import__("[project]/node_modules/@mui/material/Button/Button.js [app-client] (ecmascript) <export default as Button>");
 'use client';
+;
+;
 ;
 ;
 const config = {
     home: {
         title: 'bridal hair',
-        description: 'for the modern bride'
+        description: 'for the modern bride',
+        services: false
     },
     about: {
         title: '',
-        description: ''
+        description: '',
+        services: false
     },
     services: {
         title: 'turning brides past hair struggles around',
-        description: 'with frizz free, long lasting buns and waves'
+        description: 'with frizz free, long lasting buns and waves',
+        services: true
     },
     portfolio: {
         title: 'portfolio',
-        description: 'gallery'
+        description: 'gallery',
+        services: false
     },
     contact: {
         title: 'submit inquiry',
-        description: 'get in touch'
+        description: 'get in touch',
+        services: false
     }
 };
 const HeroText = ({ page })=>{
-    const { title, description } = config[page];
+    const { title, description, services } = config[page];
+    console.log(services);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Hero$2f$HeroText$2f$Styled$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["StyledHeroTextWrapper"], {
+        services: services,
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Hero$2f$HeroText$2f$Styled$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["StyledH1"], {
                 variant: "h1",
+                services: services,
                 children: title
             }, void 0, false, {
                 fileName: "[project]/src/components/Hero/HeroText/HeroText.tsx",
-                lineNumber: 34,
+                lineNumber: 42,
                 columnNumber: 9
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Hero$2f$HeroText$2f$Styled$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["StyledH3"], {
                 variant: "h6",
+                services: services,
                 children: description
             }, void 0, false, {
                 fileName: "[project]/src/components/Hero/HeroText/HeroText.tsx",
-                lineNumber: 35,
+                lineNumber: 43,
+                columnNumber: 9
+            }, this),
+            services && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Hero$2f$HeroText$2f$Styled$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["StyledButtonContainer"], {
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Button$2f$Button$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Button$3e$__["Button"], {
+                    variant: "contained",
+                    href: "/contact#form",
+                    children: "lets' work together"
+                }, void 0, false, {
+                    fileName: "[project]/src/components/Hero/HeroText/HeroText.tsx",
+                    lineNumber: 46,
+                    columnNumber: 9
+                }, this)
+            }, void 0, false, {
+                fileName: "[project]/src/components/Hero/HeroText/HeroText.tsx",
+                lineNumber: 45,
                 columnNumber: 9
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/Hero/HeroText/HeroText.tsx",
-        lineNumber: 33,
+        lineNumber: 41,
         columnNumber: 5
     }, this);
 };
@@ -292,9 +344,7 @@ const config = {
     }
 };
 const Hero = ({ page })=>{
-    console.log(page, 1);
     const { url } = config[page];
-    console.log(url);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Hero$2f$Styled$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["StyledSection"], {
         url: url,
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Container$2f$Container$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Container$3e$__["Container"], {
@@ -302,17 +352,17 @@ const Hero = ({ page })=>{
                 page: page
             }, void 0, false, {
                 fileName: "[project]/src/components/Hero/Hero.tsx",
-                lineNumber: 24,
+                lineNumber: 21,
                 columnNumber: 9
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/components/Hero/Hero.tsx",
-            lineNumber: 23,
+            lineNumber: 20,
             columnNumber: 8
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/components/Hero/Hero.tsx",
-        lineNumber: 22,
+        lineNumber: 19,
         columnNumber: 5
     }, this);
 };
@@ -394,7 +444,7 @@ const navItems = [
     },
     {
         label: 'FAQS',
-        url: '/services/#faqs'
+        url: '/services#faqs'
     },
     {
         label: 'Contact',
@@ -470,30 +520,29 @@ const Header = ()=>{
     _s();
     const pathname = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["usePathname"])();
     const page = pathname.split('/')[2] || __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$types$2f$enum$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Page"].HOMEPAGE;
-    console.log(page);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Header$2f$Styled$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["StyledHeader"], {
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Logo$2f$Logo$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Logo"], {}, void 0, false, {
                 fileName: "[project]/src/components/Header/Header.tsx",
-                lineNumber: 19,
+                lineNumber: 16,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Hero$2f$Hero$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Hero"], {
                 page: page
             }, void 0, false, {
                 fileName: "[project]/src/components/Header/Header.tsx",
-                lineNumber: 20,
+                lineNumber: 17,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Nav$2f$Nav$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Nav"], {}, void 0, false, {
                 fileName: "[project]/src/components/Header/Header.tsx",
-                lineNumber: 21,
+                lineNumber: 18,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/Header/Header.tsx",
-        lineNumber: 18,
+        lineNumber: 15,
         columnNumber: 5
     }, this);
 };

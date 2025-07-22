@@ -36,7 +36,7 @@ const config = [
   },
   {
     title: 'FAQs',
-    link: '/faqs',
+    link: '/services#faqs',
   },
   {
     title: 'Services',

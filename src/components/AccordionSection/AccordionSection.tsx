@@ -130,7 +130,7 @@ export const AccordionSection = () => {
               </StyledLi>
             ))}
           </StyledUl>
-          <Button variant='contained'>Make A personal offer</Button>
+          <Button variant='contained' href='/contact#form'>Make A personal offer</Button>
         </StyledWrapper>
       </Container>
     </StyledSection>

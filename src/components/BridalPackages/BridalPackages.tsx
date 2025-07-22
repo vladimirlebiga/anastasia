@@ -134,7 +134,7 @@ export const BridalPackages = () => {
             ))}
           </StyledUl>
           <StyledButtonWrapper>
-            <Button variant='text'>unlock your quote</Button>
+            <Button variant='text' href='/contact#form'>unlock your quote</Button>
           </StyledButtonWrapper>
         </StyledWrapper>
       </Container>

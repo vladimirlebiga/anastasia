@@ -14,10 +14,7 @@ const config = {
 }
 
 export const Hero = ({ page }: { page: string }) => {
-  console.log(page,1);
     const { url } = config[page as keyof typeof config];
-    console.log(url);
-
   return (
     <StyledSection url={url}>
        <Container>

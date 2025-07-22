@@ -47,8 +47,9 @@ export const Form = () => {
   };
 
   return (
+    <section id='form'>
       <FormProvider {...methods}>
-        <StyledSection id='form'>
+        <StyledSection>
           <Container>
             <StyledH1 variant='h2'>Wedding Day Details</StyledH1>
             <StyledFormWrapper>
@@ -65,5 +66,6 @@ export const Form = () => {
           </Container>
         </StyledSection>
       </FormProvider>
+    </section>
   );
 };

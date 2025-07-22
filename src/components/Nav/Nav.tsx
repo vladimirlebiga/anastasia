@@ -21,7 +21,7 @@ const navItems = [
   },
   {
     label: 'FAQS',
-    url: '/services/#faqs',
+    url: '/services#faqs',
   },
   {
     label: 'Contact',
