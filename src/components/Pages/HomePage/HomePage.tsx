@@ -5,10 +5,12 @@ import { PersonalStylist } from '@/components/PersonalStylist/PersonalStylist';
 import { TrustedBy } from '@/components/TrustedBy/TrustedBy';
 import { BrideReviews } from '@/components/BrideReviews/BrideReviews';
 import { AccordionSection } from '@/components/AccordionSection/AccordionSection';
-
+import { useMenuOpen } from '@/contexts/MenuContext';
+import { MenuOpen } from '@/components/MenuOpen.tsx/MenuOpen';
 
 export const HomePage = () => {
-
+  const {isMenuOpen} = useMenuOpen();
+  console.log(isMenuOpen);
   return (
     <main>
       <PersonalStylist/>
@@ -16,6 +18,7 @@ export const HomePage = () => {
       <SomeOf/>
       <BrideReviews/>
       <AccordionSection/>
+      {isMenuOpen && <MenuOpen />}
     </main>
   );
 };

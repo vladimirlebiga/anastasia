@@ -478,7 +478,7 @@ function ResponsiveProvider({ children }) {
         children: children
     }, void 0, false, {
         fileName: "[project]/src/contexts/ResponsiveContext.tsx",
-        lineNumber: 43,
+        lineNumber: 42,
         columnNumber: 5
     }, this);
 }

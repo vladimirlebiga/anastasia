@@ -3,6 +3,7 @@ import { supportedLocales } from '@/utils/languageNegotiator';
 import { Header } from '@/components/Header/Header';
 import { Footer } from '@/components/Footer/Footer';
 
+
 export default async function LocaleLayout({
   children,
   params,
