@@ -11,10 +11,12 @@ import {
   StyledSection,
 } from './Styled';
 import Link from 'next/link';
+import { useResponsive } from '@/contexts/ResponsiveContext';
 
 export const PersonalStylist = () => {
+  const { isMobile } = useResponsive();
   return (
-    <StyledSection>
+    <StyledSection isMobile={isMobile}>
     <Container>
       <StyledWrapper>
         <StyledH1 variant='body2'>amsterdam / netherlands</StyledH1>

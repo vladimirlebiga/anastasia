@@ -1,12 +1,13 @@
 import { styled } from '@mui/material/styles';
 
-export const StyledSection = styled('section')<{ url: string }>(({ url }) => ({
+export const StyledSection = styled('section')<{ url: string, isMobile: boolean }>(({ url, isMobile }) => ({
   position: 'relative',
   alignItems: 'center',
   justifyContent: 'center',
-  height: '537px',
+  height: isMobile ? '200px' : '537px',
   width: '100%',
   overflow: 'hidden',
+  paddingTop: isMobile ? '300px' : '0',
   // No background image or opacity here!
 
   // Pseudo-element for the semi-transparent background

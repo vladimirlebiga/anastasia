@@ -10,6 +10,8 @@ import {
   StyledLi,
   StyledSection,
 } from './Styled';
+import { useResponsive } from '@/contexts/ResponsiveContext';
+import { SwiperComponent } from '@/components/Swiper/Swiper';
 
 const config = {
   hairstyles: [
@@ -25,28 +27,34 @@ const config = {
       title: 'Hairstyle 3',
       image: '/img/homepage/Homepage5.jpg',
     },
-  ],
+  ]
 };
 
 export const SomeOf = () => {
+  const { isMobile } = useResponsive();
   return (
     <section>
-      <StyledSection>
+      <StyledSection isMobile={isMobile}>
         <Container>
           <StyledH1 variant='h2'>Some of my work</StyledH1>
           <StyledH2 variant='h2'>Requested Hairstyles</StyledH2>
-          <StyledP variant='body1'>
+          <StyledP variant='body1' isMobile={isMobile}>
             I’m not here to do a quick hairstyle and leave. I become your
             Personal Beauty Assistant — someone who stays with you the entire
             day, ensuring that everything beauty-related feels perfect,
             effortless, and entirely *you*.
           </StyledP>
           <StyledImgWrapper>
-            <StyledUl>
-              {config.hairstyles.map((hairstyle) => (
-                <StyledLi url={hairstyle.image} key={hairstyle.title} />
-              ))}
-            </StyledUl>
+            {isMobile && (
+              <SwiperComponent config={config.hairstyles} id='hairstyles' />
+            )}
+            {!isMobile && (
+              <StyledUl>
+                {config.hairstyles.map((hairstyle) => (
+                  <StyledLi url={hairstyle.image} key={hairstyle.title} />
+                ))}
+              </StyledUl>
+            )}
           </StyledImgWrapper>
         </Container>
       </StyledSection>

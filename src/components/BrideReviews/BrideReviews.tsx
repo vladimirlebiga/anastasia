@@ -2,6 +2,7 @@ import React from 'react';
 import { StyledSection, StyledH1, StyledWrapper } from './Styled';
 import { Button, Container } from '@mui/material';
 import { SwiperComponent } from '../Swiper/Swiper';
+import { useResponsive } from '@/contexts/ResponsiveContext';
 
 const config = [
 
@@ -10,7 +11,7 @@ const config = [
       image: '/img/homepage/Homepage6.jpg',
       textTitle: 'Anna',
       text: 'Anastasia! OMG thank you so much for an AMAIZING wedding day hair and make-up. I have never felt more beautiful in my life. You truly worked some magic haha.',
-      isRound: true
+      isRound: true,
     },
     {
       title: 'Review 2',
@@ -50,11 +51,12 @@ const config = [
   ];
 
 export const BrideReviews = () => {
+  const { isMobile } = useResponsive();
   return (
-    <StyledSection>
+    <StyledSection isMobile={isMobile}>
       <Container>
         <StyledH1 variant='h2'>Bride Reviews</StyledH1>
-        <SwiperComponent config={config} id='review' />
+        <SwiperComponent config={config} id={isMobile ? 'reviewMobile' : 'review'} />
         <StyledWrapper>
           <Button variant='contained' href='/contact#form'>let's work together</Button>
         </StyledWrapper>

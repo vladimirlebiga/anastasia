@@ -17,6 +17,7 @@ import {
   StyledArrowWrapper,
 } from './Styled';
 import { Arrow } from '../../assets/icons/Arrow';
+import { useResponsive } from '@/contexts/ResponsiveContext';
 
 const config = [
   {
@@ -38,7 +39,7 @@ const config = [
     title: 'Accordion2',
     image: '/img/homepage/Homepage10.jpg',
     name: 'Basic',
-    spanName: ' +2guest',
+    spanName: ' +2guests',
     name2: 'Package',
     price: '€ 1000',
     name3: "What you'll receive:",
@@ -93,23 +94,25 @@ export const AccordionSection = () => {
   const handleToggle = (title: keyof typeof active) => {
     setActive((prev) => ({ ...prev, [title]: !prev[title] }));
   };
+  const { isMobile } = useResponsive();
 
   return (
     <StyledSection>
       <Container maxWidth='xl'>
         <StyledWrapper>
-          <StyledUl>
+          <StyledUl isMobile={isMobile}>
             {config.map((item) => (
               <StyledLi key={item.title} 
-              isActive={active[item.title as keyof typeof active]}>
-                <StyledImage src={item.image} alt={item.title} />
-                <StyledH2 variant='h4'>
+              isActive={active[item.title as keyof typeof active]}
+              isMobile={isMobile}>
+                <StyledImage src={item.image} alt={item.title} isMobile={isMobile} />
+                <StyledH2 variant='h4' isMobile={isMobile}>
                   {item.name}
-                  {item.spanName && <StyleSpan>{item.spanName}</StyleSpan>}
+                  {item.spanName && <StyleSpan isMobile={isMobile}>{item.spanName}</StyleSpan>}
                 </StyledH2>
 
-                <StyledP1 variant='body1'>{item.name2}</StyledP1>
-                <StyledP variant='h3'>{item.price}</StyledP>
+                <StyledP1 isMobile={isMobile} variant='body1'>{item.name2}</StyledP1>
+                <StyledP variant='h3' isMobile={isMobile}>{item.price}</StyledP>
                 
                 {active[item.title as keyof typeof active] && (
                   <StyledHiddenContainer>
@@ -119,11 +122,12 @@ export const AccordionSection = () => {
                     ))}
                   </StyledHiddenContainer>
                 )}
-                <StyledArrowWrapper
+                <StyledArrowWrapper 
                   onClick={() =>
                     handleToggle(item.title as keyof typeof active)
                   }
                   isActive={active[item.title as keyof typeof active]}
+                  isMobile={isMobile}
                 >
                   <Arrow />
                 </StyledArrowWrapper>

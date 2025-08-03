@@ -3,6 +3,7 @@ import React from 'react'
 import { StyledH1, StyledH3, StyledHeroTextWrapper } from './Styled';
 import { Button } from '@mui/material';
 import { StyledButtonContainer } from './Styled';
+import { useResponsive } from '@/contexts/ResponsiveContext';
 
 const config = {
     home: {
@@ -35,6 +36,7 @@ const config = {
 
 
 export const HeroText = ({ page }: { page: string }) => {
+    const { isMobile } = useResponsive();
     const { title, description, services } = config[page as keyof typeof config];
     console.log(services);
   return (
@@ -43,7 +45,7 @@ export const HeroText = ({ page }: { page: string }) => {
         <StyledH3 variant='h6' services={services}>{description}</StyledH3>
         {services &&
         <StyledButtonContainer>
-        <Button variant='contained' href='/contact#form'>lets' work together</Button>
+        {!isMobile && <Button variant='contained' href='/contact#form'>lets' work together</Button>}
         </StyledButtonContainer>}
     </StyledHeroTextWrapper>
   )

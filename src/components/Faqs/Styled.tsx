@@ -1,10 +1,10 @@
 import { styled } from '@mui/material/styles';
 import Typography from '@mui/material/Typography';
 
-export const StyledSection = styled('section')(() => ({
+export const StyledSection = styled('section')<{isMobile: boolean}>(({isMobile}) => ({
   backgroundColor: '#F5F5F5',
   paddingBottom: '20px',
-  paddingTop: '50px',
+  paddingTop: isMobile ? '100px' : '50px',
 }));
 
 export const StyledH1 = styled(Typography)(() => ({

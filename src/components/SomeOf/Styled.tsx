@@ -1,9 +1,10 @@
 import { styled } from '@mui/material/styles';
 import Typography from '@mui/material/Typography';
 
-export const StyledSection = styled('section')(() => ({
-
-  paddingTop: '50px',
+export const StyledSection = styled('section', {
+  shouldForwardProp: (prop) => prop !== 'isMobile'
+})(({ isMobile }: { isMobile: boolean }) => ({
+  paddingTop: isMobile ? '30px' : '50px',
 }));
 
 export const StyledH1 = styled(Typography)(() => ({
@@ -19,11 +20,14 @@ export const StyledH2 = styled(Typography)(() => ({
   textAlign: 'center',
 }));
 
-export const StyledP = styled(Typography)(() => ({
+export const StyledP = styled(Typography, {
+  shouldForwardProp: (prop) => prop !== 'isMobile'
+})(({ isMobile }: { isMobile: boolean }) => ({
   fontFamily: 'Montserrat',
   lineHeight: '136%',
   color: '#000000',
   textAlign: 'center',
+  padding: isMobile ? '10px 0 20px 0' : '0',
 }));
 
 export const StyledUl = styled('ul')(() => ({

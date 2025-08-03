@@ -124,6 +124,9 @@ const theme = createTheme({
       textTransform: 'uppercase',
       margin: 0,
       color: '#000000',
+      [`@media (max-width:600px)`]: {
+        fontSize: 20,
+      },
     },
     h2: {
       // fontFamily: 'Playfair Display',
@@ -134,6 +137,9 @@ const theme = createTheme({
       // textTransform: 'uppercase',
       margin: 0,
       // color: '#000000',
+      [`@media (max-width:600px)`]: {
+        fontSize: 22,
+      },
     },
     h3: {
       // fontFamily: 'Great Vibes',
@@ -144,6 +150,9 @@ const theme = createTheme({
       marginBottom: 0,
       // color: '#000000',
       // textAlign: 'right',
+      [`@media (max-width:600px)`]: {
+        fontSize: 22,
+      },
     },
     h4: {
       fontFamily: 'Great Vibes',
@@ -151,6 +160,9 @@ const theme = createTheme({
       fontWeight: 400,
       lineHeight: '120%',
       letterSpacing: '6%',
+      [`@media (max-width:600px)`]: {
+        fontSize: 22,
+      },
     },
     h6: {
       fontFamily: 'Great Vibes',
@@ -161,6 +173,9 @@ const theme = createTheme({
       textTransform: 'lowercase',
          color: '#000000',
       textAlign: 'right',
+      [`@media (max-width:600px)`]: {
+        fontSize: 14,
+      },
     },
     body1: {
       fontSize: 24,
@@ -168,19 +183,20 @@ const theme = createTheme({
       letterSpacing: '6%',
       // lineHeight: '120%',
       marginBottom: 0,
+      [`@media (max-width:600px)`]: {
+        fontSize: 12,
+      },
     },
     body2: {
       fontSize: 20,
       letterSpacing: '6%',
       lineHeight: '120%',
+      [`@media (max-width:600px)`]: {
+        fontSize: 12,
+        lineHeight: '180%',
+      },
     },
-    caption: {
-      // fontSize: 20,
-      // fontWeight: 400,
-      // letterSpacing: 0,
-      // lineHeight: 1.5,
-      // marginBottom: 0,
-    },
+ 
   },
   components: {
     MuiButton: {
@@ -196,6 +212,10 @@ const theme = createTheme({
           padding: '10px 22px',
           borderRadius: '10px',
           textTransform: 'uppercase',
+          [`@media (max-width:600px)`]: {
+            fontSize: 12,
+            padding: '5px 60px',
+          },
         },
         outlined: {
           borderColor: '#B29584',
@@ -209,6 +229,10 @@ const theme = createTheme({
           padding: '10px 22px',
           borderRadius: '10px',
           textTransform: 'uppercase',
+          [`@media (max-width:600px)`]: {
+            fontSize: 12,
+            padding: '5px 60px',
+          },
         },
         text: {
           backgroundColor: '#7D4047',
@@ -222,6 +246,10 @@ const theme = createTheme({
           padding: '10px 22px',
           borderRadius: '10px',
           textTransform: 'uppercase',
+          [`@media (max-width:600px)`]: {
+            fontSize: 12,
+            padding: '5px 60px',
+          },
         },
       },
     },

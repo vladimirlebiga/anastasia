@@ -13,16 +13,24 @@ import {
   StyledImage,
   StyledText,
   StyledPOrange,
+  StyledImgWrapper,
+  StyledImgText,
 } from './Styled';
+import { useResponsive } from '@/contexts/ResponsiveContext';
 
 export const TrustedBy = () => {
+  const { isMobile } = useResponsive();
   return (
     <StyledSection>
       <Container>
-        <StyledWrapper>
+        <StyledWrapper isMobile={isMobile}>
           <StyledWrapperLeft>
-            <StyledH1 variant='h3'>TRUSTED BY OVER 500+ BRIDES</StyledH1>
-            <StyledH2 variant='h3'>more than just makeup and hair</StyledH2>
+            <StyledH1 variant='h3' isMobile={isMobile}>
+              TRUSTED BY OVER 500+ BRIDES
+            </StyledH1>
+            <StyledH2 variant='h3' isMobile={isMobile}>
+              more than just makeup and hair
+            </StyledH2>
             <StyledP variant='body2'>
               You don’t want to *just look* beautiful on your wedding day. You
               want to feel held, understood, and guided — from the moment you
@@ -65,18 +73,33 @@ export const TrustedBy = () => {
               truly seen, incredibly beautiful, and completely supported.
             </StyledP>
             <br />
-            <Button variant='text' href='/contact#form' component='a'>BOOK VIDEO CONSULTATION</Button>
+            <Button variant='text' href='/contact#form' component='a'>
+              BOOK VIDEO CONSULTATION
+            </Button>
           </StyledWrapperLeft>
-          <StyledWrapperRight>
-            <StyledImage src='/img/homepage/Homepage2.jpg' alt='Homepage2' />
-            <StyledText>
-              <StyledP variant='body2'>I want you to say:</StyledP>
-              <StyledPOrange variant='body2'>
-                “This was everything I didn’t even know
-              </StyledPOrange>
-              <StyledPOrange variant='body2'>I needed.</StyledPOrange>
-              <StyledPOrange variant='body2'>She was magic.”</StyledPOrange>
-            </StyledText>
+          <StyledWrapperRight isMobile={isMobile}>
+            <StyledImgWrapper isMobile={isMobile}>
+              <StyledImage
+                src='/img/homepage/Homepage2.jpg'
+                alt='Homepage2'
+                isMobile={isMobile}
+              />
+              {isMobile && (
+                <StyledImgText>
+                  “ You deserve to feel calm, stunning and truly like a queen”
+                </StyledImgText>
+              )}
+            </StyledImgWrapper>
+            {!isMobile && (
+              <StyledText>
+                <StyledP variant='body2'>I want you to say:</StyledP>
+                <StyledPOrange variant='body2'>
+                  “This was everything I didn’t even know
+                </StyledPOrange>
+                <StyledPOrange variant='body2'>I needed.</StyledPOrange>
+                <StyledPOrange variant='body2'>She was magic.”</StyledPOrange>
+              </StyledText>
+            )}
           </StyledWrapperRight>
         </StyledWrapper>
       </Container>

@@ -1,3 +1,4 @@
+'use client';
 import React from 'react';
 import {
   StyledFooter,
@@ -13,13 +14,14 @@ import {
   StyledFooterSocialItemLink,
   StyledSocialText,
   StyledIconWrapper,
+  StyledSocialTextTitle,
 } from './Styled';
 import { Container } from '@mui/material';
 import { Union } from '@/assets/icons/Union';
 import { InstagramIcon } from '@/assets/icons/InstagramIcon';
 import { FacebookIcon } from '@/assets/icons/FacebookIcon';
 import { TelegramIcon } from '@/assets/icons/TelegramIcon';
-
+import { useResponsive } from '@/contexts/ResponsiveContext';
 
 const config = [
   {
@@ -49,39 +51,61 @@ const config = [
 ];
 
 export const Footer = () => {
+  const { isMobile } = useResponsive();
   return (
-    <StyledFooter id='footer'>
+    <StyledFooter id='footer' isMobile={isMobile}>
       <Container>
         <StyledGridContainer>
-          <StyledFooterLogo>
-            <Union />
-            <StyledH1 variant='body1'>
-              Bridal hairstyling for the modern bride
-            </StyledH1>
-          </StyledFooterLogo>
-          <StyledFooterMenu>
-            {config.map((item) => (
-              <StyledFooterMenuItem variant='body1' key={item.title}>
-                <StyledFooterMenuItemLink href={item.link}>
-                  {item.title}
-                </StyledFooterMenuItemLink>
-              </StyledFooterMenuItem>
-            ))}
-          </StyledFooterMenu>
+          {!isMobile && (
+            <StyledFooterLogo>
+              <Union />
+              <StyledH1 variant='body1'>
+                Bridal hairstyling for the modern bride
+              </StyledH1>
+            </StyledFooterLogo>
+          )}
+          {!isMobile && (
+            <StyledFooterMenu>
+              {config.map((item) => (
+                <StyledFooterMenuItem variant='body1' key={item.title}>
+                  <StyledFooterMenuItemLink href={item.link}>
+                    {item.title}
+                  </StyledFooterMenuItemLink>
+                </StyledFooterMenuItem>
+              ))}
+            </StyledFooterMenu>
+          )}
           <StyledFooterSocial>
             <StyledFooterSocialItem>
-              <StyledFooterSocialItemLink>
-                <StyledSocialText variant='body1'>
+              <StyledFooterSocialItemLink isMobile={isMobile}>
+                {isMobile && (
+                  <StyledSocialTextTitle variant='h2'>
+                    LETS GET SOCIAL
+                  </StyledSocialTextTitle>
+                )}
+                <StyledSocialText variant='body1' isMobile={isMobile}>
                   SERVING AMSTERDAM
                 </StyledSocialText>
-                <StyledIconWrapper>
-                  <a href='https://t.me/Muachaos' target='_blank' rel='noopener noreferrer'>
+                <StyledIconWrapper isMobile={isMobile}>
+                  <a
+                    href='https://t.me/Muachaos'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                  >
                     <TelegramIcon />
                   </a>
-                  <a href='https://www.facebook.com/PyzhikMakeup' target='_blank' rel='noopener noreferrer'>
+                  <a
+                    href='https://www.facebook.com/PyzhikMakeup'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                  >
                     <FacebookIcon />
                   </a>
-                  <a href='https://www.instagram.com/wed_makeup_nl' target='_blank' rel='noopener noreferrer'>
+                  <a
+                    href='https://www.instagram.com/wed_makeup_nl'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                  >
                     <InstagramIcon />
                   </a>
                 </StyledIconWrapper>
@@ -89,7 +113,7 @@ export const Footer = () => {
             </StyledFooterSocialItem>
           </StyledFooterSocial>
         </StyledGridContainer>
-        <StyledParagraph>
+        <StyledParagraph isMobile={isMobile}>
           &copy; 2025 Lebiga. All rights reserved.
         </StyledParagraph>
       </Container>

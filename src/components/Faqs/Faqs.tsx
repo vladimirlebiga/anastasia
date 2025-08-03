@@ -12,6 +12,7 @@ import {
   StyledArrowWrapper,
 } from './Styled';
 import { FilledArrow } from '@/assets/icons/FilledArrow';
+import { useResponsive } from '@/contexts/ResponsiveContext';
 
 const config = [
   {
@@ -59,6 +60,7 @@ const config = [
 ];
 
 export const Faqs = () => {
+  const {isMobile} = useResponsive();
   const [active, setActive] = useState({
     faq1: false,
     faq2: false,
@@ -74,8 +76,7 @@ export const Faqs = () => {
   };
 
   return (
-    <section id='faqs'>
-      <StyledSection>
+      <StyledSection id='faqs' isMobile={isMobile}>
         <Container>
           <StyledH1 variant='h2'>FAQs</StyledH1>
           <StyledUl>
@@ -107,6 +108,5 @@ export const Faqs = () => {
           </StyledUl>
         </Container>
       </StyledSection>
-    </section>
   );
 };

@@ -10,10 +10,10 @@ export const StyledHeroTextWrapper = styled('div', {
     // bottom: services ? '0' : '200px',
     left: '-10%',
     width: services ? '600px' : 'auto',
-
+    zIndex: 100,
 }));
 
-export const StyledH1 = styled(Typography, {
+export const StyledH1 = styled(Typography, {  
   shouldForwardProp: (prop) => prop !== 'services'
 })(({services}: {services?: boolean}) => ({
     fontSize: services ? '40px' : '64px',

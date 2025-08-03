@@ -10,7 +10,6 @@ import { MenuOpen } from '@/components/MenuOpen.tsx/MenuOpen';
 
 export const HomePage = () => {
   const {isMenuOpen} = useMenuOpen();
-  console.log(isMenuOpen);
   return (
     <main>
       <PersonalStylist/>

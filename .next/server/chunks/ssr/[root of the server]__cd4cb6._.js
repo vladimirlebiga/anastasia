@@ -75,7 +75,10 @@ const theme = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2
             lineHeight: '120%',
             textTransform: 'uppercase',
             margin: 0,
-            color: '#000000'
+            color: '#000000',
+            [`@media (max-width:600px)`]: {
+                fontSize: 20
+            }
         },
         h2: {
             // fontFamily: 'Playfair Display',
@@ -84,7 +87,11 @@ const theme = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2
             letterSpacing: '6%',
             lineHeight: '120%',
             // textTransform: 'uppercase',
-            margin: 0
+            margin: 0,
+            // color: '#000000',
+            [`@media (max-width:600px)`]: {
+                fontSize: 22
+            }
         },
         h3: {
             // fontFamily: 'Great Vibes',
@@ -92,14 +99,22 @@ const theme = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2
             fontWeight: 400,
             letterSpacing: '6%',
             lineHeight: '120%',
-            marginBottom: 0
+            marginBottom: 0,
+            // color: '#000000',
+            // textAlign: 'right',
+            [`@media (max-width:600px)`]: {
+                fontSize: 22
+            }
         },
         h4: {
             fontFamily: 'Great Vibes',
             fontSize: 60,
             fontWeight: 400,
             lineHeight: '120%',
-            letterSpacing: '6%'
+            letterSpacing: '6%',
+            [`@media (max-width:600px)`]: {
+                fontSize: 22
+            }
         },
         h6: {
             fontFamily: 'Great Vibes',
@@ -109,21 +124,29 @@ const theme = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2
             letterSpacing: '6%',
             textTransform: 'lowercase',
             color: '#000000',
-            textAlign: 'right'
+            textAlign: 'right',
+            [`@media (max-width:600px)`]: {
+                fontSize: 14
+            }
         },
         body1: {
             fontSize: 24,
             // fontWeight: 400,
             letterSpacing: '6%',
             // lineHeight: '120%',
-            marginBottom: 0
+            marginBottom: 0,
+            [`@media (max-width:600px)`]: {
+                fontSize: 12
+            }
         },
         body2: {
             fontSize: 20,
             letterSpacing: '6%',
-            lineHeight: '120%'
-        },
-        caption: {
+            lineHeight: '120%',
+            [`@media (max-width:600px)`]: {
+                fontSize: 12,
+                lineHeight: '180%'
+            }
         }
     },
     components: {
@@ -139,7 +162,11 @@ const theme = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2
                     fontWeight: 600,
                     padding: '10px 22px',
                     borderRadius: '10px',
-                    textTransform: 'uppercase'
+                    textTransform: 'uppercase',
+                    [`@media (max-width:600px)`]: {
+                        fontSize: 12,
+                        padding: '5px 60px'
+                    }
                 },
                 outlined: {
                     borderColor: '#B29584',
@@ -152,7 +179,11 @@ const theme = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2
                     width: '100%',
                     padding: '10px 22px',
                     borderRadius: '10px',
-                    textTransform: 'uppercase'
+                    textTransform: 'uppercase',
+                    [`@media (max-width:600px)`]: {
+                        fontSize: 12,
+                        padding: '5px 60px'
+                    }
                 },
                 text: {
                     backgroundColor: '#7D4047',
@@ -165,7 +196,11 @@ const theme = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2
                     width: '100%',
                     padding: '10px 22px',
                     borderRadius: '10px',
-                    textTransform: 'uppercase'
+                    textTransform: 'uppercase',
+                    [`@media (max-width:600px)`]: {
+                        fontSize: 12,
+                        padding: '5px 60px'
+                    }
                 }
             }
         }

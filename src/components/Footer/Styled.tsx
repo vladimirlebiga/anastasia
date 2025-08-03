@@ -1,20 +1,20 @@
 'use client';
 import { styled } from '@mui/material/styles';
-import { Typography } from '@mui/material';
+import { Typography, Box } from '@mui/material';
 import Link from 'next/link';
 
-export const StyledFooter = styled('footer')(() => ({
-  backgroundColor: '#8E7A74',
-  padding: '80px 0 ',
+export const StyledFooter = styled('footer')<{isMobile: boolean}>(({isMobile}) => ({
+  backgroundColor: isMobile ? '#FFFFFF' : '#8E7A74',
+  padding: isMobile ? '20px 0 20px 0' : '80px 0 ',
   display: 'flex',
   justifyContent: 'center',
   alignItems: 'center',
   width: '100%',
 }));
 
-export const StyledParagraph = styled('p')(() => ({
-  fontSize: '0.8rem',
-  color: '#fff',
+export const StyledParagraph = styled('p')<{isMobile: boolean}>(({isMobile}) => ({
+  fontSize: isMobile ? '12px' : '0.8rem',
+  color: isMobile ? '#000000' : '#fff',
   textAlign: 'center',
   marginTop: '50px',
 }));
@@ -87,25 +87,45 @@ export const StyledFooterSocialItem = styled('div')(() => ({
   width: '100%',
 }));
 
-export const StyledFooterSocialItemLink = styled('div')(() => ({  
-  color: '#fff',
+export const StyledFooterSocialItemLink = styled(Box, {
+  shouldForwardProp: (prop) => prop !== 'isMobile'
+})(({isMobile}: {isMobile: boolean}) => ({
+  color: isMobile ? '#000000' : '#FFFFFF',
   textDecoration: 'none',
   fontSize: '0.8rem',
+  display: 'flex',
+  flexDirection: 'column',
+  alignItems: 'center',
+  justifyContent: 'center',
+  // gap: '10px',
+
 }));
 
-export const StyledSocialText = styled(Typography)(() => ({
-  color: '#fff',
-  fontSize: '18px',
+export const StyledSocialText = styled(Typography, {
+  shouldForwardProp: (prop) => prop !== 'isMobile'
+})(({isMobile}: {isMobile: boolean}) => ({
+  color: isMobile ? '#000000' : '#FFFFFF',
+  fontSize: isMobile ? '12px' : '18px',
   fontFamily: 'Montserrat',
   fontWeight: '500',
   letterSpacing: '0.05em',
+  order: isMobile ? 1 : 2,
+  paddingTop: isMobile ? '30px' : '0',
 }));
 
-export const StyledIconWrapper = styled('div')(() => ({
+export const StyledIconWrapper = styled('div')<{isMobile: boolean}>(({isMobile}) => ({
   display: 'flex',
   justifyContent: 'center',
   alignItems: 'center',
-  gap: '20%',
+  gap: isMobile ? '55%' : '20%',
   paddingTop: '30px',
+}));
+
+export const StyledSocialTextTitle = styled(Typography)(() => ({
+  color: '#000000',
+  fontSize: '22px',
+  fontFamily: 'Playfair Display',
+  fontWeight: '400',
+  letterSpacing: '0.05em',
 }));
 

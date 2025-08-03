@@ -1,13 +1,13 @@
 import { styled } from '@mui/material/styles';
 import Typography from '@mui/material/Typography';
 
-export const StyledItem = styled('div')(({ isRound }: { isRound: boolean }) => ({
+export const StyledItem = styled('div')(({ isRound, isMobile, height }: { isRound: boolean, isMobile: boolean, height: string }) => ({
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'center',
   justifyContent: 'space-between',
-  height: isRound ? '562px' : '240px',
-  gap: isRound ? '25px' : '10px',
+  height: height,
+  // gap: isRound ? '0' : '10px',
 }));
 
 export const StyledImage = styled('img')(({ isRound }: { isRound: boolean }) => ({
@@ -23,19 +23,45 @@ export const StyledTextTitle = styled(Typography)(() => ({
   fontWeight: 400,
   lineHeight: '120%',
   color: '#F49D6A',
+  fontSize: '40px !important',
 }));
 
-export const StyledText = styled(Typography)(() => ({
+export const StyledText = styled(Typography, {
+  shouldForwardProp: (prop) => prop !== 'isMobile'
+})(({ isMobile }: { isMobile: boolean }) => ({
   fontFamily: 'Montserrat',
   fontWeight: 500,
   lineHeight: '136%',
   color: '#000000',
-  flex: '1 1 50%',
   textAlign: 'center',
+  height: isMobile ? '120px' : '240px',
 }));
 
 export const StyledSwiperWrapper = styled('div')(({ theme }) => ({
+  position: 'relative',
   '& .swiper-pagination-bullet-active': {
     backgroundColor: theme.palette.primary.dark,
+  },
+  '& .swiper-button-next, & .swiper-button-prev': {
+    color: '#000000',
+    backgroundColor: 'rgba(255, 255, 255, 0.9)',
+    borderRadius: '50%',
+    border: '2px solid #000000',
+    width: '40px',
+    height: '40px',
+    top: '34%',
+    transform: 'translateY(-50%)',
+    zIndex: 9999,
+    display: 'flex',
+    '&::after': {
+      fontSize: '20px',
+      fontWeight: 'bold',
+    },
+  },
+  '& .swiper-button-prev': {
+    left: '10px',
+  },
+  '& .swiper-button-next': {
+    right: '10px',
   },
 }));
