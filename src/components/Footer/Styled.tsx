@@ -117,7 +117,7 @@ export const StyledIconWrapper = styled('div')<{isMobile: boolean}>(({isMobile})
   display: 'flex',
   justifyContent: 'center',
   alignItems: 'center',
-  gap: isMobile ? '55%' : '20%',
+  gap: isMobile ? '30px' : '20%',
   paddingTop: '30px',
 }));
 

@@ -764,7 +764,7 @@ const StyledIconWrapper = (0, __TURBOPACK__imported__module__$5b$project$5d2f$no
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        gap: isMobile ? '55%' : '20%',
+        gap: isMobile ? '30px' : '20%',
         paddingTop: '30px'
     }));
 const StyledSocialTextTitle = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__["styled"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"])(()=>({

@@ -70,9 +70,24 @@ export const SwiperComponent = ({
   const { slidesPerView, spaceBetween, freeMode, pagination, loop, centeredSlides, modules, navigation, height } =
     swiperConfiguration[id];
   const { isMobile } = useResponsive();
+  const swiperRef = useRef<any>(null);
+  
+  const goNext = () => {
+    if (swiperRef.current && swiperRef.current.swiper) {
+      swiperRef.current.swiper.slideNext();
+    }
+  };
+
+  const goPrev = () => {
+    if (swiperRef.current && swiperRef.current.swiper) {
+      swiperRef.current.swiper.slidePrev();
+    }
+  };
+  
   return (
     <StyledSwiperWrapper>
       <Swiper
+        ref={swiperRef}
         navigation={navigation}
         slidesPerView={slidesPerView as number}
         spaceBetween={spaceBetween}
@@ -93,6 +108,18 @@ export const SwiperComponent = ({
           </SwiperSlide>
         ))}
       </Swiper>
+      {id === 'reviewMobile' && (
+        <div style={{ display: 'flex', justifyContent: 'center', gap: '20px', marginTop: '20px' }}>
+          <button 
+            onClick={goPrev}
+          >
+          </button>
+          <button 
+            onClick={goNext}
+          >
+          </button>
+        </div>
+      )}
     </StyledSwiperWrapper>
   );
 };
