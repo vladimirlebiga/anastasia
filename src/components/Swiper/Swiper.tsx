@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 // Import Swiper styles
@@ -71,22 +71,41 @@ export const SwiperComponent = ({
     swiperConfiguration[id];
   const { isMobile } = useResponsive();
   const swiperRef = useRef<any>(null);
+  const [isReady, setIsReady] = useState(false);
   
-  const goNext = () => {
-    if (swiperRef.current && swiperRef.current.swiper) {
-      swiperRef.current.swiper.slideNext();
+  useEffect(() => {
+    // Force Swiper to update after component mounts
+    const timer = setTimeout(() => {
+      if (swiperRef.current && swiperRef.current.swiper) {
+        swiperRef.current.swiper.update();
+        // Only initialize navigation if it exists and navigation is enabled
+        if (navigation && swiperRef.current.swiper.navigation) {
+          swiperRef.current.swiper.navigation.init();
+          swiperRef.current.swiper.navigation.update();
+        }
+      }
+      setIsReady(true);
+    }, 100);
+    
+    return () => clearTimeout(timer);
+  }, [navigation]);
+  
+  useEffect(() => {
+    // Re-initialize when config or id changes
+    if (isReady && swiperRef.current && swiperRef.current.swiper) {
+      swiperRef.current.swiper.update();
+      // Only initialize navigation if it exists and navigation is enabled
+      if (navigation && swiperRef.current.swiper.navigation) {
+        swiperRef.current.swiper.navigation.init();
+        swiperRef.current.swiper.navigation.update();
+      }
     }
-  };
-
-  const goPrev = () => {
-    if (swiperRef.current && swiperRef.current.swiper) {
-      swiperRef.current.swiper.slidePrev();
-    }
-  };
+  }, [config, id, isReady, navigation]);
   
   return (
     <StyledSwiperWrapper>
       <Swiper
+        key={`${id}-${isReady}`}
         ref={swiperRef}
         navigation={navigation}
         slidesPerView={slidesPerView as number}
@@ -108,18 +127,7 @@ export const SwiperComponent = ({
           </SwiperSlide>
         ))}
       </Swiper>
-      {id === 'reviewMobile' && (
-        <div style={{ display: 'flex', justifyContent: 'center', gap: '20px', marginTop: '20px' }}>
-          <button 
-            onClick={goPrev}
-          >
-          </button>
-          <button 
-            onClick={goNext}
-          >
-          </button>
-        </div>
-      )}
+
     </StyledSwiperWrapper>
   );
 };

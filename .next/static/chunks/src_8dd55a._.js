@@ -237,113 +237,115 @@ const SwiperComponent = ({ config, id })=>{
     const { slidesPerView, spaceBetween, freeMode, pagination, loop, centeredSlides, modules, navigation, height } = swiperConfiguration[id];
     const { isMobile } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$contexts$2f$ResponsiveContext$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useResponsive"])();
     const swiperRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
-    const goNext = ()=>{
-        if (swiperRef.current && swiperRef.current.swiper) {
-            swiperRef.current.swiper.slideNext();
+    const [isReady, setIsReady] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
+        "SwiperComponent.useEffect": ()=>{
+            // Force Swiper to update after component mounts
+            const timer = setTimeout({
+                "SwiperComponent.useEffect.timer": ()=>{
+                    if (swiperRef.current && swiperRef.current.swiper) {
+                        swiperRef.current.swiper.update();
+                        // Only initialize navigation if it exists and navigation is enabled
+                        if (navigation && swiperRef.current.swiper.navigation) {
+                            swiperRef.current.swiper.navigation.init();
+                            swiperRef.current.swiper.navigation.update();
+                        }
+                    }
+                    setIsReady(true);
+                }
+            }["SwiperComponent.useEffect.timer"], 100);
+            return ({
+                "SwiperComponent.useEffect": ()=>clearTimeout(timer)
+            })["SwiperComponent.useEffect"];
         }
-    };
-    const goPrev = ()=>{
-        if (swiperRef.current && swiperRef.current.swiper) {
-            swiperRef.current.swiper.slidePrev();
+    }["SwiperComponent.useEffect"], [
+        navigation
+    ]);
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
+        "SwiperComponent.useEffect": ()=>{
+            // Re-initialize when config or id changes
+            if (isReady && swiperRef.current && swiperRef.current.swiper) {
+                swiperRef.current.swiper.update();
+                // Only initialize navigation if it exists and navigation is enabled
+                if (navigation && swiperRef.current.swiper.navigation) {
+                    swiperRef.current.swiper.navigation.init();
+                    swiperRef.current.swiper.navigation.update();
+                }
+            }
         }
-    };
+    }["SwiperComponent.useEffect"], [
+        config,
+        id,
+        isReady,
+        navigation
+    ]);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Swiper$2f$Styled$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["StyledSwiperWrapper"], {
-        children: [
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$swiper$2f$swiper$2d$react$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Swiper"], {
-                ref: swiperRef,
-                navigation: navigation,
-                slidesPerView: slidesPerView,
-                spaceBetween: spaceBetween,
-                freeMode: freeMode,
-                pagination: pagination,
-                loop: loop,
-                centeredSlides: centeredSlides,
-                modules: modules,
-                className: "mySwiper",
-                children: config.map((item)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$swiper$2f$swiper$2d$react$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SwiperSlide"], {
-                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Swiper$2f$Styled$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["StyledItem"], {
-                            isRound: item.isRound,
-                            isMobile: isMobile,
-                            height: height,
-                            children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Swiper$2f$Styled$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["StyledImage"], {
-                                    isRound: item.isRound,
-                                    src: item.image,
-                                    alt: item.title
-                                }, void 0, false, {
-                                    fileName: "[project]/src/components/Swiper/Swiper.tsx",
-                                    lineNumber: 104,
-                                    columnNumber: 15
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Swiper$2f$Styled$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["StyledTextTitle"], {
-                                    variant: "h2",
-                                    children: item.textTitle
-                                }, void 0, false, {
-                                    fileName: "[project]/src/components/Swiper/Swiper.tsx",
-                                    lineNumber: 105,
-                                    columnNumber: 15
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Swiper$2f$Styled$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["StyledText"], {
-                                    variant: "body2",
-                                    isMobile: isMobile,
-                                    children: item.text
-                                }, void 0, false, {
-                                    fileName: "[project]/src/components/Swiper/Swiper.tsx",
-                                    lineNumber: 106,
-                                    columnNumber: 15
-                                }, this)
-                            ]
-                        }, void 0, true, {
-                            fileName: "[project]/src/components/Swiper/Swiper.tsx",
-                            lineNumber: 103,
-                            columnNumber: 13
-                        }, this)
-                    }, item.title, false, {
+        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$swiper$2f$swiper$2d$react$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Swiper"], {
+            ref: swiperRef,
+            navigation: navigation,
+            slidesPerView: slidesPerView,
+            spaceBetween: spaceBetween,
+            freeMode: freeMode,
+            pagination: pagination,
+            loop: loop,
+            centeredSlides: centeredSlides,
+            modules: modules,
+            className: "mySwiper",
+            children: config.map((item)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$swiper$2f$swiper$2d$react$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SwiperSlide"], {
+                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Swiper$2f$Styled$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["StyledItem"], {
+                        isRound: item.isRound,
+                        isMobile: isMobile,
+                        height: height,
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Swiper$2f$Styled$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["StyledImage"], {
+                                isRound: item.isRound,
+                                src: item.image,
+                                alt: item.title
+                            }, void 0, false, {
+                                fileName: "[project]/src/components/Swiper/Swiper.tsx",
+                                lineNumber: 123,
+                                columnNumber: 15
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Swiper$2f$Styled$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["StyledTextTitle"], {
+                                variant: "h2",
+                                children: item.textTitle
+                            }, void 0, false, {
+                                fileName: "[project]/src/components/Swiper/Swiper.tsx",
+                                lineNumber: 124,
+                                columnNumber: 15
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Swiper$2f$Styled$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["StyledText"], {
+                                variant: "body2",
+                                isMobile: isMobile,
+                                children: item.text
+                            }, void 0, false, {
+                                fileName: "[project]/src/components/Swiper/Swiper.tsx",
+                                lineNumber: 125,
+                                columnNumber: 15
+                            }, this)
+                        ]
+                    }, void 0, true, {
                         fileName: "[project]/src/components/Swiper/Swiper.tsx",
-                        lineNumber: 102,
-                        columnNumber: 11
-                    }, this))
-            }, void 0, false, {
-                fileName: "[project]/src/components/Swiper/Swiper.tsx",
-                lineNumber: 89,
-                columnNumber: 7
-            }, this),
-            id === 'reviewMobile' && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                style: {
-                    display: 'flex',
-                    justifyContent: 'center',
-                    gap: '20px',
-                    marginTop: '20px'
-                },
-                children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                        onClick: goPrev
-                    }, void 0, false, {
-                        fileName: "[project]/src/components/Swiper/Swiper.tsx",
-                        lineNumber: 113,
-                        columnNumber: 11
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                        onClick: goNext
-                    }, void 0, false, {
-                        fileName: "[project]/src/components/Swiper/Swiper.tsx",
-                        lineNumber: 117,
-                        columnNumber: 11
+                        lineNumber: 122,
+                        columnNumber: 13
                     }, this)
-                ]
-            }, void 0, true, {
-                fileName: "[project]/src/components/Swiper/Swiper.tsx",
-                lineNumber: 112,
-                columnNumber: 9
-            }, this)
-        ]
-    }, void 0, true, {
+                }, item.title, false, {
+                    fileName: "[project]/src/components/Swiper/Swiper.tsx",
+                    lineNumber: 121,
+                    columnNumber: 11
+                }, this))
+        }, `${id}-${isReady}`, false, {
+            fileName: "[project]/src/components/Swiper/Swiper.tsx",
+            lineNumber: 107,
+            columnNumber: 7
+        }, this)
+    }, void 0, false, {
         fileName: "[project]/src/components/Swiper/Swiper.tsx",
-        lineNumber: 88,
+        lineNumber: 106,
         columnNumber: 5
     }, this);
 };
-_s(SwiperComponent, "htXMZn0APbVjVy34Yxoc5J1TpTY=", false, function() {
+_s(SwiperComponent, "PTPnf0aFCcBzP7dCLH2UlX6/tcE=", false, function() {
     return [
         __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$contexts$2f$ResponsiveContext$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useResponsive"]
     ];
