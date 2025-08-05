@@ -7,7 +7,7 @@ export const StyledSection = styled('section')<{ url: string, isMobile: boolean 
   height: isMobile ? '200px' : '537px',
   width: '100%',
   overflow: 'hidden',
-  paddingTop: isMobile ? '300px' : '0',
+  paddingTop: isMobile ? '5rem' : '0',
   // No background image or opacity here!
 
   // Pseudo-element for the semi-transparent background

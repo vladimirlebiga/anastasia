@@ -168,7 +168,7 @@ const StyledSection = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_m
         height: isMobile ? '200px' : '537px',
         width: '100%',
         overflow: 'hidden',
-        paddingTop: isMobile ? '300px' : '0',
+        paddingTop: isMobile ? '5rem' : '0',
         // No background image or opacity here!
         // Pseudo-element for the semi-transparent background
         '&::before': {
@@ -210,32 +210,33 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$mat
 ;
 ;
 const StyledHeroTextWrapper = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__["styled"])('div', {
-    shouldForwardProp: (prop)=>prop !== 'services'
-})(({ services })=>({
+    shouldForwardProp: (prop)=>prop !== 'services' && prop !== 'isMobile'
+})(({ services, isMobile })=>({
         position: 'absolute',
-        paddingTop: services ? '150px' : '300px',
+        paddingTop: isMobile ? '5rem' : services ? '150px' : '300px',
         // top: services ? '50px' : '150px', // Alternative using top instead of paddingTop
         // bottom: services ? '0' : '200px',
-        left: '-10%',
+        left: isMobile ? '5%' : '-10%',
         width: services ? '600px' : 'auto',
         zIndex: 100
     }));
 const StyledH1 = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__["styled"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-    shouldForwardProp: (prop)=>prop !== 'services'
-})(({ services })=>({
+    shouldForwardProp: (prop)=>prop !== 'services' && prop !== 'isMobile'
+})(({ services, isMobile })=>({
+        display: isMobile ? 'none' : 'block',
         fontSize: services ? '40px' : '64px',
         textAlign: services ? 'center' : 'left',
         marginBottom: services ? '20px' : '0',
         letterSpacing: services ? '2px' : '0'
     }));
 const StyledH3 = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__["styled"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-    shouldForwardProp: (prop)=>prop !== 'services'
-})(({ services })=>({
+    shouldForwardProp: (prop)=>prop !== 'services' && prop !== 'isMobile'
+})(({ services, isMobile })=>({
+        display: isMobile ? 'none' : 'block',
         fontSize: services ? '40px' : '48px',
         textAlign: services ? 'center' : 'right',
         letterSpacing: services ? '1px' : '0',
         width: services ? '520px' : 'auto',
-        // // left: services ? '-20%' : '0',
         paddingLeft: services ? '60px' : '0'
     }));
 const StyledButtonContainer = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__["styled"])('div')(()=>({
@@ -300,25 +301,30 @@ const HeroText = ({ page })=>{
     console.log(services);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Hero$2f$HeroText$2f$Styled$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["StyledHeroTextWrapper"], {
         services: services,
+        isMobile: isMobile,
         children: [
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Hero$2f$HeroText$2f$Styled$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["StyledH1"], {
-                variant: "h1",
-                services: services,
-                children: title
-            }, void 0, false, {
-                fileName: "[project]/src/components/Hero/HeroText/HeroText.tsx",
-                lineNumber: 44,
-                columnNumber: 9
-            }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Hero$2f$HeroText$2f$Styled$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["StyledH3"], {
-                variant: "h6",
-                services: services,
-                children: description
-            }, void 0, false, {
-                fileName: "[project]/src/components/Hero/HeroText/HeroText.tsx",
-                lineNumber: 45,
-                columnNumber: 9
-            }, this),
+            isMobile && !services && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Hero$2f$HeroText$2f$Styled$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["StyledH1"], {
+                        variant: "h1",
+                        services: services,
+                        children: title
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/Hero/HeroText/HeroText.tsx",
+                        lineNumber: 46,
+                        columnNumber: 13
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Hero$2f$HeroText$2f$Styled$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["StyledH3"], {
+                        variant: "h6",
+                        services: services,
+                        children: description
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/Hero/HeroText/HeroText.tsx",
+                        lineNumber: 47,
+                        columnNumber: 13
+                    }, this)
+                ]
+            }, void 0, true),
             services && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Hero$2f$HeroText$2f$Styled$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["StyledButtonContainer"], {
                 children: !isMobile && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Button$2f$Button$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Button$3e$__["Button"], {
                     variant: "contained",
@@ -326,12 +332,12 @@ const HeroText = ({ page })=>{
                     children: "lets' work together"
                 }, void 0, false, {
                     fileName: "[project]/src/components/Hero/HeroText/HeroText.tsx",
-                    lineNumber: 48,
+                    lineNumber: 52,
                     columnNumber: 23
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/Hero/HeroText/HeroText.tsx",
-                lineNumber: 47,
+                lineNumber: 51,
                 columnNumber: 9
             }, this)
         ]

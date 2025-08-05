@@ -113,6 +113,17 @@ export const AccordionSection = () => {
 
                 <StyledP1 isMobile={isMobile} variant='body1'>{item.name2}</StyledP1>
                 <StyledP variant='h3' isMobile={isMobile}>{item.price}</StyledP>
+                {isMobile && (
+                  <StyledArrowWrapper 
+                    onClick={() =>
+                      handleToggle(item.title as keyof typeof active)
+                    }
+                    isActive={active[item.title as keyof typeof active]}
+                    isMobile={isMobile}
+                  >
+                    <Arrow />
+                  </StyledArrowWrapper>
+                )}
                 
                 {active[item.title as keyof typeof active] && (
                   <StyledHiddenContainer>
@@ -122,6 +133,7 @@ export const AccordionSection = () => {
                     ))}
                   </StyledHiddenContainer>
                 )}
+                {!isMobile && (
                 <StyledArrowWrapper 
                   onClick={() =>
                     handleToggle(item.title as keyof typeof active)
@@ -131,6 +143,7 @@ export const AccordionSection = () => {
                 >
                   <Arrow />
                 </StyledArrowWrapper>
+                )}
               </StyledLi>
             ))}
           </StyledUl>

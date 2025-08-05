@@ -2,5 +2,7 @@
   "/[locale]/contact/page": "app/[locale]/contact/page.js",
   "/[locale]/page": "app/[locale]/page.js",
   "/_not-found/page": "app/_not-found/page.js",
-  "/[locale]/about/page": "app/[locale]/about/page.js"
+  "/[locale]/about/page": "app/[locale]/about/page.js",
+  "/[locale]/services/page": "app/[locale]/services/page.js",
+  "/[locale]/portfolio/page": "app/[locale]/portfolio/page.js"
 }

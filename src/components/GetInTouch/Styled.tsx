@@ -8,7 +8,9 @@ export const StyledSection = styled('section')(() => ({
 //   paddingTop: '40px',
 }));
 
-export const StyledH1 = styled(Typography)(() => ({
+export const StyledH1 = styled(Typography, {
+  shouldForwardProp: (prop) => prop !== 'isMobile',
+} )(({ isMobile }: { isMobile: boolean }) => ({
   fontFamily: 'Playfair Display',
   textTransform: 'uppercase',
   color: '#000000',
@@ -18,11 +20,17 @@ export const StyledH1 = styled(Typography)(() => ({
 }));
 
 
-export const StyledP = styled(Typography)(() => ({
+export const StyledP = styled(Typography, {
+  shouldForwardProp: (prop) => prop !== 'isMobile',
+} )(({ isMobile }: { isMobile: boolean }) => ({
   fontFamily: 'Montserrat',
-  fontSize: '24px',
+  fontSize: isMobile ? '16px' : '24px',
   lineHeight: '136%',
-  paddingBottom: '1rem',
+  paddingBottom: isMobile ? '0' : '1rem',
+  paddingTop: isMobile ? '10px' : '0',
+  textAlign: isMobile ? 'center' : 'left',
+  paddingLeft: isMobile ? '30px' : '0',
+  paddingRight: isMobile ? '30px' : '0',
 }));
 
 export const StyledButtonWrapper = styled('div')(() => ({
@@ -38,10 +46,13 @@ export const StyledButton = styled(Button)(() => ({
   paddingRight: '60px',
 }));
 
-export const StyledWrapper = styled('div')(() => ({
+export const StyledWrapper = styled('div', {
+  shouldForwardProp: (prop) => prop !== 'isMobile',
+} )(({ isMobile }: { isMobile: boolean }) => ({
   display: 'grid',
-  gridTemplateColumns: '1fr 1fr',
-  gap: '60px',
+  gridTemplateColumns: isMobile ? '1fr' : '1fr 1fr',
+  gridTemplateRows: isMobile ? '1fr 1fr' : '1fr',
+  gap: isMobile ? '10px' : '60px',
   // backgroundColor: '#E8D1C5',
 }));
 
@@ -65,11 +76,15 @@ export const StyledImgWrapper = styled('div')(() => ({
   // height: '100%',
 }));
 
-export const StyledImg = styled('div')(() => ({
+export const StyledImg = styled('div', {
+  shouldForwardProp: (prop) => prop !== 'isMobile',
+} )(({ isMobile }: { isMobile: boolean }) => ({
   backgroundImage: "url('/img/portfolio/get_in_touch.jpg')",
-  width: '780px',
-  height: '520px',
-  borderRadius: '10px',
+  backgroundPosition: isMobile ? 'center' : 'center',
+  width: isMobile ? '100%' : '780px',
+  height: isMobile ? '170px' : '520px',
+  // maxWidth: '400px',
+  borderRadius: isMobile ? '0' : '10px',
   objectFit: 'cover',
   objectPosition: 'center',
 }));

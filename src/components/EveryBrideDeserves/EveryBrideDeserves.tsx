@@ -7,6 +7,7 @@ import {
   StyledH2,
   StyledImg,
 } from './Styled';
+import { useResponsive } from '@/contexts/ResponsiveContext';
 
 const config = [
   {
@@ -84,12 +85,13 @@ const config = [
 ];
 
 export const EveryBrideDeserves = () => {
+  const { isMobile } = useResponsive();
   return (
-    <StyledSection>
+    <StyledSection isMobile={isMobile}>
       <Container>
       <StyledH1 variant='h3'>every bride deserves</StyledH1>
       <StyledH2 variant='h3'>to fall in love with themselves</StyledH2>
-        <StyledWrapper>
+        <StyledWrapper isMobile={isMobile}>
           {config.map((item) => (
             <StyledImg key={item.title} src={item.url} alt={item.title} grid={item.grid} isTall={item.isTall} />
           ))}
