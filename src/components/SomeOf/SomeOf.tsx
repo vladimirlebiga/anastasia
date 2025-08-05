@@ -46,7 +46,7 @@ export const SomeOf = () => {
           </StyledP>
           <StyledImgWrapper>
             {isMobile && (
-              <SwiperComponent config={config.hairstyles} id='hairstyles' />
+              <SwiperComponent config={config.hairstyles} id='hairstylesMobile' />
             )}
             {!isMobile && (
               <StyledUl>

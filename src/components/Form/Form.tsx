@@ -12,15 +12,32 @@ import { InputComponent } from '../Input/Input';
 import { PhoneInputComponent } from '../Input/PhoneInput';
 import emailjs from '@emailjs/browser';
 
+
 export const Form = () => {
-  const methods = useForm();
-  const { control } = methods;
+  const methods = useForm({
+    defaultValues: {
+      name: '',
+      email: '',
+      phone: '',
+      date: '',
+      ceremonyLocation: '',
+      notice: '',
+    }
+  });
+  const { control, handleSubmit, reset } = methods;
 
   const onSubmit = (data: any) => {
+    console.log('Submitting form with data:', data);
+    console.log('Using EmailJS config:', {
+      serviceId: process.env.SERVICE_ID,
+      templateId: process.env.TEMPLATE_ID,
+      publicKey: process.env.PUBLIC_KEY?.substring(0, 10) + '...'
+    });
+    
     emailjs
       .send(
-        'your_service_id', // Replace with your actual service ID
-        'your_template_id', // Replace with your actual template ID
+        process.env.SERVICE_ID!,
+        process.env.TEMPLATE_ID!,
         {
           name: data.name,
           email: data.email,
@@ -31,17 +48,17 @@ export const Form = () => {
           ceremonyLocation: data.ceremonyLocation,
           notice: data.notice,
         },
-        'your_public_key' // Replace with your actual EmailJS public key
+        process.env.PUBLIC_KEY!
       )
       .then(
         (result) => {
-          console.log('✅ Email sent:', result.text);
-          alert('Form submitted successfully!');
-          methods.reset(); // optional: reset form after submission
+          console.log('✅ Email sent successfully:', result);
+          alert('Thank you! Your message has been sent successfully.');
+          reset(); // Reset form after successful submission
         },
         (error) => {
-          console.error('❌ Email failed:', error.text);
-          alert('Something went wrong. Please try again.');
+          console.error('❌ EmailJS error:', error);
+          alert(`Email failed: ${error.text || 'Unknown error'}. Please check your EmailJS configuration.`);
         }
       );
   };
@@ -61,7 +78,9 @@ export const Form = () => {
               <InputComponent id='notice' />
             </StyledFormWrapper>
             <StyledButtonWrapper>
-              <Button variant='outlined'>send</Button>
+              <Button variant='outlined' onClick={handleSubmit(onSubmit)}>
+                send
+              </Button>
             </StyledButtonWrapper>
           </Container>
         </StyledSection>

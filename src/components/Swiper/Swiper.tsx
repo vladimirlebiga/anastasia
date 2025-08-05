@@ -19,6 +19,51 @@ import { useResponsive } from '@/contexts/ResponsiveContext';
 import { FreeMode, Pagination, Navigation } from 'swiper/modules';
 
 const swiperConfiguration = {
+  hairstylesMobile: {
+    navigation: false,
+    slidesPerView: 2.3,
+    centeredSlides: false,
+    freeMode: false,
+    spaceBetween: 10,
+    loop: true,
+    pagination: {
+      clickable: true,
+    },
+    modules: [Pagination],
+    height: '250px',
+    imgHeight: '210px',
+    imgWidth: '160px',
+  },
+  // hairstyles: {
+  //   navigation: false,
+  //   slidesPerView: 3,
+  //   centeredSlides: false,
+  //   freeMode: false,
+  //   spaceBetween: 10,
+  //   loop: true,
+  //   pagination: {
+  //     clickable: true,
+  //   },
+  //   modules: [Pagination],
+  //   height: '250px',
+  //   imgHeight: '350px',
+  //   imgWidth: '480px',
+  // },
+  reviewMobile: {
+    navigation: true,
+    slidesPerView: 1,
+    spaceBetween: 30,
+    centeredSlides: false,
+    freeMode: false,
+    loop: true,
+    pagination: {
+      clickable: true,
+    },
+    modules: [Navigation, Pagination],
+    height: '450px',
+    imgHeight: '230px',
+    imgWidth: '230px',
+  },
   review: {
     navigation: false,
     slidesPerView: 3,
@@ -29,12 +74,14 @@ const swiperConfiguration = {
     pagination: {
       clickable: true,
     },
-    modules:[Pagination, FreeMode],
-    height: '580px'
+    modules: [Pagination, FreeMode],
+    height: '580px',
+    imgHeight: '260px',
+    imgWidth: '260px',
   },
-  hairstyles: {
+  processMobile: {
     navigation: false,
-    slidesPerView: 2.3,
+    slidesPerView: 1.5,
     centeredSlides: false,
     freeMode: false,
     spaceBetween: 10,
@@ -42,22 +89,26 @@ const swiperConfiguration = {
     pagination: {
       clickable: true,
     },
-    modules:[Pagination],
-    height: '250px'
+    modules: [Pagination],
+    height: '210px',
+    imgHeight: '172px',
+    imgWidth: '250px',
   },
-     reviewMobile: {
-     navigation: true,
-     slidesPerView: 1,
-     spaceBetween: 30,
-     centeredSlides: false,
-     freeMode: false,
-     loop: true,
-     pagination: {
-       clickable: true,
-     },
-     modules:[Navigation, Pagination],
-     height: '450px'
-   }
+  process: {
+    navigation: false,
+    slidesPerView: 2.3,
+    centeredSlides: false,
+    freeMode: false,
+    spaceBetween: 0,
+    loop: true,
+    pagination: {
+      clickable: true,
+    },
+    modules: [Pagination],
+    height: '380px',
+    imgHeight: '350px',
+    imgWidth: '480px',
+  },
 };
 
 export const SwiperComponent = ({
@@ -67,12 +118,23 @@ export const SwiperComponent = ({
   config: any;
   id: keyof typeof swiperConfiguration;
 }) => {
-  const { slidesPerView, spaceBetween, freeMode, pagination, loop, centeredSlides, modules, navigation, height } =
-    swiperConfiguration[id];
+  const {
+    slidesPerView,
+    spaceBetween,
+    freeMode,
+    pagination,
+    loop,
+    centeredSlides,
+    modules,
+    navigation,
+    height,
+    imgHeight,
+    imgWidth,
+  } = swiperConfiguration[id];
   const { isMobile } = useResponsive();
   const swiperRef = useRef<any>(null);
   const [isReady, setIsReady] = useState(false);
-  
+
   useEffect(() => {
     // Force Swiper to update after component mounts
     const timer = setTimeout(() => {
@@ -86,10 +148,10 @@ export const SwiperComponent = ({
       }
       setIsReady(true);
     }, 100);
-    
+
     return () => clearTimeout(timer);
   }, [navigation]);
-  
+
   useEffect(() => {
     // Re-initialize when config or id changes
     if (isReady && swiperRef.current && swiperRef.current.swiper) {
@@ -101,7 +163,7 @@ export const SwiperComponent = ({
       }
     }
   }, [config, id, isReady, navigation]);
-  
+
   return (
     <StyledSwiperWrapper>
       <Swiper
@@ -119,15 +181,22 @@ export const SwiperComponent = ({
       >
         {config.map((item: any) => (
           <SwiperSlide key={item.title}>
-            <StyledItem isRound={item.isRound} isMobile={isMobile} height={height}>
-              <StyledImage isRound={item.isRound} src={item.image} alt={item.title} />
+            <StyledItem height={height}>
+              <StyledImage
+                isRound={item.isRound}
+                src={item.image}
+                alt={item.title}
+                imgHeight={imgHeight}
+                imgWidth={imgWidth}
+              />
               <StyledTextTitle variant='h2'>{item.textTitle}</StyledTextTitle>
-              <StyledText variant='body2' isMobile={isMobile}>{item.text}</StyledText>
+              <StyledText variant='body2' isMobile={isMobile}>
+                {item.text}
+              </StyledText>
             </StyledItem>
           </SwiperSlide>
         ))}
       </Swiper>
-
     </StyledSwiperWrapper>
   );
 };

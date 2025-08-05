@@ -3,6 +3,7 @@ import React from 'react';
 import { SwiperComponent } from '../Swiper/Swiper';
 import { Button, Container } from '@mui/material';
 import { StyledSection, StyledH1, StyledH2, StyledWrapper } from './Styled';
+import { useResponsive } from '@/contexts/ResponsiveContext';
 
 const config = [
 
@@ -40,15 +41,18 @@ const config = [
   
 
 export const Process = () => {
+    const { isMobile } = useResponsive();
     return (
-        <StyledSection>
+        <StyledSection isMobile={isMobile}>
           <Container>
             <StyledH1 variant='h2'>process</StyledH1>
             <StyledH2 variant='h2'>my favorite part</StyledH2>
-            <SwiperComponent config={config} id='review' />
-            <StyledWrapper>
-              <Button variant='contained' href='/contact#form'>let's work together</Button>
-            </StyledWrapper>
+            <SwiperComponent config={config} id={isMobile ? 'processMobile' : 'process'} />
+            {!isMobile && (
+              <StyledWrapper>
+                <Button variant='contained' href='/contact#form'>let's work together</Button>
+              </StyledWrapper>
+            )}
           </Container>
         </StyledSection>
       );

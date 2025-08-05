@@ -9,18 +9,27 @@ import {
   StyledH1,
   StyledP,
   StyledSpan,
+  StyledButtonWrapper,
 } from './Styled';
+import { Button } from '@mui/material';
+import { useResponsive } from '@/contexts/ResponsiveContext';
 
 export const HelloBeauty = () => {
+  const { isMobile } = useResponsive();
   return (
-    <StyledSection>
+    <StyledSection isMobile={isMobile}>
       <Container>
-        <StyledWrapper>
-          <StyledWrapperLeft>
-            <StyledImage src='/img/aboutpage/hellobeauty.jpg' alt='hellobeauty' />
+        <StyledWrapper isMobile={isMobile}>
+          <StyledWrapperLeft isMobile={isMobile}>
+            <StyledImage
+              src='/img/aboutpage/hellobeauty.jpg'
+              alt='hellobeauty'
+            />
           </StyledWrapperLeft>
-          <StyledWrapperRight>
-            <StyledH1 variant='h2'>Hello, Beauty!</StyledH1>
+          <StyledH1 variant='h2' isMobile={isMobile}>
+            Hello, Beauty!
+          </StyledH1>
+          <StyledWrapperRight isMobile={isMobile}>
             <StyledP variant='body1'>
               <StyledSpan>I'm Anastasiia,</StyledSpan> your bridal stylist.
               Originally from Ukraine, now call the Netherlands home.
@@ -39,6 +48,13 @@ export const HelloBeauty = () => {
             </StyledP>
           </StyledWrapperRight>
         </StyledWrapper>
+        {isMobile && (
+          <StyledButtonWrapper>
+            <Button variant='contained' href='/contact#form'>
+              let's work together
+            </Button>
+          </StyledButtonWrapper>
+        )}
       </Container>
     </StyledSection>
   );

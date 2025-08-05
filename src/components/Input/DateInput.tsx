@@ -33,7 +33,8 @@ export const DateInput = ({
             label={label}
             format="dd/MM/yyyy"
             minDate={new Date()}
-            {...field}
+            value={field.value || null}
+            onChange={field.onChange}
             slotProps={{
               textField: {
                 error: !!fieldState.error,
