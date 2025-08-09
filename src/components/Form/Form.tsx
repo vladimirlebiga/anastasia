@@ -11,19 +11,24 @@ import { DateInput } from '../Input/DateInput';
 import { InputComponent } from '../Input/Input';
 import { PhoneInputComponent } from '../Input/PhoneInput';
 import emailjs from '@emailjs/browser';
-
+import { schemaContact, type FormSchema } from './Schema';
+import { yupResolver } from '@hookform/resolvers/yup';
+import { useResponsive } from '@/contexts/ResponsiveContext';
 
 export const Form = () => {
-  const methods = useForm({
+  const { isMobile } = useResponsive();
+  const methods = useForm<FormSchema>({
+    resolver: yupResolver(schemaContact),
     defaultValues: {
       name: '',
       email: '',
       phone: '',
-      date: '',
+      date: new Date(),
       ceremonyLocation: '',
       notice: '',
-    }
+    },
   });
+
   const { control, handleSubmit, reset } = methods;
 
   const onSubmit = (data: any) => {
@@ -66,7 +71,7 @@ export const Form = () => {
   return (
     <section id='form'>
       <FormProvider {...methods}>
-        <StyledSection>
+        <StyledSection isMobile={isMobile}>
           <Container>
             <StyledH1 variant='h2'>Wedding Day Details</StyledH1>
             <StyledFormWrapper>

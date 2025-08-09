@@ -38,7 +38,6 @@ const config = {
 export const HeroText = ({ page }: { page: string }) => {
     const { isMobile } = useResponsive();
     const { title, description, services } = config[page as keyof typeof config];
-    console.log(services);
   return (
     <StyledHeroTextWrapper services={services} isMobile={isMobile}>
         {isMobile && !services && (

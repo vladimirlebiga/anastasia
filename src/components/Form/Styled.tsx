@@ -1,9 +1,11 @@
 import { styled } from '@mui/material/styles';
 import { Typography } from '@mui/material';
 
-export const StyledSection = styled('section')(() => ({
-  paddingTop: '50px',
-  paddingBottom: '50px',
+export const StyledSection = styled('section', {
+  shouldForwardProp: (prop) => prop !== 'isMobile',
+})(({ isMobile }: { isMobile: boolean }) => ({
+  paddingTop: isMobile ? '20px' : '50px',
+  paddingBottom: isMobile ? '20px' : '50px',
 }));
 
 export const StyledButtonWrapper = styled('div')(() => ({

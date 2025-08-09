@@ -6,7 +6,7 @@ import Link from 'next/link';
 export const StyledFooter = styled('footer')<{isMobile: boolean}>(({isMobile}) => ({
   backgroundColor: isMobile ? '#FFFFFF' : '#8E7A74',
   padding: isMobile ? '20px 0 20px 0' : '80px 0 ',
-  display: 'flex',
+  // display: 'flex',
   justifyContent: 'center',
   alignItems: 'center',
   width: '100%',
@@ -127,5 +127,18 @@ export const StyledSocialTextTitle = styled(Typography)(() => ({
   fontFamily: 'Playfair Display',
   fontWeight: '400',
   letterSpacing: '0.05em',
+}));
+
+export const StyledSocialTextTitleImg = styled('img', {
+  shouldForwardProp: (prop) => prop !== 'isMobile'
+})(({isMobile}: {isMobile: boolean}) => ({
+  backgroundImage: "url('/img/portfolio/get_in_touch.jpg')",
+  backgroundPosition: '85% 55%',
+  backgroundSize: 'cover',
+  width: '100%',
+  height:  '80px',
+  objectFit: 'cover',
+  objectPosition: 'center',
+  marginBottom: isMobile ? '20px' : '0',
 }));
 

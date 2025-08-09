@@ -15,6 +15,7 @@ import {
   StyledSocialText,
   StyledIconWrapper,
   StyledSocialTextTitle,
+  StyledSocialTextTitleImg,
 } from './Styled';
 import { Container } from '@mui/material';
 import { Union } from '@/assets/icons/Union';
@@ -22,6 +23,7 @@ import { InstagramIcon } from '@/assets/icons/InstagramIcon';
 import { FacebookIcon } from '@/assets/icons/FacebookIcon';
 import { TelegramIcon } from '@/assets/icons/TelegramIcon';
 import { useResponsive } from '@/contexts/ResponsiveContext';
+import { usePathname } from 'next/navigation';
 
 const config = [
   {
@@ -52,8 +54,13 @@ const config = [
 
 export const Footer = () => {
   const { isMobile } = useResponsive();
+  const pathname = usePathname();
+  const isPortfolio = pathname.includes('portfolio');
   return (
     <StyledFooter id='footer' isMobile={isMobile}>
+        {isMobile && !isPortfolio && (
+                <StyledSocialTextTitleImg isMobile={isMobile} />
+              )}
       <Container>
         <StyledGridContainer>
           {!isMobile && (
@@ -77,6 +84,7 @@ export const Footer = () => {
           )}
           <StyledFooterSocial>
             <StyledFooterSocialItem>
+            
               <StyledFooterSocialItemLink isMobile={isMobile}>
                 {isMobile && (
                   <StyledSocialTextTitle variant='h2'>

@@ -32,8 +32,9 @@ export const PhoneInputComponent = () => {
             label={'Phone:(WhatsApp)'}
             id={`phone-${reactId}`}
             fullWidth
+            error={!!error}
+            helperText={error ? error.message : ''}
           />
-          {error && <p style={{ color: 'red' }}>{error.message}</p>}
         </div>
       )}
     />

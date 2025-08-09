@@ -97,7 +97,7 @@ export const AccordionSection = () => {
   const { isMobile } = useResponsive();
 
   return (
-    <StyledSection>
+    <StyledSection isMobile={isMobile}>
       <Container maxWidth='xl'>
         <StyledWrapper>
           <StyledUl isMobile={isMobile}>

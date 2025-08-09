@@ -1,9 +1,11 @@
 import { styled } from '@mui/material/styles';
 import Typography from '@mui/material/Typography';
 
-export const StyledSection = styled('section')(() => ({
+export const StyledSection = styled('section', {
+  shouldForwardProp: (prop) => prop !== 'isMobile',
+})(({ isMobile }: { isMobile: boolean }) => ({
   width: '100%',
-  paddingBottom: '100px',
+  paddingBottom: isMobile ? '20px' : '100px',
   paddingTop: '60px',
 }));
 
