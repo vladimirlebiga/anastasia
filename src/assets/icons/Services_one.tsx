@@ -1,0 +1,25 @@
+import React from 'react';
+import { useResponsive } from '@/contexts/ResponsiveContext';
+
+export const Services_one = () => {
+  const { isMobile } = useResponsive();
+  return (
+    <>
+      <svg
+        width={isMobile ? '55' : '124'}
+        height={isMobile ? '55' : '124'}
+        viewBox='0 0 55 55'
+        fill='none'
+        xmlns='http://www.w3.org/2000/svg'
+      >
+        <path
+          d='M45.833 34.3737V22.9154M9.16632 34.3737V16.0404C9.16632 11.7183 9.16632 9.55953 10.5092 8.21661C11.8522 6.8737 14.0109 6.8737 18.333 6.8737H26.3538M32.083 13.7487C32.083 13.7487 34.3747 13.7487 36.6663 18.332C36.6663 18.332 43.9469 6.8737 50.4163 4.58203M8.0159 36.6997L9.21215 34.3737H45.723L46.9834 36.6997C50.2903 42.8002 51.1153 45.8504 49.8572 48.1329C48.599 50.4154 45.2692 50.4154 38.6051 50.4154H16.3942C9.72778 50.4154 6.39569 50.4154 5.13986 48.1329C3.88173 45.8504 4.70673 42.8002 8.0159 36.6997Z'
+          stroke='black'
+          strokeWidth='3'
+          strokeLinecap='round'
+          strokeLinejoin='round'
+        />
+      </svg>
+    </>
+  );
+};

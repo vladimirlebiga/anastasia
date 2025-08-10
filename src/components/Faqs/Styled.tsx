@@ -3,8 +3,8 @@ import Typography from '@mui/material/Typography';
 
 export const StyledSection = styled('section')<{isMobile: boolean}>(({isMobile}) => ({
   backgroundColor: '#F5F5F5',
-  paddingBottom: '20px',
-  paddingTop: isMobile ? '100px' : '50px',
+  paddingBottom: isMobile ? '0' : '20px',
+  paddingTop: isMobile ? '0' : '50px',
 }));
 
 export const StyledH1 = styled(Typography)(() => ({

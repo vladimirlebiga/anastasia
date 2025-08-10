@@ -1,11 +1,13 @@
 import React from 'react';
+import { useResponsive } from '@/contexts/ResponsiveContext';
 
 export const WeddingQuestionnaire = () => {
+  const { isMobile } = useResponsive();
   return (
     <>
       <svg
-        width='151'
-        height='151'
+        width={isMobile ? '60' : '124'}
+        height={isMobile ? '60' : '124'}
         viewBox='0 0 151 151'
         fill='none'
         xmlns='http://www.w3.org/2000/svg'

@@ -1,9 +1,11 @@
 import { styled } from '@mui/material/styles';
 import Typography from '@mui/material/Typography';
 
-export const StyledSection = styled('section')(() => ({
+export const StyledSection = styled('section', {
+  shouldForwardProp: (prop) => prop !== 'isMobile',
+})(({ isMobile }: { isMobile: boolean }) => ({
   width: '100%',
-  paddingBottom: '100px',
+  paddingBottom: isMobile ? '20px' : '100px',
   justifyContent: 'center',
   alignItems: 'center',
 }));
@@ -27,26 +29,33 @@ export const StyledWrapper = styled('div')(() => ({
 //   marginTop: '20px',
 // }));
 
-export const StyledH2 = styled(Typography)(() => ({
+export const StyledH2 = styled(Typography, {
+  shouldForwardProp: (prop) => prop !== 'isMobile',
+})(({ isMobile }: { isMobile: boolean }) => ({
   fontFamily: 'Playfair Display',
   color: '#000000',
   textAlign: 'center',
   textTransform: 'uppercase',
+  padding: isMobile ? '0 40px' : '0',
 }));
 
-export const StyledH3 = styled(Typography)(() => ({
+export const StyledH3 = styled(Typography, {
+  shouldForwardProp: (prop) => prop !== 'isMobile',
+})(({ isMobile }: { isMobile: boolean }) => ({
   fontFamily: 'Great Vibes',
   color: '#F49D6A',
   textAlign: 'center',
   textTransform: 'lowercase',
-  marginBottom: '30px',
+  marginBottom: isMobile ? '0' : '30px',
 }));
 
-export const StyledP = styled(Typography)(() => ({
+export const StyledP = styled(Typography, {
+  shouldForwardProp: (prop) => prop !== 'isMobile',
+})(({ isMobile }: { isMobile: boolean }) => ({
   fontFamily: 'Montserrat',
   fontStyle: 'italic',
   color: '#000000',
-  lineHeight: '30px',
+  lineHeight: isMobile ? '20px' : '30px',
   textAlign: 'center',
   marginTop: '10px',
   marginBottom: '30px',
@@ -54,22 +63,25 @@ export const StyledP = styled(Typography)(() => ({
   maxWidth: '200px',
 }));
 
-
-export const StyledUl = styled('ul')(() => ({
+export const StyledUl = styled('ul', {
+  shouldForwardProp: (prop) => prop !== 'isMobile',
+})(({ isMobile }: { isMobile: boolean }) => ({
   display: 'grid',
   gridTemplateColumns: 'repeat(15, 1fr)',
-  gridTemplateRows: 'repeat(2, 1fr)',
-  rowGap: '30px',
-  columnGap: '40px',
-  marginBottom: '30px',
+  gridTemplateRows: isMobile ? '1fr 1fr 1.5fr' : 'repeat(2, 1fr)',
+  rowGap: isMobile ? '10px' : '30px',
+  columnGap: isMobile ? '0' : '40px',
+  marginBottom: isMobile ? '0' : '30px',
 }));
 
-export const StyledLi = styled('li')<{ gridArea: string }>(({ gridArea }) => ({
-  display: 'flex',
-  flexDirection: 'column',
-  alignItems: 'center',
-  justifyContent: 'center',
-  columnGap: '40px',
-  gridArea: gridArea,
-  maxHeight: '300px',
-}));
+export const StyledLi = styled('li')<{ gridArea: string; gridMobile: string; isMobile: boolean }>(
+  ({ gridArea, gridMobile, isMobile }) => ({
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'center',
+    columnGap: '40px',
+    gridArea: isMobile ? gridMobile : gridArea,
+    maxHeight: '300px',
+  })
+);

@@ -1,11 +1,13 @@
 import React from 'react';
+import { useResponsive } from '@/contexts/ResponsiveContext';
 
 export const MakeItOfficial = () => {
+  const { isMobile } = useResponsive();
   return (
     <>
       <svg
-        width='124'
-        height='124'
+        width={isMobile ? '60' : '124'}
+        height={isMobile ? '60' : '124'}
         viewBox='0 0 124 124'
         fill='none'
         xmlns='http://www.w3.org/2000/svg'

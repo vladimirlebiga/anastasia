@@ -1,9 +1,11 @@
 import { styled } from '@mui/material/styles';
 import Typography from '@mui/material/Typography';
 
-export const StyledSection = styled('section')(() => ({
-    width: '100%',
-    paddingBottom: '100px',
+export const StyledSection = styled('section', {
+  shouldForwardProp: (prop) => prop !== 'isMobile',
+})(({ isMobile }: { isMobile: boolean }) => ({
+  width: '100%',
+  paddingBottom: isMobile ? '20px' : '100px',
     // paddingTop: '60px',
   }));
 
@@ -23,27 +25,33 @@ export const StyledWrapper = styled('div')(() => ({
   // justifyContent: 'center',
 }));
 
-export const StyledP1 = styled(Typography)(() => ({
+export const StyledP1 = styled(Typography, {
+  shouldForwardProp: (prop) => prop !== 'isMobile',
+})(({ isMobile }: { isMobile: boolean }) => ({
   fontFamily: 'Montserrat',
   lineHeight: '180%',
   color: '#000000',
   textAlign: 'left',
   position: 'relative',
-  paddingLeft: '2rem',
+  paddingLeft: isMobile ? '0' : '2rem',
   maxWidth: '400px',
 }));
 
-export const StyledP2 = styled(Typography)(() => ({
+export const StyledP2 = styled(Typography, {
+  shouldForwardProp: (prop) => prop !== 'isMobile',
+})(({ isMobile }: { isMobile: boolean }) => ({
   fontFamily: 'Montserrat',
   lineHeight: '180%',
   color: '#000000',
   textAlign: 'left',
   position: 'relative',
-  paddingLeft: '2rem',
+  paddingLeft: isMobile ? '3rem' : '2rem',
   maxWidth: '100px',
 }));
 
-export const StyledP3 = styled(Typography)(() => ({
+export const StyledP3 = styled(Typography, {
+  shouldForwardProp: (prop) => prop !== 'isMobile',
+})(({ isMobile }: { isMobile: boolean }) => ({
   fontFamily: 'Montserrat',
   lineHeight: '180%',
   color: '#000000',
