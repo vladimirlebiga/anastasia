@@ -11,7 +11,9 @@ import {
   StyledUl,
   StyledLi,
   StyledLink,
+  StyledSocialP,
 } from './Styled';
+import { useResponsive } from '@/contexts/ResponsiveContext';
 
 const config = [
   {
@@ -35,26 +37,27 @@ const config = [
 ];
 
 export const BookBHCNow = () => {
+  const { isMobile } = useResponsive();
   return (
-    <StyledSection>
+    <StyledSection isMobile={isMobile}>
       <Container>
-        <StyledWrapper>
+        <StyledWrapper isMobile={isMobile}>
           <StyledH2 variant='h2'>book now</StyledH2>
           <StyledH3 variant='h3'>check your date!</StyledH3>
-          <StyledH4 variant='body1'>
+          <StyledH4 variant='body1' isMobile={isMobile}>
             Book your dream wedding hair experience
           </StyledH4>
-          <StyledP variant='body1'>
+          <StyledP variant='body1' isMobile={isMobile}>
             Fill in the inquiry form below and I will be touch with the next
             steps.
           </StyledP>
-          <StyledUl>
+          <StyledUl isMobile={isMobile}>
             {config.map((item) => (
-              <StyledLi key={item.text}>
-                <StyledP variant='body1'>
+              <StyledLi key={item.text} isMobile={isMobile}>
+                <StyledSocialP variant='body1' isMobile={isMobile}>
                   {item.text}
                   <StyledLink target='_blank' rel='noopener noreferrer' href={item.link} decoration={item.textDecoration}>{item.textLink}</StyledLink>
-                </StyledP>
+                </StyledSocialP>
               </StyledLi>
             ))}
           </StyledUl>

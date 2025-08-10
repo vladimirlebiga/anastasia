@@ -2,36 +2,46 @@ import { styled } from '@mui/material/styles';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 
-export const StyledSection = styled('div')(() => ({
+export const StyledSection = styled('div', {
+  shouldForwardProp: (prop) => prop !== 'isMobile',
+})(({ isMobile }: { isMobile: boolean }) => ({
   backgroundColor: '#E8D1C5',
-  paddingBottom: '20px',
-  paddingTop: '40px',
+  paddingBottom: isMobile ? '0' : '20px',
+  paddingTop: isMobile ? '0' : '40px',
 }));
 
-export const StyledH1 = styled(Typography)(() => ({
+export const StyledH1 = styled(Typography, {
+  shouldForwardProp: (prop) => prop !== 'isMobile',
+})(({ isMobile }: { isMobile: boolean }) => ({
   fontFamily: 'Playfair Display',
   textTransform: 'uppercase',
   color: '#000000',
-  textAlign: 'left',
+  textAlign: isMobile ? 'center' : 'left',
+  margin: isMobile ? '0 50px' : '0',
 }));
 
-export const StyledH2 = styled(Typography)(() => ({
+export const StyledH2 = styled(Typography, {
+  shouldForwardProp: (prop) => prop !== 'isMobile',
+})(({ isMobile }: { isMobile: boolean }) => ({
   fontFamily: 'Montserrat',
   fontWeight: 500,
   fontSize: '16px',
   lineHeight: '136%',
   color: '#000000',
-  textAlign: 'left',
+  textAlign: isMobile ? 'center' : 'left',
   position: 'relative',
-  paddingBottom: '3rem',
-  // paddingLeft: '2rem',
+  paddingBottom: isMobile ? '1rem' : '3rem',
+   margin: isMobile ? '0 50px' : '0',
 }));
 
-export const StyledP = styled(Typography)(() => ({
+
+export const StyledP = styled(Typography, {
+  shouldForwardProp: (prop) => prop !== 'isMobile',
+})(({ isMobile }: { isMobile: boolean }) => ({
   fontFamily: 'Montserrat',
   fontSize: '16px',
   lineHeight: '136%',
-  paddingLeft: '2rem',
+  paddingLeft: isMobile ? '0' : '2rem',
   paddingBottom: '1rem',
 }));
 
@@ -48,23 +58,31 @@ export const StyledButton = styled(Button)(() => ({
   paddingRight: '60px',
 }));
 
-export const StyledWrapper = styled('div')(() => ({
+export const StyledWrapper = styled('div', {
+  shouldForwardProp: (prop) => prop !== 'isMobile',
+})(({ isMobile }: { isMobile: boolean }) => ({
   display: 'grid',
-  gridTemplateColumns: '1.5fr 1fr',
-  gap: '10%',
-  // backgroundColor: '#E8D1C5',
+  gridTemplateColumns: isMobile ? '1fr' : '1.5fr 1fr',
+  gridTemplateRows: isMobile ? '1fr 1.5fr' : '1fr',
+  gap: isMobile ? '0' : '10%',
 }));
 
-export const StyledWrapperLeft = styled('div')(() => ({
+export const StyledWrapperLeft = styled('div', {
+  shouldForwardProp: (prop) => prop !== 'isMobile',
+})(({ isMobile }: { isMobile: boolean }) => ({
   display: 'flex',
   flexDirection: 'column',
-  alignItems: 'flex-start',
+  alignItems: isMobile ? 'center' : 'flex-start',
   justifyContent: 'flex-start',
-  margin: '0 auto',
+  margin: '20px auto',
+  gridArea: isMobile ? '2 / 1 / 3 / 2' : '1 / 1 / 2 / 2',
+  padding: isMobile ? '0 20px' : '0',
 }));
 
-export const StyledWrapperRight = styled('div')(() => ({
-
+export const StyledWrapperRight = styled('div', {
+  shouldForwardProp: (prop) => prop !== 'isMobile',
+})(({ isMobile }: { isMobile: boolean }) => ({
+  gridArea: isMobile ? '1 / 1 / 2 / 2' : '1 / 2 / 2 / 3',
 }));
 
 export const StyledImgWrapper = styled('div')(() => ({
@@ -75,11 +93,13 @@ export const StyledImgWrapper = styled('div')(() => ({
   // height: '100%',
 }));
 
-export const StyledImg = styled('img')(() => ({
-  maxWidth: '414px',
+export const StyledImg = styled('img', {
+  shouldForwardProp: (prop) => prop !== 'isMobile',
+})(({ isMobile }: { isMobile: boolean }) => ({
+  // maxWidth: '414px',
   width: '100%',
-  maxHeight: '520px',
-  borderRadius: '10px',
+  maxHeight: isMobile ? '200px' : '520px',
+  borderRadius: isMobile ? '0' : '10px',
   objectFit: 'cover',
   objectPosition: 'center',
 }));
