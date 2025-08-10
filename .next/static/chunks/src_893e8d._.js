@@ -1,4 +1,4 @@
-(globalThis.TURBOPACK = globalThis.TURBOPACK || []).push(["static/chunks/src_8dd55a._.js", {
+(globalThis.TURBOPACK = globalThis.TURBOPACK || []).push(["static/chunks/src_893e8d._.js", {
 
 "[project]/src/components/SomeOf/Styled.tsx [app-client] (ecmascript)": ((__turbopack_context__) => {
 "use strict";
@@ -1291,8 +1291,7 @@ const StyledSection = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_m
     shouldForwardProp: (prop)=>prop !== 'isMobile'
 })(({ isMobile })=>({
         width: '100%',
-        paddingBottom: isMobile ? '20px' : '100px',
-        paddingTop: '60px'
+        marginTop: isMobile ? '20px' : '60px'
     }));
 const StyledWrapper = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__["styled"])('div')(()=>({
         display: 'flex',
@@ -1361,7 +1360,6 @@ const StyledLi = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_module
         flexDirection: 'column',
         // minHeight: isActive ? '1206px' : 'auto',
         minHeight: isMobile ? '300px' : isActive ? '1206px' : 'auto',
-        marginBottom: '20px',
         borderRadius: '10px',
         border: '1px solid #AEA8A8',
         backgroundColor: '#F5F5F5',
@@ -1570,7 +1568,7 @@ const AccordionSection = ()=>{
                                     isMobile: isMobile
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/AccordionSection/AccordionSection.tsx",
-                                    lineNumber: 108,
+                                    lineNumber: 109,
                                     columnNumber: 17
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$AccordionSection$2f$Styled$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["StyledH2"], {
@@ -1583,13 +1581,13 @@ const AccordionSection = ()=>{
                                             children: item.spanName
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/AccordionSection/AccordionSection.tsx",
-                                            lineNumber: 111,
+                                            lineNumber: 112,
                                             columnNumber: 37
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/AccordionSection/AccordionSection.tsx",
-                                    lineNumber: 109,
+                                    lineNumber: 110,
                                     columnNumber: 17
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$AccordionSection$2f$Styled$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["StyledP1"], {
@@ -1598,7 +1596,7 @@ const AccordionSection = ()=>{
                                     children: item.name2
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/AccordionSection/AccordionSection.tsx",
-                                    lineNumber: 114,
+                                    lineNumber: 115,
                                     columnNumber: 17
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$AccordionSection$2f$Styled$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["StyledP"], {
@@ -1607,7 +1605,7 @@ const AccordionSection = ()=>{
                                     children: item.price
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/AccordionSection/AccordionSection.tsx",
-                                    lineNumber: 115,
+                                    lineNumber: 116,
                                     columnNumber: 17
                                 }, this),
                                 isMobile && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$AccordionSection$2f$Styled$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["StyledArrowWrapper"], {
@@ -1616,12 +1614,12 @@ const AccordionSection = ()=>{
                                     isMobile: isMobile,
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$icons$2f$Arrow$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Arrow"], {}, void 0, false, {
                                         fileName: "[project]/src/components/AccordionSection/AccordionSection.tsx",
-                                        lineNumber: 124,
+                                        lineNumber: 125,
                                         columnNumber: 21
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/AccordionSection/AccordionSection.tsx",
-                                    lineNumber: 117,
+                                    lineNumber: 118,
                                     columnNumber: 19
                                 }, this),
                                 active[item.title] && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$AccordionSection$2f$Styled$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["StyledHiddenContainer"], {
@@ -1631,7 +1629,7 @@ const AccordionSection = ()=>{
                                             children: item.name3
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/AccordionSection/AccordionSection.tsx",
-                                            lineNumber: 130,
+                                            lineNumber: 131,
                                             columnNumber: 21
                                         }, this),
                                         item.text.map((text)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$AccordionSection$2f$Styled$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["StyledTextItem"], {
@@ -1639,13 +1637,13 @@ const AccordionSection = ()=>{
                                                 children: text
                                             }, text, false, {
                                                 fileName: "[project]/src/components/AccordionSection/AccordionSection.tsx",
-                                                lineNumber: 132,
+                                                lineNumber: 133,
                                                 columnNumber: 23
                                             }, this))
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/AccordionSection/AccordionSection.tsx",
-                                    lineNumber: 129,
+                                    lineNumber: 130,
                                     columnNumber: 19
                                 }, this),
                                 !isMobile && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$AccordionSection$2f$Styled$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["StyledArrowWrapper"], {
@@ -1654,38 +1652,38 @@ const AccordionSection = ()=>{
                                     isMobile: isMobile,
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$icons$2f$Arrow$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Arrow"], {}, void 0, false, {
                                         fileName: "[project]/src/components/AccordionSection/AccordionSection.tsx",
-                                        lineNumber: 144,
+                                        lineNumber: 145,
                                         columnNumber: 19
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/AccordionSection/AccordionSection.tsx",
-                                    lineNumber: 137,
+                                    lineNumber: 138,
                                     columnNumber: 17
                                 }, this)
                             ]
                         }, item.title, true, {
                             fileName: "[project]/src/components/AccordionSection/AccordionSection.tsx",
-                            lineNumber: 105,
+                            lineNumber: 106,
                             columnNumber: 15
                         }, this))
                 }, void 0, false, {
                     fileName: "[project]/src/components/AccordionSection/AccordionSection.tsx",
-                    lineNumber: 103,
+                    lineNumber: 104,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/AccordionSection/AccordionSection.tsx",
-                lineNumber: 102,
+                lineNumber: 103,
                 columnNumber: 9
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/components/AccordionSection/AccordionSection.tsx",
-            lineNumber: 101,
+            lineNumber: 102,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/components/AccordionSection/AccordionSection.tsx",
-        lineNumber: 100,
+        lineNumber: 101,
         columnNumber: 5
     }, this);
 };
@@ -1833,6 +1831,39 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
     __turbopack_refresh__.registerExports(module, globalThis.$RefreshHelpers$);
 }
 }}),
+"[project]/src/components/Pages/HomePage/Styled.tsx [app-client] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, k: __turbopack_refresh__, m: module, z: __turbopack_require_stub__ } = __turbopack_context__;
+{
+__turbopack_esm__({
+    "StyledButtonWrapper": (()=>StyledButtonWrapper),
+    "StyledH1": (()=>StyledH1)
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__ = __turbopack_import__("[project]/node_modules/@mui/material/styles/styled.js [app-client] (ecmascript) <locals> <export default as styled>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@mui/material/Typography/Typography.js [app-client] (ecmascript)");
+'use client';
+;
+;
+const StyledButtonWrapper = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__["styled"])('div', {
+    shouldForwardProp: (prop)=>prop !== 'isMobile'
+})(({ isMobile })=>({
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        marginBottom: isMobile ? '20px' : '80px'
+    }));
+const StyledH1 = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__["styled"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"])(()=>({
+        fontFamily: 'Playfair Display',
+        textTransform: 'uppercase',
+        color: '#000000',
+        textAlign: 'center',
+        marginTop: '20px'
+    }));
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_refresh__.registerExports(module, globalThis.$RefreshHelpers$);
+}
+}}),
 "[project]/src/components/Pages/HomePage/HomePage.tsx [app-client] (ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
@@ -1849,6 +1880,9 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$BrideRe
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$AccordionSection$2f$AccordionSection$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/components/AccordionSection/AccordionSection.tsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$contexts$2f$MenuContext$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/contexts/MenuContext.tsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$MenuOpen$2e$tsx$2f$MenuOpen$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/components/MenuOpen.tsx/MenuOpen.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Pages$2f$HomePage$2f$Styled$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/components/Pages/HomePage/Styled.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$contexts$2f$ResponsiveContext$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/contexts/ResponsiveContext.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Button$2f$Button$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Button$3e$__ = __turbopack_import__("[project]/node_modules/@mui/material/Button/Button.js [app-client] (ecmascript) <export default as Button>");
 ;
 var _s = __turbopack_refresh__.signature();
 'use client';
@@ -1859,51 +1893,81 @@ var _s = __turbopack_refresh__.signature();
 ;
 ;
 ;
+;
+;
+;
+;
 const HomePage = ()=>{
     _s();
     const { isMenuOpen } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$contexts$2f$MenuContext$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useMenuOpen"])();
+    const { isMobile } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$contexts$2f$ResponsiveContext$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useResponsive"])();
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("main", {
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$PersonalStylist$2f$PersonalStylist$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["PersonalStylist"], {}, void 0, false, {
                 fileName: "[project]/src/components/Pages/HomePage/HomePage.tsx",
-                lineNumber: 15,
+                lineNumber: 20,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$TrustedBy$2f$TrustedBy$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TrustedBy"], {}, void 0, false, {
                 fileName: "[project]/src/components/Pages/HomePage/HomePage.tsx",
-                lineNumber: 16,
+                lineNumber: 21,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$SomeOf$2f$SomeOf$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SomeOf"], {}, void 0, false, {
                 fileName: "[project]/src/components/Pages/HomePage/HomePage.tsx",
-                lineNumber: 17,
+                lineNumber: 22,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$BrideReviews$2f$BrideReviews$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["BrideReviews"], {}, void 0, false, {
                 fileName: "[project]/src/components/Pages/HomePage/HomePage.tsx",
-                lineNumber: 18,
+                lineNumber: 23,
                 columnNumber: 7
+            }, this),
+            isMobile && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Pages$2f$HomePage$2f$Styled$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["StyledH1"], {
+                variant: "h2",
+                children: "Packages"
+            }, void 0, false, {
+                fileName: "[project]/src/components/Pages/HomePage/HomePage.tsx",
+                lineNumber: 25,
+                columnNumber: 9
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$AccordionSection$2f$AccordionSection$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AccordionSection"], {}, void 0, false, {
                 fileName: "[project]/src/components/Pages/HomePage/HomePage.tsx",
-                lineNumber: 19,
+                lineNumber: 27,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Pages$2f$HomePage$2f$Styled$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["StyledButtonWrapper"], {
+                isMobile: isMobile,
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Button$2f$Button$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Button$3e$__["Button"], {
+                    variant: "contained",
+                    href: "/contact#form",
+                    children: "Make A personal offer"
+                }, void 0, false, {
+                    fileName: "[project]/src/components/Pages/HomePage/HomePage.tsx",
+                    lineNumber: 29,
+                    columnNumber: 10
+                }, this)
+            }, void 0, false, {
+                fileName: "[project]/src/components/Pages/HomePage/HomePage.tsx",
+                lineNumber: 28,
                 columnNumber: 7
             }, this),
             isMenuOpen && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$MenuOpen$2e$tsx$2f$MenuOpen$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["MenuOpen"], {}, void 0, false, {
                 fileName: "[project]/src/components/Pages/HomePage/HomePage.tsx",
-                lineNumber: 20,
+                lineNumber: 31,
                 columnNumber: 22
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/Pages/HomePage/HomePage.tsx",
-        lineNumber: 14,
+        lineNumber: 19,
         columnNumber: 5
     }, this);
 };
-_s(HomePage, "BlXLzfygGBB3DJu8XNVlL16HK5w=", false, function() {
+_s(HomePage, "usZ27UKrmo/CGFQyMKPlxrpWJAs=", false, function() {
     return [
-        __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$contexts$2f$MenuContext$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useMenuOpen"]
+        __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$contexts$2f$MenuContext$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useMenuOpen"],
+        __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$contexts$2f$ResponsiveContext$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useResponsive"]
     ];
 });
 _c = HomePage;
@@ -1920,4 +1984,4 @@ var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_
 }}),
 }]);
 
-//# sourceMappingURL=src_8dd55a._.js.map
+//# sourceMappingURL=src_893e8d._.js.map

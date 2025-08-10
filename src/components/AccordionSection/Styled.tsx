@@ -5,8 +5,7 @@ export const StyledSection = styled('section', {
   shouldForwardProp: (prop) => prop !== 'isMobile',
 })(({ isMobile }: { isMobile: boolean }) => ({
   width: '100%',
-  paddingBottom: isMobile ? '20px' : '100px',
-  paddingTop: '60px',
+  marginTop: isMobile ? '20px' : '60px',
 }));
 
 export const StyledWrapper = styled('div')(() => ({
@@ -88,7 +87,6 @@ export const StyledLi = styled('li')<{ isActive: boolean; isMobile: boolean }>(
     flexDirection: 'column',
     // minHeight: isActive ? '1206px' : 'auto',
     minHeight: isMobile ? '300px' : isActive ? '1206px' : 'auto',
-    marginBottom: '20px',
     borderRadius: '10px',
     border: '1px solid #AEA8A8',
     backgroundColor: '#F5F5F5',
@@ -144,3 +142,4 @@ export const StyledArrowWrapper = styled('div')<{ isActive: boolean, isMobile: b
     paddingTop: isMobile ? '0' : '20px',
   })
 );
+

@@ -15,6 +15,7 @@ import {
   StyledHiddenContainer,
   StyleSpan,
   StyledArrowWrapper,
+  StyledH1,
 } from './Styled';
 import { Arrow } from '../../assets/icons/Arrow';
 import { useResponsive } from '@/contexts/ResponsiveContext';
@@ -147,7 +148,7 @@ export const AccordionSection = () => {
               </StyledLi>
             ))}
           </StyledUl>
-          <Button variant='contained' href='/contact#form'>Make A personal offer</Button>
+          {/* <Button variant='contained' href='/contact#form'>Make A personal offer</Button> */}
         </StyledWrapper>
       </Container>
     </StyledSection>

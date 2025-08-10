@@ -18,6 +18,7 @@ import {
   StyledFifthItem,
   StyledSixthItem,
 } from './Styled';
+import { useResponsive } from '@/contexts/ResponsiveContext';
 
 const config = {
   hairstyles: [
@@ -37,40 +38,50 @@ const config = {
 };
 
 export const WhatYouCanExpect = () => {
+  const { isMobile } = useResponsive();
   return (
     <section>
-      <StyledSection>
+      <StyledSection isMobile={isMobile}>
+        {isMobile && (
+            <StyledImgWrapper >
+              <StyledUl isMobile={isMobile}>
+                {config.hairstyles.map((hairstyle) => (
+                  <StyledLi url={hairstyle.image} key={hairstyle.title} isMobile={isMobile} />
+                ))}
+              </StyledUl>
+            </StyledImgWrapper>
+        )}
         <Container>
           <StyledH1 variant='h2'>what you can expect</StyledH1>
           <StyledH2 variant='h2'>when working with me</StyledH2>
-          <StyledTextContainer>
-            <StyledFirstItem variant='body2'>
+          <StyledTextContainer isMobile={isMobile}>
+            <StyledFirstItem variant='body2' isMobile={isMobile}>
               You’re not just booking a stylist. You’re choosing a calm, loving
               presence who’ll care for you like someone from your inner circle.
             </StyledFirstItem>
-            <StyledSecondItem variant='body2'>
+            <StyledSecondItem variant='body2' isMobile={isMobile}>
               I arrive early, fully prepared, and with a peaceful energy that
               gently sets the tone for the entire morning. Brides often say: “It
               felt like you were my second mom — I didn’t even know I needed
               that.”  
             </StyledSecondItem>
-            <StyledThirdItem variant='body2'>
+            <StyledThirdItem variant='body2' isMobile={isMobile}>
               Every detail of your look is created with precision and love. I
               use top-tier professional products, refined techniques, and 12
               years of experience to ensure your hairstyle and makeup last
               beautifully — from the first photo to the last dance.
             </StyledThirdItem>
-            <StyledFourthItem variant='body2'>
+            <StyledFourthItem variant='body2' isMobile={isMobile}>
               Communication with me is always open and easy. You can ask
               anything, share your thoughts, or change your mind — I’ll listen
               and support you with care.  
             </StyledFourthItem>
-            <StyledFifthItem variant='body2'>
+            <StyledFifthItem variant='body2' isMobile={isMobile}>
               You’ll feel beautiful, calm, and completely yourself. And you’ll
               remember this morning not as stressful prep time — but as one of
               the happiest moments of your life.
             </StyledFifthItem>
-            <StyledSixthItem variant='body2'>
+            <StyledSixthItem variant='body2' isMobile={isMobile}>
               I work exclusively with brides and fully immerse myself in your
               day. My entire focus is on you — your comfort, your wishes, and
               the atmosphere we create together.  
@@ -79,13 +90,15 @@ export const WhatYouCanExpect = () => {
               <Button variant='contained' href='/contact#form'>i'm here to help you</Button>
             </StyledButtonWrapper>
           </StyledTextContainer>
-          <StyledImgWrapper>
-            <StyledUl>
+          {!isMobile && (
+          <StyledImgWrapper >
+            <StyledUl isMobile={isMobile}>
               {config.hairstyles.map((hairstyle) => (
-                <StyledLi url={hairstyle.image} key={hairstyle.title} />
+                <StyledLi url={hairstyle.image} key={hairstyle.title} isMobile={isMobile} />
               ))}
             </StyledUl>
           </StyledImgWrapper>
+          )}
         </Container>
       </StyledSection>
     </section>

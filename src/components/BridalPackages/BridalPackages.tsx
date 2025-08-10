@@ -1,107 +1,111 @@
 'use client';
 import React, { useState } from 'react';
 import { Button, Container } from '@mui/material';
+import { AccordionSection } from '../AccordionSection/AccordionSection';
 import {
   StyledWrapper,
   StyledSection,
-  StyledUl,
-  StyledLi,
-  StyledH2,
-  StyledTextList,
-  StyledTextItem,
-  StyledP,
-  StyledP1,
-  StyledImage,
-  StyledHiddenContainer,
-  StyleSpan,
-  StyledArrowWrapper,
+  // StyledUl,
+  // StyledLi,
+  // StyledH2,
+  // StyledTextList,
+  // StyledTextItem,
+  // StyledP,
+  // StyledP1,
+  // StyledImage,
+  // StyledHiddenContainer,
+  // StyleSpan,
+  // StyledArrowWrapper,
   StyledTitle,
   StyledButtonWrapper,
 } from './Styled';
 import { Arrow } from '../../assets/icons/Arrow';
+import { useResponsive } from '@/contexts/ResponsiveContext';
 
-const config = [
-  {
-    title: 'Accordion1',
-    image: '/img/homepage/Homepage9.jpg',
-    name: 'Basic',
-    name2: 'Package',
-    price: '€ 800',
-    name3: "What you'll receive:",
-    text: [
-      'CONSULTATION',
-      'TRIAL HAIR AND MAKEUP',
-      'MAKEUP FOR OPEN-BODY PARTS',
-      'MAKEUP FOR BRIDEGROOM',
-      'GIFT BAG WITH TOUCH-UP ITEMS',
-    ],
-  },
-  {
-    title: 'Accordion2',
-    image: '/img/homepage/Homepage10.jpg',
-    name: 'Basic',
-    spanName: ' +2guest',
-    name2: 'Package',
-    price: '€ 1000',
-    name3: "What you'll receive:",
-    text: [
-      'SOFT MAKEUP&HAIRSTYLE FOR 2 GUESTS (MAX 1 HOUR FOR EACH)',
-      'CONSULTATION',
-      'TRIAL HAIR AND MAKEUP',
-      'MAKEUP FOR OPEN-BODY PARTS',
-      'MAKEUP FOR BRIDEGROOM',
-      'GIFT BAG WITH TOUCH-UP ITEMS',
-    ],
-  },
-  {
-    title: 'Accordion3',
-    image: '/img/homepage/Homepage11.jpg',
-    name: 'Luxe',
-    name2: 'Package',
-    price: '€ 1200',
-    name3: "What you'll receive:",
-    text: [
-      'PERSONAL BEAUTY ASSISTANT FOR 8 HOURS',
-      'CONSULTATION',
-      'TRIAL HAIR AND MAKEUP',
-      'MAKEUP FOR OPEN-BODY PARTS',
-      'MAKEUP FOR BRIDEGROOM',
-      'GIFT BAG WITH TOUCH-UP ITEMS',
-    ],
-  },
-  {
-    title: 'Accordion4',
-    image: '/img/homepage/Homepage12.png',
-    name: '2 grooms',
-    name2: 'Package',
-    price: '€ 400',
-    name3: "What you'll receive:",
-    text: [
-      'CONSULTATION',
-      'MAKEUP FOR 2 GROOMS',
-      'HAIRSTYLE FOR 2 GROOMS',
-    ],
-  },
-];
+// const config = [
+//   {
+//     title: 'Accordion1',
+//     image: '/img/homepage/Homepage9.jpg',
+//     name: 'Basic',
+//     name2: 'Package',
+//     price: '€ 800',
+//     name3: "What you'll receive:",
+//     text: [
+//       'CONSULTATION',
+//       'TRIAL HAIR AND MAKEUP',
+//       'MAKEUP FOR OPEN-BODY PARTS',
+//       'MAKEUP FOR BRIDEGROOM',
+//       'GIFT BAG WITH TOUCH-UP ITEMS',
+//     ],
+//   },
+//   {
+//     title: 'Accordion2',
+//     image: '/img/homepage/Homepage10.jpg',
+//     name: 'Basic',
+//     spanName: ' +2guest',
+//     name2: 'Package',
+//     price: '€ 1000',
+//     name3: "What you'll receive:",
+//     text: [
+//       'SOFT MAKEUP&HAIRSTYLE FOR 2 GUESTS (MAX 1 HOUR FOR EACH)',
+//       'CONSULTATION',
+//       'TRIAL HAIR AND MAKEUP',
+//       'MAKEUP FOR OPEN-BODY PARTS',
+//       'MAKEUP FOR BRIDEGROOM',
+//       'GIFT BAG WITH TOUCH-UP ITEMS',
+//     ],
+//   },
+//   {
+//     title: 'Accordion3',
+//     image: '/img/homepage/Homepage11.jpg',
+//     name: 'Luxe',
+//     name2: 'Package',
+//     price: '€ 1200',
+//     name3: "What you'll receive:",
+//     text: [
+//       'PERSONAL BEAUTY ASSISTANT FOR 8 HOURS',
+//       'CONSULTATION',
+//       'TRIAL HAIR AND MAKEUP',
+//       'MAKEUP FOR OPEN-BODY PARTS',
+//       'MAKEUP FOR BRIDEGROOM',
+//       'GIFT BAG WITH TOUCH-UP ITEMS',
+//     ],
+//   },
+//   {
+//     title: 'Accordion4',
+//     image: '/img/homepage/Homepage12.png',
+//     name: '2 grooms',
+//     name2: 'Package',
+//     price: '€ 400',
+//     name3: "What you'll receive:",
+//     text: [
+//       'CONSULTATION',
+//       'MAKEUP FOR 2 GROOMS',
+//       'HAIRSTYLE FOR 2 GROOMS',
+//     ],
+//   },
+// ];
 
 export const BridalPackages = () => {
-  const [active, setActive] = useState({
-    Accordion1: false,
-    Accordion2: false,
-    Accordion3: false,
-    Accordion4: false,
-  });
+  // const [active, setActive] = useState({
+  //   Accordion1: false,
+  //   Accordion2: false,
+  //   Accordion3: false,
+  //   Accordion4: false,
+  // });
 
-  const handleToggle = (title: keyof typeof active) => {
-    setActive((prev) => ({ ...prev, [title]: !prev[title] }));
-  };
+  // const handleToggle = (title: keyof typeof active) => {
+  //   setActive((prev) => ({ ...prev, [title]: !prev[title] }));
+  // };
+  const { isMobile } = useResponsive();
 
   return (
-    <StyledSection>
+    <StyledSection isMobile={isMobile}>
       <Container maxWidth='xl'>
-      <StyledTitle variant='h2'>Bride Reviews</StyledTitle>
+      <StyledTitle variant='h2' isMobile={isMobile}>Bridal Packages</StyledTitle>
         <StyledWrapper>
-          <StyledUl>
+          <AccordionSection />
+          {/* <StyledUl>
             {config.map((item) => (
               <StyledLi key={item.title} 
               isActive={active[item.title as keyof typeof active]}>
@@ -132,7 +136,7 @@ export const BridalPackages = () => {
                 </StyledArrowWrapper>
               </StyledLi>
             ))}
-          </StyledUl>
+          </StyledUl> */}
           <StyledButtonWrapper>
             <Button variant='text' href='/contact#form'>unlock your quote</Button>
           </StyledButtonWrapper>
