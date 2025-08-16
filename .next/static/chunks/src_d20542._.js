@@ -142,7 +142,7 @@ const config = [
     },
     {
         text: 'phone: ',
-        textLink: '+380 (0) 634 612 880',
+        textLink: '+38 (0) 6 3461 2880',
         link: 'tel:+380634612880',
         textDecoration: 'none'
     }

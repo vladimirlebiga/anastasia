@@ -10,16 +10,13 @@ import {
   StyledLi,
   StyledP,
 } from './Styled';
-import { ReceiveTheProposal } from '@/assets/icons/ReceiveTheProposal';
-import { MakeItOfficial } from '@/assets/icons/MakeItOfficial';
-import { ReachOut } from '@/assets/icons/ReachOut';
-import { BridalPreviewExp } from '@/assets/icons/BridalPreviewExp';
-import { WeddingDaySchedule } from '@/assets/icons/WeddingDaySchedule';
-import { WeddingQuestionnaire } from '@/assets/icons/WeddingQuestionnaire';
-import { DreamWeddingHair } from '@/assets/icons/DreamWeddingHair';
 import { useResponsive } from '@/contexts/ResponsiveContext';
 import { Services_one } from '@/assets/icons/Services_one';
 import { Services_two } from '@/assets/icons/Services_two';
+import { Services_three } from '@/assets/icons/Services_three';
+import { Services_four } from '@/assets/icons/Services_four';
+import { Services_five } from '@/assets/icons/Services_five';
+import { Services_six } from '@/assets/icons/Services_six';
 import { Services_seven } from '@/assets/icons/Services_seven';
 
 const config = [
@@ -39,28 +36,28 @@ const config = [
   },
   {
     title: 'icon3',
-    component: <Services_two />,
+    component: <Services_three />,
     text: 'Make it official',
     gridArea: '1 / 9 / 2 / 12',
     gridMobile: '1 / 11 / 2 / 16',
   },
   {
     title: 'icon4',
-    component: <Services_one />,
+    component: <Services_four />,
     text: 'Bridal preview experience',
     gridArea: '1 / 13 / 2 / 16',
     gridMobile: '2 / 1 / 3 / 6',
   },
   {
     title: 'icon5',
-    component: <WeddingQuestionnaire />,
+    component: <Services_five />,
     text: 'Wedding questionaire',
     gridArea: '2 / 3 / 3 / 6',
     gridMobile: '2 / 6 / 3 / 11',
   },
   {
     title: 'icon6',
-    component: <WeddingDaySchedule />,
+    component: <Services_six />,
     text: 'Wedding day schedule',
     gridArea: '2 / 7 / 3 / 10',
     gridMobile: '2 / 11 / 3 / 16',

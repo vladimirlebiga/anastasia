@@ -22,6 +22,7 @@ import { Union } from '@/assets/icons/Union';
 import { InstagramIcon } from '@/assets/icons/InstagramIcon';
 import { FacebookIcon } from '@/assets/icons/FacebookIcon';
 import { TelegramIcon } from '@/assets/icons/TelegramIcon';
+import { WhatsAppIcon } from '@/assets/icons/WhatsAppIcon';
 import { useResponsive } from '@/contexts/ResponsiveContext';
 import { usePathname } from 'next/navigation';
 
@@ -115,6 +116,13 @@ export const Footer = () => {
                     rel='noopener noreferrer'
                   >
                     <InstagramIcon />
+                  </a>
+                  <a
+                    href='https://wa.me/380634612880'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                  >
+                    <WhatsAppIcon />
                   </a>
                 </StyledIconWrapper>
               </StyledFooterSocialItemLink>

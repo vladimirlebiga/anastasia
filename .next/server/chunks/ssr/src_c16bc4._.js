@@ -1,0 +1,2397 @@
+module.exports = {
+
+"[project]/src/components/WeddingMorning/Styled.tsx [app-ssr] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, z: __turbopack_require_stub__ } = __turbopack_context__;
+{
+__turbopack_esm__({
+    "StyledButtonWrapper": (()=>StyledButtonWrapper),
+    "StyledH2": (()=>StyledH2),
+    "StyledH3": (()=>StyledH3),
+    "StyledP": (()=>StyledP),
+    "StyledSection": (()=>StyledSection),
+    "StyledWrapper": (()=>StyledWrapper)
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__ = __turbopack_import__("[project]/node_modules/@mui/material/styles/styled.js [app-ssr] (ecmascript) <locals> <export default as styled>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@mui/material/Typography/Typography.js [app-ssr] (ecmascript)");
+;
+;
+const StyledSection = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__["styled"])('section', {
+    shouldForwardProp: (prop)=>prop !== 'isMobile'
+})(({ isMobile })=>({
+        width: '100%',
+        paddingBottom: isMobile ? '20px' : '100px',
+        justifyContent: 'center',
+        alignItems: 'center'
+    }));
+const StyledWrapper = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__["styled"])('div')(()=>({
+        display: 'flex',
+        flexDirection: 'column',
+        // maxWidth: '900px',
+        alignItems: 'center',
+        justifyContent: 'center',
+        margin: '0 auto'
+    }));
+const StyledH2 = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__["styled"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+    shouldForwardProp: (prop)=>prop !== 'isMobile'
+})(({ isMobile })=>({
+        fontFamily: 'Playfair Display',
+        color: '#000000',
+        textAlign: 'center',
+        textTransform: 'uppercase',
+        marginTop: isMobile ? '20px' : '0'
+    }));
+const StyledH3 = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__["styled"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"])(()=>({
+        fontFamily: 'Great Vibes',
+        color: '#F49D6A',
+        textAlign: 'center',
+        textTransform: 'lowercase'
+    }));
+const StyledP = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__["styled"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+    shouldForwardProp: (prop)=>prop !== 'isMobile'
+})(({ isMobile })=>({
+        fontFamily: 'Montserrat',
+        fontStyle: isMobile ? 'normal' : 'italic',
+        color: '#000000',
+        lineHeight: isMobile ? '15px' : '30px',
+        textAlign: isMobile ? 'left' : 'center',
+        marginTop: '10px',
+        marginBottom: isMobile ? '10px' : '30px',
+        letterSpacing: '1px'
+    }));
+const StyledButtonWrapper = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__["styled"])('div', {
+    shouldForwardProp: (prop)=>prop !== 'isMobile'
+})(({ isMobile })=>({
+        marginTop: isMobile ? '15px' : '0'
+    }));
+}}),
+"[project]/src/components/WeddingMorning/WeddingMorning.tsx [app-ssr] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, z: __turbopack_require_stub__ } = __turbopack_context__;
+{
+__turbopack_esm__({
+    "WeddingMorning": (()=>WeddingMorning)
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$WeddingMorning$2f$Styled$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/components/WeddingMorning/Styled.tsx [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$contexts$2f$ResponsiveContext$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/contexts/ResponsiveContext.tsx [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Container$2f$Container$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Container$3e$__ = __turbopack_import__("[project]/node_modules/@mui/material/Container/Container.js [app-ssr] (ecmascript) <export default as Container>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Button$2f$Button$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Button$3e$__ = __turbopack_import__("[project]/node_modules/@mui/material/Button/Button.js [app-ssr] (ecmascript) <export default as Button>");
+'use client';
+;
+;
+;
+;
+const WeddingMorning = ()=>{
+    const { isMobile } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$contexts$2f$ResponsiveContext$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useResponsive"])();
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$WeddingMorning$2f$Styled$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["StyledSection"], {
+        isMobile: isMobile,
+        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Container$2f$Container$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Container$3e$__["Container"], {
+            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$WeddingMorning$2f$Styled$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["StyledWrapper"], {
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$WeddingMorning$2f$Styled$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["StyledH2"], {
+                        variant: "h2",
+                        isMobile: isMobile,
+                        children: "on our wedding morning"
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/WeddingMorning/WeddingMorning.tsx",
+                        lineNumber: 20,
+                        columnNumber: 11
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$WeddingMorning$2f$Styled$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["StyledH3"], {
+                        variant: "h3",
+                        children: "consider the possibility"
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/WeddingMorning/WeddingMorning.tsx",
+                        lineNumber: 23,
+                        columnNumber: 11
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$WeddingMorning$2f$Styled$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["StyledP"], {
+                        variant: "body1",
+                        isMobile: isMobile,
+                        children: "You can unwind and enjoy a worry-free wedding morning, knowing that your hair will turn out exactly as you imagined. Thanks to a bridal preview that addressed all your concerns month ago. Today, you can be completely confident in your hairstyle!"
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/WeddingMorning/WeddingMorning.tsx",
+                        lineNumber: 24,
+                        columnNumber: 11
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$WeddingMorning$2f$Styled$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["StyledP"], {
+                        variant: "body1",
+                        isMobile: isMobile,
+                        children: "You’ve chosen a hairstylist who carefully fine-tunes every detail of your hair and your bridesmaids'. No frizz is overlooked, guaranteeing hairstyles that will stay flawless from morning until night."
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/WeddingMorning/WeddingMorning.tsx",
+                        lineNumber: 30,
+                        columnNumber: 11
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$WeddingMorning$2f$Styled$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["StyledP"], {
+                        variant: "body1",
+                        isMobile: isMobile,
+                        children: "You feel a sense of calm, knowing there's no need to hurry. Your stylist only takes one wedding per day, ensuring that you have their full attention throughout the entire process!"
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/WeddingMorning/WeddingMorning.tsx",
+                        lineNumber: 36,
+                        columnNumber: 11
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$WeddingMorning$2f$Styled$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["StyledButtonWrapper"], {
+                        isMobile: isMobile,
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Button$2f$Button$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Button$3e$__["Button"], {
+                            variant: "contained",
+                            href: "/contact#form",
+                            children: "lets's chat"
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/WeddingMorning/WeddingMorning.tsx",
+                            lineNumber: 42,
+                            columnNumber: 13
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/WeddingMorning/WeddingMorning.tsx",
+                        lineNumber: 41,
+                        columnNumber: 11
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/src/components/WeddingMorning/WeddingMorning.tsx",
+                lineNumber: 19,
+                columnNumber: 9
+            }, this)
+        }, void 0, false, {
+            fileName: "[project]/src/components/WeddingMorning/WeddingMorning.tsx",
+            lineNumber: 18,
+            columnNumber: 7
+        }, this)
+    }, void 0, false, {
+        fileName: "[project]/src/components/WeddingMorning/WeddingMorning.tsx",
+        lineNumber: 17,
+        columnNumber: 5
+    }, this);
+};
+}}),
+"[project]/src/components/WhatYouCanExpect/Styled.tsx [app-ssr] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, z: __turbopack_require_stub__ } = __turbopack_context__;
+{
+__turbopack_esm__({
+    "StyledButtonWrapper": (()=>StyledButtonWrapper),
+    "StyledFifthItem": (()=>StyledFifthItem),
+    "StyledFirstItem": (()=>StyledFirstItem),
+    "StyledFourthItem": (()=>StyledFourthItem),
+    "StyledH1": (()=>StyledH1),
+    "StyledH2": (()=>StyledH2),
+    "StyledImgWrapper": (()=>StyledImgWrapper),
+    "StyledLi": (()=>StyledLi),
+    "StyledP": (()=>StyledP),
+    "StyledSecondItem": (()=>StyledSecondItem),
+    "StyledSection": (()=>StyledSection),
+    "StyledSixthItem": (()=>StyledSixthItem),
+    "StyledTextContainer": (()=>StyledTextContainer),
+    "StyledThirdItem": (()=>StyledThirdItem),
+    "StyledUl": (()=>StyledUl)
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__ = __turbopack_import__("[project]/node_modules/@mui/material/styles/styled.js [app-ssr] (ecmascript) <locals> <export default as styled>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@mui/material/Typography/Typography.js [app-ssr] (ecmascript)");
+;
+;
+const StyledSection = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__["styled"])('section', {
+    shouldForwardProp: (prop)=>prop !== 'isMobile'
+})(({ isMobile })=>({
+        backgroundColor: isMobile ? '#FFFFFF' : '#E8D1C5',
+        paddingBottom: '20px',
+        paddingTop: isMobile ? '0' : '50px'
+    }));
+const StyledH1 = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__["styled"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"])(()=>({
+        fontFamily: 'Playfair Display',
+        textTransform: 'uppercase',
+        color: '#000000',
+        textAlign: 'center'
+    }));
+const StyledH2 = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__["styled"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"])(()=>({
+        fontFamily: 'Great Vibes',
+        color: '#F49D6A',
+        textAlign: 'center'
+    }));
+const StyledP = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__["styled"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"])(()=>({
+        fontFamily: 'Montserrat',
+        lineHeight: '136%',
+        color: '#000000',
+        textAlign: 'left',
+        position: 'relative',
+        paddingLeft: '2rem',
+        '&::before': {
+            content: '""',
+            position: 'absolute',
+            left: 0,
+            top: '0.25rem',
+            width: '1.2rem',
+            height: '1.2rem',
+            backgroundImage: 'url(/icons/feather.svg)',
+            backgroundSize: 'contain',
+            backgroundRepeat: 'no-repeat'
+        }
+    }));
+const StyledUl = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__["styled"])('ul', {
+    shouldForwardProp: (prop)=>prop !== 'isMobile'
+})(({ isMobile })=>({
+        display: 'flex',
+        //   flexDirection: 'row',
+        justifyContent: 'center',
+        alignItems: 'center',
+        margin: isMobile ? '10px 5px' : '30px 0',
+        gap: isMobile ? '5px' : '30px'
+    }));
+const StyledLi = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__["styled"])('li', {
+    shouldForwardProp: (prop)=>prop !== 'isMobile'
+})(({ url, isMobile })=>({
+        maxWidth: '330px',
+        width: '100%',
+        height: isMobile ? '200px' : '500px',
+        backgroundImage: `url(${url})`,
+        backgroundSize: '130% 150%',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+        borderRadius: '10px',
+        marginBottom: isMobile ? '10px' : '0'
+    }));
+const StyledTextContainer = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__["styled"])('div', {
+    shouldForwardProp: (prop)=>prop !== 'isMobile'
+})(({ isMobile })=>({
+        display: isMobile ? 'block' : 'grid',
+        gridTemplateColumns: '1fr 120px 1fr',
+        gridTemplateRows: '1fr 1fr 1fr 80px ',
+        //   columnGap: '120px',
+        rowGap: '10px',
+        backgroundColor: isMobile ? '#FFFFFF' : '#EEEEEE',
+        borderRadius: isMobile ? '0' : '10px',
+        padding: isMobile ? '10px' : '30px 100px 50px 30px'
+    }));
+const StyledButtonWrapper = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__["styled"])('div')(()=>({
+        display: 'flex',
+        justifyContent: 'center',
+        gridArea: '4 / 1 / 5 / 4',
+        marginTop: '30px'
+    }));
+const StyledImgWrapper = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__["styled"])('div')(()=>({
+    }));
+const StyledFirstItem = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__["styled"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+    shouldForwardProp: (prop)=>prop !== 'isMobile'
+})(({ isMobile })=>({
+        gridArea: isMobile ? '1 / 1 / 2 / 2' : '1 / 1 / 2 / 2',
+        fontFamily: 'Montserrat',
+        lineHeight: '136%',
+        color: '#000000',
+        textAlign: 'left',
+        position: 'relative',
+        paddingLeft: '2rem',
+        '&::before': {
+            content: '""',
+            position: 'absolute',
+            left: 0,
+            top: '0.25rem',
+            width: '1.2rem',
+            height: '1.2rem',
+            backgroundImage: 'url(/icons/feather.svg)',
+            backgroundSize: 'contain',
+            backgroundRepeat: 'no-repeat'
+        }
+    }));
+const StyledSecondItem = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__["styled"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+    shouldForwardProp: (prop)=>prop !== 'isMobile'
+})(({ isMobile })=>({
+        gridArea: '2 / 1 / 3 / 2',
+        fontFamily: 'Montserrat',
+        lineHeight: '136%',
+        color: '#000000',
+        textAlign: 'left',
+        position: 'relative',
+        paddingLeft: '2rem',
+        '&::before': {
+            content: '""',
+            position: 'absolute',
+            left: 0,
+            top: '0.25rem',
+            width: '1.2rem',
+            height: '1.2rem',
+            backgroundImage: 'url(/icons/feather.svg)',
+            backgroundSize: 'contain',
+            backgroundRepeat: 'no-repeat'
+        }
+    }));
+const StyledThirdItem = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__["styled"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+    shouldForwardProp: (prop)=>prop !== 'isMobile'
+})(({ isMobile })=>({
+        gridArea: '3 / 1 / 4 / 2',
+        fontFamily: 'Montserrat',
+        lineHeight: '136%',
+        color: '#000000',
+        textAlign: 'left',
+        position: 'relative',
+        paddingLeft: '2rem',
+        '&::before': {
+            content: '""',
+            position: 'absolute',
+            left: 0,
+            top: '0.25rem',
+            width: '1.2rem',
+            height: '1.2rem',
+            backgroundImage: 'url(/icons/feather.svg)',
+            backgroundSize: 'contain',
+            backgroundRepeat: 'no-repeat'
+        }
+    }));
+const StyledFourthItem = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__["styled"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+    shouldForwardProp: (prop)=>prop !== 'isMobile'
+})(({ isMobile })=>({
+        gridArea: '1 / 3 / 2 / 4',
+        fontFamily: 'Montserrat',
+        lineHeight: '136%',
+        color: '#000000',
+        textAlign: 'left',
+        position: 'relative',
+        paddingLeft: '2rem',
+        '&::before': {
+            content: '""',
+            position: 'absolute',
+            left: 0,
+            top: '0.25rem',
+            width: '1.2rem',
+            height: '1.2rem',
+            backgroundImage: 'url(/icons/feather.svg)',
+            backgroundSize: 'contain',
+            backgroundRepeat: 'no-repeat'
+        }
+    }));
+const StyledFifthItem = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__["styled"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+    shouldForwardProp: (prop)=>prop !== 'isMobile'
+})(({ isMobile })=>({
+        gridArea: '2 / 3 / 3 / 4',
+        fontFamily: 'Montserrat',
+        lineHeight: '136%',
+        color: '#000000',
+        textAlign: 'left',
+        position: 'relative',
+        paddingLeft: '2rem',
+        '&::before': {
+            content: '""',
+            position: 'absolute',
+            left: 0,
+            top: '0.25rem',
+            width: '1.2rem',
+            height: '1.2rem',
+            backgroundImage: 'url(/icons/feather.svg)',
+            backgroundSize: 'contain',
+            backgroundRepeat: 'no-repeat'
+        }
+    }));
+const StyledSixthItem = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__["styled"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+    shouldForwardProp: (prop)=>prop !== 'isMobile'
+})(({ isMobile })=>({
+        gridArea: '3 / 3 / 4 / 4',
+        fontFamily: 'Montserrat',
+        lineHeight: '136%',
+        color: '#000000',
+        textAlign: 'left',
+        position: 'relative',
+        paddingLeft: '2rem',
+        '&::before': {
+            content: '""',
+            position: 'absolute',
+            left: 0,
+            top: '0.25rem',
+            width: '1.2rem',
+            height: '1.2rem',
+            backgroundImage: 'url(/icons/feather.svg)',
+            backgroundSize: 'contain',
+            backgroundRepeat: 'no-repeat'
+        }
+    })); // export const StyledImg = styled('img')(() => ({
+ //   // maxWidth: '414px',
+ //   // width: '100%',
+ //   // maxHeight: '528px',
+ //   borderRadius: '10px',
+ //   objectFit: 'cover',
+ //   objectPosition: 'center',
+ // }));
+}}),
+"[project]/src/components/WhatYouCanExpect/WhatYouCanExpect.tsx [app-ssr] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, z: __turbopack_require_stub__ } = __turbopack_context__;
+{
+__turbopack_esm__({
+    "WhatYouCanExpect": (()=>WhatYouCanExpect)
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$WhatYouCanExpect$2f$Styled$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/components/WhatYouCanExpect/Styled.tsx [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$contexts$2f$ResponsiveContext$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/contexts/ResponsiveContext.tsx [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Container$2f$Container$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Container$3e$__ = __turbopack_import__("[project]/node_modules/@mui/material/Container/Container.js [app-ssr] (ecmascript) <export default as Container>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Button$2f$Button$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Button$3e$__ = __turbopack_import__("[project]/node_modules/@mui/material/Button/Button.js [app-ssr] (ecmascript) <export default as Button>");
+'use client';
+;
+;
+;
+;
+const config = {
+    hairstyles: [
+        {
+            title: 'Hairstyle 1',
+            image: '/img/homepage/Homepage3.jpg'
+        },
+        {
+            title: 'Hairstyle 2',
+            image: '/img/homepage/Homepage4.jpg'
+        },
+        {
+            title: 'Hairstyle 3',
+            image: '/img/homepage/Homepage5.jpg'
+        }
+    ]
+};
+const WhatYouCanExpect = ()=>{
+    const { isMobile } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$contexts$2f$ResponsiveContext$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useResponsive"])();
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
+        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$WhatYouCanExpect$2f$Styled$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["StyledSection"], {
+            isMobile: isMobile,
+            children: [
+                isMobile && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$WhatYouCanExpect$2f$Styled$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["StyledImgWrapper"], {
+                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$WhatYouCanExpect$2f$Styled$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["StyledUl"], {
+                        isMobile: isMobile,
+                        children: config.hairstyles.map((hairstyle)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$WhatYouCanExpect$2f$Styled$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["StyledLi"], {
+                                url: hairstyle.image,
+                                isMobile: isMobile
+                            }, hairstyle.title, false, {
+                                fileName: "[project]/src/components/WhatYouCanExpect/WhatYouCanExpect.tsx",
+                                lineNumber: 49,
+                                columnNumber: 19
+                            }, this))
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/WhatYouCanExpect/WhatYouCanExpect.tsx",
+                        lineNumber: 47,
+                        columnNumber: 15
+                    }, this)
+                }, void 0, false, {
+                    fileName: "[project]/src/components/WhatYouCanExpect/WhatYouCanExpect.tsx",
+                    lineNumber: 46,
+                    columnNumber: 13
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Container$2f$Container$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Container$3e$__["Container"], {
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$WhatYouCanExpect$2f$Styled$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["StyledH1"], {
+                            variant: "h2",
+                            children: "what you can expect"
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/WhatYouCanExpect/WhatYouCanExpect.tsx",
+                            lineNumber: 55,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$WhatYouCanExpect$2f$Styled$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["StyledH2"], {
+                            variant: "h2",
+                            children: "when working with me"
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/WhatYouCanExpect/WhatYouCanExpect.tsx",
+                            lineNumber: 56,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$WhatYouCanExpect$2f$Styled$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["StyledTextContainer"], {
+                            isMobile: isMobile,
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$WhatYouCanExpect$2f$Styled$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["StyledFirstItem"], {
+                                    variant: "body2",
+                                    isMobile: isMobile,
+                                    children: "You’re not just booking a stylist. You’re choosing a calm, loving presence who’ll care for you like someone from your inner circle."
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/WhatYouCanExpect/WhatYouCanExpect.tsx",
+                                    lineNumber: 58,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$WhatYouCanExpect$2f$Styled$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["StyledSecondItem"], {
+                                    variant: "body2",
+                                    isMobile: isMobile,
+                                    children: "I arrive early, fully prepared, and with a peaceful energy that gently sets the tone for the entire morning. Brides often say: “It felt like you were my second mom — I didn’t even know I needed that.”  "
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/WhatYouCanExpect/WhatYouCanExpect.tsx",
+                                    lineNumber: 62,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$WhatYouCanExpect$2f$Styled$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["StyledThirdItem"], {
+                                    variant: "body2",
+                                    isMobile: isMobile,
+                                    children: "Every detail of your look is created with precision and love. I use top-tier professional products, refined techniques, and 12 years of experience to ensure your hairstyle and makeup last beautifully — from the first photo to the last dance."
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/WhatYouCanExpect/WhatYouCanExpect.tsx",
+                                    lineNumber: 68,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$WhatYouCanExpect$2f$Styled$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["StyledFourthItem"], {
+                                    variant: "body2",
+                                    isMobile: isMobile,
+                                    children: "Communication with me is always open and easy. You can ask anything, share your thoughts, or change your mind — I’ll listen and support you with care.  "
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/WhatYouCanExpect/WhatYouCanExpect.tsx",
+                                    lineNumber: 74,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$WhatYouCanExpect$2f$Styled$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["StyledFifthItem"], {
+                                    variant: "body2",
+                                    isMobile: isMobile,
+                                    children: "You’ll feel beautiful, calm, and completely yourself. And you’ll remember this morning not as stressful prep time — but as one of the happiest moments of your life."
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/WhatYouCanExpect/WhatYouCanExpect.tsx",
+                                    lineNumber: 79,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$WhatYouCanExpect$2f$Styled$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["StyledSixthItem"], {
+                                    variant: "body2",
+                                    isMobile: isMobile,
+                                    children: "I work exclusively with brides and fully immerse myself in your day. My entire focus is on you — your comfort, your wishes, and the atmosphere we create together.  "
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/WhatYouCanExpect/WhatYouCanExpect.tsx",
+                                    lineNumber: 84,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$WhatYouCanExpect$2f$Styled$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["StyledButtonWrapper"], {
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Button$2f$Button$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Button$3e$__["Button"], {
+                                        variant: "contained",
+                                        href: "/contact#form",
+                                        children: "i'm here to help you"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/WhatYouCanExpect/WhatYouCanExpect.tsx",
+                                        lineNumber: 90,
+                                        columnNumber: 15
+                                    }, this)
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/WhatYouCanExpect/WhatYouCanExpect.tsx",
+                                    lineNumber: 89,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/src/components/WhatYouCanExpect/WhatYouCanExpect.tsx",
+                            lineNumber: 57,
+                            columnNumber: 11
+                        }, this),
+                        !isMobile && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$WhatYouCanExpect$2f$Styled$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["StyledImgWrapper"], {
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$WhatYouCanExpect$2f$Styled$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["StyledUl"], {
+                                isMobile: isMobile,
+                                children: config.hairstyles.map((hairstyle)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$WhatYouCanExpect$2f$Styled$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["StyledLi"], {
+                                        url: hairstyle.image,
+                                        isMobile: isMobile
+                                    }, hairstyle.title, false, {
+                                        fileName: "[project]/src/components/WhatYouCanExpect/WhatYouCanExpect.tsx",
+                                        lineNumber: 97,
+                                        columnNumber: 17
+                                    }, this))
+                            }, void 0, false, {
+                                fileName: "[project]/src/components/WhatYouCanExpect/WhatYouCanExpect.tsx",
+                                lineNumber: 95,
+                                columnNumber: 13
+                            }, this)
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/WhatYouCanExpect/WhatYouCanExpect.tsx",
+                            lineNumber: 94,
+                            columnNumber: 11
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/src/components/WhatYouCanExpect/WhatYouCanExpect.tsx",
+                    lineNumber: 54,
+                    columnNumber: 9
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "[project]/src/components/WhatYouCanExpect/WhatYouCanExpect.tsx",
+            lineNumber: 44,
+            columnNumber: 7
+        }, this)
+    }, void 0, false, {
+        fileName: "[project]/src/components/WhatYouCanExpect/WhatYouCanExpect.tsx",
+        lineNumber: 43,
+        columnNumber: 5
+    }, this);
+};
+}}),
+"[project]/src/components/AccordionSection/Styled.tsx [app-ssr] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, z: __turbopack_require_stub__ } = __turbopack_context__;
+{
+__turbopack_esm__({
+    "StyleSpan": (()=>StyleSpan),
+    "StyledArrowWrapper": (()=>StyledArrowWrapper),
+    "StyledH1": (()=>StyledH1),
+    "StyledH2": (()=>StyledH2),
+    "StyledH3": (()=>StyledH3),
+    "StyledHiddenContainer": (()=>StyledHiddenContainer),
+    "StyledImage": (()=>StyledImage),
+    "StyledLi": (()=>StyledLi),
+    "StyledP": (()=>StyledP),
+    "StyledP1": (()=>StyledP1),
+    "StyledSection": (()=>StyledSection),
+    "StyledTextItem": (()=>StyledTextItem),
+    "StyledTextList": (()=>StyledTextList),
+    "StyledUl": (()=>StyledUl),
+    "StyledWrapper": (()=>StyledWrapper)
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__ = __turbopack_import__("[project]/node_modules/@mui/material/styles/styled.js [app-ssr] (ecmascript) <locals> <export default as styled>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@mui/material/Typography/Typography.js [app-ssr] (ecmascript)");
+;
+;
+const StyledSection = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__["styled"])('section', {
+    shouldForwardProp: (prop)=>prop !== 'isMobile'
+})(({ isMobile })=>({
+        width: '100%',
+        marginTop: isMobile ? '20px' : '60px'
+    }));
+const StyledWrapper = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__["styled"])('div')(()=>({
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'center',
+        margin: '0 auto'
+    }));
+const StyledH1 = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__["styled"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"])(()=>({
+        fontFamily: 'Montserrat',
+        textTransform: 'uppercase',
+        fontWeight: 500,
+        color: '#000000',
+        textAlign: 'center',
+        marginBottom: '10px',
+        marginTop: '20px'
+    }));
+const StyledH2 = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__["styled"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+    shouldForwardProp: (prop)=>prop !== 'isMobile'
+})(({ isMobile })=>({
+        textAlign: 'center',
+        minHeight: isMobile ? '20px' : '76px'
+    }));
+const StyleSpan = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__["styled"])('span')(({ isMobile })=>({
+        fontFamily: 'Great Vibes',
+        fontSize: isMobile ? '20px' : '40px'
+    }));
+const StyledH3 = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__["styled"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"])(()=>({
+        fontFamily: 'Great Vibes',
+        color: '#F49D6A',
+        textAlign: 'center',
+        textTransform: 'lowercase'
+    }));
+const StyledP = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__["styled"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+    shouldForwardProp: (prop)=>prop !== 'isMobile'
+})(({ isMobile })=>({
+        fontFamily: 'Montserrat',
+        //   fontStyle: 'italic',
+        color: '#000000',
+        lineHeight: '30px',
+        textAlign: 'center',
+        marginTop: isMobile ? '0' : '10px',
+        marginBottom: isMobile ? '0' : '30px'
+    }));
+const StyledP1 = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__["styled"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+    shouldForwardProp: (prop)=>prop !== 'isMobile'
+})(({ isMobile })=>({
+        fontFamily: 'Montserrat',
+        textTransform: 'uppercase',
+        color: 'rgba(0, 0, 0, 0.5)',
+        letterSpacing: '3px',
+        lineHeight: '30px',
+        textAlign: 'center',
+        marginTop: isMobile ? '0' : '10px',
+        marginBottom: isMobile ? '0' : '30px'
+    }));
+const StyledUl = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__["styled"])('ul')(({ isMobile })=>({
+        display: 'grid',
+        gridTemplateColumns: isMobile ? 'repeat(2, 1fr)' : 'repeat(4, 1fr)',
+        gap: '20px',
+        width: '100%',
+        marginBottom: '20px'
+    }));
+const StyledLi = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__["styled"])('li')(({ isActive, isMobile })=>({
+        display: 'flex',
+        flexDirection: 'column',
+        // minHeight: isActive ? '1206px' : 'auto',
+        minHeight: isMobile ? '300px' : isActive ? '1206px' : 'auto',
+        borderRadius: '10px',
+        border: '1px solid #AEA8A8',
+        backgroundColor: '#F5F5F5',
+        padding: '20px'
+    }));
+const StyledImage = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__["styled"])('img')(({ isMobile })=>({
+        width: '100%',
+        height: isMobile ? '150px' : '230px',
+        marginBottom: '10px',
+        borderRadius: '10px'
+    }));
+const StyledHiddenContainer = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__["styled"])('div')({
+    marginTop: '10px'
+});
+const StyledTextList = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__["styled"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"])(()=>({
+        fontFamily: 'Montserrat',
+        textTransform: 'uppercase',
+        fontWeight: 600,
+        letterSpacing: '1px',
+        color: '#000000',
+        lineHeight: '30px',
+        textAlign: 'center',
+        paddingBottom: '10px',
+        borderBottom: '2px solid #E8D1C5'
+    }));
+const StyledTextItem = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__["styled"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"])(()=>({
+        fontFamily: 'Montserrat',
+        color: '#000000',
+        lineHeight: '30px',
+        textAlign: 'center',
+        marginTop: '10px',
+        marginBottom: '30px',
+        borderBottom: '2px solid #E8D1C5',
+        paddingBottom: '5px'
+    }));
+const StyledArrowWrapper = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__["styled"])('div')(({ isActive, isMobile })=>({
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        cursor: 'pointer',
+        transition: 'transform 0.3s ease-in-out',
+        transform: isActive ? 'rotate(180deg)' : 'rotate(0deg)',
+        marginTop: isMobile ? '20px' : 'auto',
+        paddingTop: isMobile ? '0' : '20px'
+    }));
+}}),
+"[project]/src/assets/icons/Arrow.tsx [app-ssr] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, z: __turbopack_require_stub__ } = __turbopack_context__;
+{
+__turbopack_esm__({
+    "Arrow": (()=>Arrow)
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
+;
+const Arrow = ()=>{
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
+        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+            width: "23",
+            height: "14",
+            viewBox: "0 0 23 14",
+            fill: "none",
+            xmlns: "http://www.w3.org/2000/svg",
+            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                fillRule: "evenodd",
+                clipRule: "evenodd",
+                d: "M0.833008 2.99935L11.4997 13.666L22.1663 2.99935L19.4997 0.332682L11.4997 8.33268L3.49967 0.332682L0.833008 2.99935Z",
+                fill: "#B29584"
+            }, void 0, false, {
+                fileName: "[project]/src/assets/icons/Arrow.tsx",
+                lineNumber: 13,
+                columnNumber: 5
+            }, this)
+        }, void 0, false, {
+            fileName: "[project]/src/assets/icons/Arrow.tsx",
+            lineNumber: 6,
+            columnNumber: 5
+        }, this)
+    }, void 0, false);
+};
+}}),
+"[project]/src/components/AccordionSection/AccordionSection.tsx [app-ssr] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, z: __turbopack_require_stub__ } = __turbopack_context__;
+{
+__turbopack_esm__({
+    "AccordionSection": (()=>AccordionSection)
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$AccordionSection$2f$Styled$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/components/AccordionSection/Styled.tsx [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$icons$2f$Arrow$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/assets/icons/Arrow.tsx [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$contexts$2f$ResponsiveContext$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/contexts/ResponsiveContext.tsx [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Container$2f$Container$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Container$3e$__ = __turbopack_import__("[project]/node_modules/@mui/material/Container/Container.js [app-ssr] (ecmascript) <export default as Container>");
+'use client';
+;
+;
+;
+;
+;
+;
+const config = [
+    {
+        title: 'Accordion1',
+        image: '/img/homepage/Homepage9.jpg',
+        name: 'Basic',
+        name2: 'Package',
+        price: '€ 800',
+        name3: "What you'll receive:",
+        text: [
+            'CONSULTATION',
+            'TRIAL HAIR AND MAKEUP',
+            'MAKEUP FOR OPEN-BODY PARTS',
+            'MAKEUP FOR BRIDEGROOM',
+            'GIFT BAG WITH TOUCH-UP ITEMS'
+        ]
+    },
+    {
+        title: 'Accordion2',
+        image: '/img/homepage/Homepage10.jpg',
+        name: 'Basic',
+        spanName: ' +2guests',
+        name2: 'Package',
+        price: '€ 1000',
+        name3: "What you'll receive:",
+        text: [
+            'SOFT MAKEUP&HAIRSTYLE FOR 2 GUESTS (MAX 1 HOUR FOR EACH)',
+            'CONSULTATION',
+            'TRIAL HAIR AND MAKEUP',
+            'MAKEUP FOR OPEN-BODY PARTS',
+            'MAKEUP FOR BRIDEGROOM',
+            'GIFT BAG WITH TOUCH-UP ITEMS'
+        ]
+    },
+    {
+        title: 'Accordion3',
+        image: '/img/homepage/Homepage11.jpg',
+        name: 'Luxe',
+        name2: 'Package',
+        price: '€ 1200',
+        name3: "What you'll receive:",
+        text: [
+            'PERSONAL BEAUTY ASSISTANT FOR 8 HOURS',
+            'CONSULTATION',
+            'TRIAL HAIR AND MAKEUP',
+            'MAKEUP FOR OPEN-BODY PARTS',
+            'MAKEUP FOR BRIDEGROOM',
+            'GIFT BAG WITH TOUCH-UP ITEMS'
+        ]
+    },
+    {
+        title: 'Accordion4',
+        image: '/img/homepage/Homepage12.png',
+        name: '2 grooms',
+        name2: 'Package',
+        price: '€ 400',
+        name3: "What you'll receive:",
+        text: [
+            'CONSULTATION',
+            'MAKEUP FOR 2 GROOMS',
+            'HAIRSTYLE FOR 2 GROOMS'
+        ]
+    }
+];
+const AccordionSection = ()=>{
+    const [active, setActive] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])({
+        Accordion1: false,
+        Accordion2: false,
+        Accordion3: false,
+        Accordion4: false
+    });
+    const handleToggle = (title)=>{
+        setActive((prev)=>({
+                ...prev,
+                [title]: !prev[title]
+            }));
+    };
+    const { isMobile } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$contexts$2f$ResponsiveContext$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useResponsive"])();
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$AccordionSection$2f$Styled$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["StyledSection"], {
+        isMobile: isMobile,
+        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Container$2f$Container$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Container$3e$__["Container"], {
+            maxWidth: "xl",
+            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$AccordionSection$2f$Styled$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["StyledWrapper"], {
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$AccordionSection$2f$Styled$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["StyledUl"], {
+                    isMobile: isMobile,
+                    children: config.map((item)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$AccordionSection$2f$Styled$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["StyledLi"], {
+                            isActive: active[item.title],
+                            isMobile: isMobile,
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$AccordionSection$2f$Styled$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["StyledImage"], {
+                                    src: item.image,
+                                    alt: item.title,
+                                    isMobile: isMobile
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/AccordionSection/AccordionSection.tsx",
+                                    lineNumber: 109,
+                                    columnNumber: 17
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$AccordionSection$2f$Styled$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["StyledH2"], {
+                                    variant: "h4",
+                                    isMobile: isMobile,
+                                    children: [
+                                        item.name,
+                                        item.spanName && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$AccordionSection$2f$Styled$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["StyleSpan"], {
+                                            isMobile: isMobile,
+                                            children: item.spanName
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/AccordionSection/AccordionSection.tsx",
+                                            lineNumber: 112,
+                                            columnNumber: 37
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/src/components/AccordionSection/AccordionSection.tsx",
+                                    lineNumber: 110,
+                                    columnNumber: 17
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$AccordionSection$2f$Styled$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["StyledP1"], {
+                                    isMobile: isMobile,
+                                    variant: "body1",
+                                    children: item.name2
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/AccordionSection/AccordionSection.tsx",
+                                    lineNumber: 115,
+                                    columnNumber: 17
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$AccordionSection$2f$Styled$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["StyledP"], {
+                                    variant: "h3",
+                                    isMobile: isMobile,
+                                    children: item.price
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/AccordionSection/AccordionSection.tsx",
+                                    lineNumber: 116,
+                                    columnNumber: 17
+                                }, this),
+                                isMobile && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$AccordionSection$2f$Styled$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["StyledArrowWrapper"], {
+                                    onClick: ()=>handleToggle(item.title),
+                                    isActive: active[item.title],
+                                    isMobile: isMobile,
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$icons$2f$Arrow$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Arrow"], {}, void 0, false, {
+                                        fileName: "[project]/src/components/AccordionSection/AccordionSection.tsx",
+                                        lineNumber: 125,
+                                        columnNumber: 21
+                                    }, this)
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/AccordionSection/AccordionSection.tsx",
+                                    lineNumber: 118,
+                                    columnNumber: 19
+                                }, this),
+                                active[item.title] && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$AccordionSection$2f$Styled$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["StyledHiddenContainer"], {
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$AccordionSection$2f$Styled$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["StyledTextList"], {
+                                            variant: "body2",
+                                            children: item.name3
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/AccordionSection/AccordionSection.tsx",
+                                            lineNumber: 131,
+                                            columnNumber: 21
+                                        }, this),
+                                        item.text.map((text)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$AccordionSection$2f$Styled$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["StyledTextItem"], {
+                                                variant: "body2",
+                                                children: text
+                                            }, text, false, {
+                                                fileName: "[project]/src/components/AccordionSection/AccordionSection.tsx",
+                                                lineNumber: 133,
+                                                columnNumber: 23
+                                            }, this))
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/src/components/AccordionSection/AccordionSection.tsx",
+                                    lineNumber: 130,
+                                    columnNumber: 19
+                                }, this),
+                                !isMobile && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$AccordionSection$2f$Styled$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["StyledArrowWrapper"], {
+                                    onClick: ()=>handleToggle(item.title),
+                                    isActive: active[item.title],
+                                    isMobile: isMobile,
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$icons$2f$Arrow$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Arrow"], {}, void 0, false, {
+                                        fileName: "[project]/src/components/AccordionSection/AccordionSection.tsx",
+                                        lineNumber: 145,
+                                        columnNumber: 19
+                                    }, this)
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/AccordionSection/AccordionSection.tsx",
+                                    lineNumber: 138,
+                                    columnNumber: 17
+                                }, this)
+                            ]
+                        }, item.title, true, {
+                            fileName: "[project]/src/components/AccordionSection/AccordionSection.tsx",
+                            lineNumber: 106,
+                            columnNumber: 15
+                        }, this))
+                }, void 0, false, {
+                    fileName: "[project]/src/components/AccordionSection/AccordionSection.tsx",
+                    lineNumber: 104,
+                    columnNumber: 11
+                }, this)
+            }, void 0, false, {
+                fileName: "[project]/src/components/AccordionSection/AccordionSection.tsx",
+                lineNumber: 103,
+                columnNumber: 9
+            }, this)
+        }, void 0, false, {
+            fileName: "[project]/src/components/AccordionSection/AccordionSection.tsx",
+            lineNumber: 102,
+            columnNumber: 7
+        }, this)
+    }, void 0, false, {
+        fileName: "[project]/src/components/AccordionSection/AccordionSection.tsx",
+        lineNumber: 101,
+        columnNumber: 5
+    }, this);
+};
+}}),
+"[project]/src/components/BridalPackages/Styled.tsx [app-ssr] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, z: __turbopack_require_stub__ } = __turbopack_context__;
+{
+__turbopack_esm__({
+    "StyleSpan": (()=>StyleSpan),
+    "StyledArrowWrapper": (()=>StyledArrowWrapper),
+    "StyledButtonWrapper": (()=>StyledButtonWrapper),
+    "StyledH1": (()=>StyledH1),
+    "StyledH2": (()=>StyledH2),
+    "StyledH3": (()=>StyledH3),
+    "StyledHiddenContainer": (()=>StyledHiddenContainer),
+    "StyledImage": (()=>StyledImage),
+    "StyledLi": (()=>StyledLi),
+    "StyledP": (()=>StyledP),
+    "StyledP1": (()=>StyledP1),
+    "StyledSection": (()=>StyledSection),
+    "StyledSpan": (()=>StyledSpan),
+    "StyledTextItem": (()=>StyledTextItem),
+    "StyledTextList": (()=>StyledTextList),
+    "StyledTitle": (()=>StyledTitle),
+    "StyledUl": (()=>StyledUl),
+    "StyledWrapper": (()=>StyledWrapper)
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__ = __turbopack_import__("[project]/node_modules/@mui/material/styles/styled.js [app-ssr] (ecmascript) <locals> <export default as styled>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@mui/material/Typography/Typography.js [app-ssr] (ecmascript)");
+;
+;
+const StyledSection = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__["styled"])('section', {
+    shouldForwardProp: (prop)=>prop !== 'isMobile'
+})(({ isMobile })=>({
+        width: '100%',
+        paddingBottom: isMobile ? '20px' : '100px',
+        paddingTop: isMobile ? '0' : '60px'
+    }));
+const StyledWrapper = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__["styled"])('div')(()=>({
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'center',
+        margin: '0 auto'
+    }));
+const StyledH1 = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__["styled"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"])(()=>({
+        fontFamily: 'Montserrat',
+        textTransform: 'uppercase',
+        fontWeight: 500,
+        color: '#000000',
+        textAlign: 'center',
+        marginBottom: '10px',
+        marginTop: '20px'
+    }));
+const StyledH2 = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__["styled"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"])(()=>({
+        textAlign: 'center',
+        minHeight: '76px'
+    }));
+const StyleSpan = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__["styled"])('span')(()=>({
+        fontFamily: 'Great Vibes',
+        fontSize: '40px'
+    }));
+const StyledH3 = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__["styled"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"])(()=>({
+        fontFamily: 'Great Vibes',
+        color: '#F49D6A',
+        textAlign: 'center',
+        textTransform: 'lowercase'
+    }));
+const StyledP = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__["styled"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"])(()=>({
+        fontFamily: 'Montserrat',
+        //   fontStyle: 'italic',
+        color: '#000000',
+        lineHeight: '30px',
+        textAlign: 'center',
+        marginTop: '10px',
+        marginBottom: '30px'
+    }));
+const StyledP1 = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__["styled"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"])(()=>({
+        fontFamily: 'Montserrat',
+        textTransform: 'uppercase',
+        color: 'rgba(0, 0, 0, 0.5)',
+        letterSpacing: '3px',
+        lineHeight: '30px',
+        textAlign: 'center',
+        marginTop: '10px',
+        marginBottom: '30px'
+    }));
+const StyledSpan = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__["styled"])('span')(()=>({
+        color: '#F49D6A'
+    }));
+const StyledUl = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__["styled"])('ul')({
+    display: 'grid',
+    gridTemplateColumns: 'repeat(4, 1fr)',
+    gap: '20px',
+    width: '100%',
+    marginBottom: '20px'
+});
+const StyledLi = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__["styled"])('li')(({ isActive })=>({
+        display: 'flex',
+        flexDirection: 'column',
+        minHeight: isActive ? '1206px' : 'auto',
+        marginBottom: '20px',
+        borderRadius: '10px',
+        border: '1px solid #AEA8A8',
+        backgroundColor: '#F5F5F5',
+        padding: '20px'
+    }));
+const StyledImage = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__["styled"])('img')({
+    width: '100%',
+    height: '230px',
+    marginBottom: '10px',
+    borderRadius: '10px'
+});
+const StyledHiddenContainer = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__["styled"])('div')({
+    marginTop: '10px'
+});
+const StyledTextList = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__["styled"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"])(()=>({
+        fontFamily: 'Montserrat',
+        textTransform: 'uppercase',
+        fontWeight: 600,
+        letterSpacing: '1px',
+        color: '#000000',
+        lineHeight: '30px',
+        textAlign: 'center',
+        paddingBottom: '10px',
+        borderBottom: '2px solid #E8D1C5'
+    }));
+const StyledTextItem = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__["styled"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"])(()=>({
+        fontFamily: 'Montserrat',
+        color: '#000000',
+        lineHeight: '30px',
+        textAlign: 'center',
+        marginTop: '10px',
+        marginBottom: '30px',
+        borderBottom: '2px solid #E8D1C5',
+        paddingBottom: '5px'
+    }));
+const StyledArrowWrapper = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__["styled"])('div')(({ isActive })=>({
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        cursor: 'pointer',
+        transition: 'transform 0.3s ease-in-out',
+        transform: isActive ? 'rotate(180deg)' : 'rotate(0deg)',
+        marginTop: 'auto',
+        paddingTop: '20px'
+    }));
+const StyledTitle = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__["styled"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+    shouldForwardProp: (prop)=>prop !== 'isMobile'
+})(({ isMobile })=>({
+        fontFamily: 'Playfair Display',
+        textTransform: 'uppercase',
+        color: '#000000',
+        textAlign: 'center',
+        marginBottom: isMobile ? '10px' : '60px'
+    }));
+const StyledButtonWrapper = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__["styled"])('div')(()=>({
+        display: 'flex',
+        justifyContent: 'center',
+        maxWidth: '330px'
+    }));
+}}),
+"[project]/src/components/BridalPackages/BridalPackages.tsx [app-ssr] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, z: __turbopack_require_stub__ } = __turbopack_context__;
+{
+__turbopack_esm__({
+    "BridalPackages": (()=>BridalPackages)
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$AccordionSection$2f$AccordionSection$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/components/AccordionSection/AccordionSection.tsx [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$BridalPackages$2f$Styled$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/components/BridalPackages/Styled.tsx [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$contexts$2f$ResponsiveContext$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/contexts/ResponsiveContext.tsx [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Container$2f$Container$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Container$3e$__ = __turbopack_import__("[project]/node_modules/@mui/material/Container/Container.js [app-ssr] (ecmascript) <export default as Container>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Button$2f$Button$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Button$3e$__ = __turbopack_import__("[project]/node_modules/@mui/material/Button/Button.js [app-ssr] (ecmascript) <export default as Button>");
+'use client';
+;
+;
+;
+;
+;
+const BridalPackages = ()=>{
+    // const [active, setActive] = useState({
+    //   Accordion1: false,
+    //   Accordion2: false,
+    //   Accordion3: false,
+    //   Accordion4: false,
+    // });
+    // const handleToggle = (title: keyof typeof active) => {
+    //   setActive((prev) => ({ ...prev, [title]: !prev[title] }));
+    // };
+    const { isMobile } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$contexts$2f$ResponsiveContext$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useResponsive"])();
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$BridalPackages$2f$Styled$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["StyledSection"], {
+        isMobile: isMobile,
+        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Container$2f$Container$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Container$3e$__["Container"], {
+            maxWidth: "xl",
+            children: [
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$BridalPackages$2f$Styled$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["StyledTitle"], {
+                    variant: "h2",
+                    isMobile: isMobile,
+                    children: "Bridal Packages"
+                }, void 0, false, {
+                    fileName: "[project]/src/components/BridalPackages/BridalPackages.tsx",
+                    lineNumber: 105,
+                    columnNumber: 7
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$BridalPackages$2f$Styled$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["StyledWrapper"], {
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$AccordionSection$2f$AccordionSection$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["AccordionSection"], {}, void 0, false, {
+                            fileName: "[project]/src/components/BridalPackages/BridalPackages.tsx",
+                            lineNumber: 107,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$BridalPackages$2f$Styled$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["StyledButtonWrapper"], {
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Button$2f$Button$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Button$3e$__["Button"], {
+                                variant: "text",
+                                href: "/contact#form",
+                                children: "unlock your quote"
+                            }, void 0, false, {
+                                fileName: "[project]/src/components/BridalPackages/BridalPackages.tsx",
+                                lineNumber: 141,
+                                columnNumber: 13
+                            }, this)
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/BridalPackages/BridalPackages.tsx",
+                            lineNumber: 140,
+                            columnNumber: 11
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/src/components/BridalPackages/BridalPackages.tsx",
+                    lineNumber: 106,
+                    columnNumber: 9
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "[project]/src/components/BridalPackages/BridalPackages.tsx",
+            lineNumber: 104,
+            columnNumber: 7
+        }, this)
+    }, void 0, false, {
+        fileName: "[project]/src/components/BridalPackages/BridalPackages.tsx",
+        lineNumber: 103,
+        columnNumber: 5
+    }, this);
+};
+}}),
+"[project]/src/components/AdditionalServices/Styled.tsx [app-ssr] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, z: __turbopack_require_stub__ } = __turbopack_context__;
+{
+__turbopack_esm__({
+    "StyledH1": (()=>StyledH1),
+    "StyledP1": (()=>StyledP1),
+    "StyledP2": (()=>StyledP2),
+    "StyledP3": (()=>StyledP3),
+    "StyledSection": (()=>StyledSection),
+    "StyledWrapper": (()=>StyledWrapper)
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__ = __turbopack_import__("[project]/node_modules/@mui/material/styles/styled.js [app-ssr] (ecmascript) <locals> <export default as styled>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@mui/material/Typography/Typography.js [app-ssr] (ecmascript)");
+;
+;
+const StyledSection = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__["styled"])('section', {
+    shouldForwardProp: (prop)=>prop !== 'isMobile'
+})(({ isMobile })=>({
+        width: '100%',
+        paddingBottom: isMobile ? '20px' : '100px'
+    }));
+const StyledH1 = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__["styled"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"])(()=>({
+        fontFamily: 'Great Vibes',
+        // textTransform: 'uppercase',
+        color: '#000000',
+        textAlign: 'center',
+        marginBottom: '10px'
+    }));
+const StyledWrapper = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__["styled"])('div')(()=>({
+        display: 'grid',
+        gridTemplateColumns: '2fr 1fr 1fr',
+        gap: '20px'
+    }));
+const StyledP1 = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__["styled"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+    shouldForwardProp: (prop)=>prop !== 'isMobile'
+})(({ isMobile })=>({
+        fontFamily: 'Montserrat',
+        lineHeight: '180%',
+        color: '#000000',
+        textAlign: 'left',
+        position: 'relative',
+        paddingLeft: isMobile ? '0' : '2rem',
+        maxWidth: '400px'
+    }));
+const StyledP2 = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__["styled"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+    shouldForwardProp: (prop)=>prop !== 'isMobile'
+})(({ isMobile })=>({
+        fontFamily: 'Montserrat',
+        lineHeight: '180%',
+        color: '#000000',
+        textAlign: 'left',
+        position: 'relative',
+        paddingLeft: isMobile ? '3rem' : '2rem',
+        maxWidth: '100px'
+    }));
+const StyledP3 = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__["styled"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+    shouldForwardProp: (prop)=>prop !== 'isMobile'
+})(({ isMobile })=>({
+        fontFamily: 'Montserrat',
+        lineHeight: '180%',
+        color: '#000000',
+        textAlign: 'left',
+        position: 'relative',
+        paddingLeft: '2rem',
+        maxWidth: '150px'
+    }));
+}}),
+"[project]/src/components/AdditionalServices/AdditionalServices.tsx [app-ssr] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, z: __turbopack_require_stub__ } = __turbopack_context__;
+{
+__turbopack_esm__({
+    "AdditionalServices": (()=>AdditionalServices)
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$AdditionalServices$2f$Styled$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/components/AdditionalServices/Styled.tsx [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$contexts$2f$ResponsiveContext$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/contexts/ResponsiveContext.tsx [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Container$2f$Container$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Container$3e$__ = __turbopack_import__("[project]/node_modules/@mui/material/Container/Container.js [app-ssr] (ecmascript) <export default as Container>");
+'use client';
+;
+;
+;
+;
+const AdditionalServices = ()=>{
+    const { isMobile } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$contexts$2f$ResponsiveContext$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useResponsive"])();
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$AdditionalServices$2f$Styled$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["StyledSection"], {
+        isMobile: isMobile,
+        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Container$2f$Container$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Container$3e$__["Container"], {
+            children: [
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$AdditionalServices$2f$Styled$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["StyledH1"], {
+                    variant: "h2",
+                    children: "Additional services"
+                }, void 0, false, {
+                    fileName: "[project]/src/components/AdditionalServices/AdditionalServices.tsx",
+                    lineNumber: 19,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$AdditionalServices$2f$Styled$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["StyledWrapper"], {
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$AdditionalServices$2f$Styled$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["StyledP1"], {
+                            variant: "body1",
+                            isMobile: isMobile,
+                            children: "Personal beauty assistant Makeup/hairstyle for 1 guest"
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/AdditionalServices/AdditionalServices.tsx",
+                            lineNumber: 21,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$AdditionalServices$2f$Styled$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["StyledP2"], {
+                            variant: "body1",
+                            isMobile: isMobile,
+                            children: "50€ 150€"
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/AdditionalServices/AdditionalServices.tsx",
+                            lineNumber: 22,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$AdditionalServices$2f$Styled$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["StyledP3"], {
+                            variant: "body1",
+                            isMobile: isMobile,
+                            children: "per hour per hour"
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/AdditionalServices/AdditionalServices.tsx",
+                            lineNumber: 23,
+                            columnNumber: 11
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/src/components/AdditionalServices/AdditionalServices.tsx",
+                    lineNumber: 20,
+                    columnNumber: 9
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "[project]/src/components/AdditionalServices/AdditionalServices.tsx",
+            lineNumber: 18,
+            columnNumber: 7
+        }, this)
+    }, void 0, false, {
+        fileName: "[project]/src/components/AdditionalServices/AdditionalServices.tsx",
+        lineNumber: 17,
+        columnNumber: 5
+    }, this);
+};
+}}),
+"[project]/src/components/HairstylingExperience/Styled.tsx [app-ssr] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, z: __turbopack_require_stub__ } = __turbopack_context__;
+{
+__turbopack_esm__({
+    "StyledH2": (()=>StyledH2),
+    "StyledH3": (()=>StyledH3),
+    "StyledLi": (()=>StyledLi),
+    "StyledP": (()=>StyledP),
+    "StyledSection": (()=>StyledSection),
+    "StyledUl": (()=>StyledUl),
+    "StyledWrapper": (()=>StyledWrapper)
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__ = __turbopack_import__("[project]/node_modules/@mui/material/styles/styled.js [app-ssr] (ecmascript) <locals> <export default as styled>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@mui/material/Typography/Typography.js [app-ssr] (ecmascript)");
+;
+;
+const StyledSection = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__["styled"])('section', {
+    shouldForwardProp: (prop)=>prop !== 'isMobile'
+})(({ isMobile })=>({
+        width: '100%',
+        paddingBottom: isMobile ? '20px' : '100px',
+        justifyContent: 'center',
+        alignItems: 'center'
+    }));
+const StyledWrapper = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__["styled"])('div')(()=>({
+        display: 'flex',
+        flexDirection: 'column',
+        maxWidth: '1500px',
+        alignItems: 'center',
+        justifyContent: 'center',
+        margin: '0 auto'
+    }));
+const StyledH2 = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__["styled"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+    shouldForwardProp: (prop)=>prop !== 'isMobile'
+})(({ isMobile })=>({
+        fontFamily: 'Playfair Display',
+        color: '#000000',
+        textAlign: 'center',
+        textTransform: 'uppercase',
+        padding: isMobile ? '0 40px' : '0'
+    }));
+const StyledH3 = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__["styled"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+    shouldForwardProp: (prop)=>prop !== 'isMobile'
+})(({ isMobile })=>({
+        fontFamily: 'Great Vibes',
+        color: '#F49D6A',
+        textAlign: 'center',
+        textTransform: 'lowercase',
+        marginBottom: isMobile ? '0' : '30px'
+    }));
+const StyledP = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__["styled"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+    shouldForwardProp: (prop)=>prop !== 'isMobile'
+})(({ isMobile })=>({
+        fontFamily: 'Montserrat',
+        fontStyle: 'italic',
+        color: '#000000',
+        lineHeight: isMobile ? '20px' : '30px',
+        textAlign: 'center',
+        marginTop: '10px',
+        marginBottom: '30px',
+        letterSpacing: '1px',
+        maxWidth: '200px'
+    }));
+const StyledUl = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__["styled"])('ul', {
+    shouldForwardProp: (prop)=>prop !== 'isMobile'
+})(({ isMobile })=>({
+        display: 'grid',
+        gridTemplateColumns: 'repeat(15, 1fr)',
+        gridTemplateRows: isMobile ? '1fr 1fr 1.5fr' : 'repeat(2, 1fr)',
+        rowGap: isMobile ? '10px' : '30px',
+        columnGap: isMobile ? '0' : '40px',
+        marginBottom: isMobile ? '0' : '30px'
+    }));
+const StyledLi = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__["styled"])('li')(({ gridArea, gridMobile, isMobile })=>({
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'center',
+        columnGap: '40px',
+        gridArea: isMobile ? gridMobile : gridArea,
+        maxHeight: '300px'
+    }));
+}}),
+"[project]/src/assets/icons/WeddingDaySchedule.tsx [app-ssr] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, z: __turbopack_require_stub__ } = __turbopack_context__;
+{
+__turbopack_esm__({
+    "WeddingDaySchedule": (()=>WeddingDaySchedule)
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$contexts$2f$ResponsiveContext$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/contexts/ResponsiveContext.tsx [app-ssr] (ecmascript)");
+;
+;
+const WeddingDaySchedule = ()=>{
+    const { isMobile } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$contexts$2f$ResponsiveContext$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useResponsive"])();
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
+        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+            width: isMobile ? '60' : '124',
+            height: isMobile ? '60' : '124',
+            viewBox: "0 0 127 106",
+            fill: "none",
+            xmlns: "http://www.w3.org/2000/svg",
+            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                d: "M55.5625 46.375H47.625V39.75H55.5625V46.375ZM79.375 46.375H71.4375V39.75H79.375V46.375ZM55.5625 59.625H47.625V53H55.5625V59.625ZM31.75 59.625H23.8125V53H31.75V59.625ZM71.4375 53H79.375V59.625H71.4375V53ZM103.188 46.375H95.25V39.75H103.188V46.375ZM95.25 53H103.188V59.625H95.25V53ZM71.4375 66.25H79.375V72.875H71.4375V66.25ZM55.5625 72.875H47.625V66.25H55.5625V72.875ZM31.75 72.875H23.8125V66.25H31.75V72.875ZM47.625 79.5H55.5625V86.125H47.625V79.5ZM23.8125 79.5H31.75V86.125H23.8125V79.5ZM127 6.625V78.0508C125.842 77.1536 124.602 76.3945 123.279 75.7734C121.956 75.1523 120.551 74.6003 119.062 74.1172V33.125H7.9375V92.75H77.3906L85.3281 99.375H0V6.625H23.8125V0H31.75V6.625H95.25V0H103.188V6.625H127ZM119.062 26.5V13.25H103.188V19.875H95.25V13.25H31.75V19.875H23.8125V13.25H7.9375V26.5H119.062ZM92.9556 79.5C95.0226 79.5 97.2964 79.4655 99.7769 79.3965C102.257 79.3275 104.779 79.3275 107.342 79.3965C109.905 79.4655 112.345 79.707 114.66 80.1211C116.975 80.5352 119.062 81.2253 120.923 82.1914C122.783 83.1576 124.251 84.5033 125.326 86.2285C126.401 87.9538 126.959 90.1276 127 92.75C127 94.5788 126.587 96.2868 125.76 97.874C124.933 99.4613 123.796 100.859 122.349 102.066C120.902 103.274 119.207 104.223 117.264 104.913C115.321 105.603 113.275 105.965 111.125 106V99.375C112.241 99.375 113.275 99.2025 114.226 98.8574C115.176 98.5124 116.003 98.0465 116.706 97.46C117.409 96.8734 117.988 96.166 118.442 95.3379C118.897 94.5098 119.104 93.6471 119.062 92.75C119.062 91.8184 118.856 90.9557 118.442 90.1621C118.029 89.3685 117.471 88.6784 116.768 88.0918C116.065 87.5052 115.218 87.0221 114.226 86.6426C113.233 86.263 112.2 86.0905 111.125 86.125H92.9556L103.001 94.5615L97.4204 99.2197L77.7627 82.8125L97.4204 66.4053L103.001 71.0635L92.9556 79.5Z",
+                fill: "black"
+            }, void 0, false, {
+                fileName: "[project]/src/assets/icons/WeddingDaySchedule.tsx",
+                lineNumber: 15,
+                columnNumber: 9
+            }, this)
+        }, void 0, false, {
+            fileName: "[project]/src/assets/icons/WeddingDaySchedule.tsx",
+            lineNumber: 8,
+            columnNumber: 7
+        }, this)
+    }, void 0, false);
+};
+}}),
+"[project]/src/assets/icons/WeddingQuestionnaire.tsx [app-ssr] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, z: __turbopack_require_stub__ } = __turbopack_context__;
+{
+__turbopack_esm__({
+    "WeddingQuestionnaire": (()=>WeddingQuestionnaire)
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$contexts$2f$ResponsiveContext$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/contexts/ResponsiveContext.tsx [app-ssr] (ecmascript)");
+;
+;
+const WeddingQuestionnaire = ()=>{
+    const { isMobile } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$contexts$2f$ResponsiveContext$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useResponsive"])();
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
+        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+            width: isMobile ? '60' : '124',
+            height: isMobile ? '60' : '124',
+            viewBox: "0 0 151 151",
+            fill: "none",
+            xmlns: "http://www.w3.org/2000/svg",
+            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                d: "M67.75 41.8571H106.5M44.5 41.8571H52.25M67.75 65H106.5M44.5 65H52.25M67.75 88.1429H106.5M44.5 88.1429H52.25M122 103.571V26.4286C122 22.3367 120.367 18.4123 117.46 15.5189C114.553 12.6255 110.611 11 106.5 11H44.5C40.3891 11 36.4467 12.6255 33.5398 15.5189C30.633 18.4123 29 22.3367 29 26.4286V103.571C29 107.663 30.633 111.588 33.5398 114.481C36.4467 117.374 40.3891 119 44.5 119H106.5C110.611 119 114.553 117.374 117.46 114.481C120.367 111.588 122 107.663 122 103.571Z",
+                stroke: "black",
+                strokeWidth: "4",
+                strokeLinecap: "round",
+                strokeLinejoin: "round"
+            }, void 0, false, {
+                fileName: "[project]/src/assets/icons/WeddingQuestionnaire.tsx",
+                lineNumber: 15,
+                columnNumber: 9
+            }, this)
+        }, void 0, false, {
+            fileName: "[project]/src/assets/icons/WeddingQuestionnaire.tsx",
+            lineNumber: 8,
+            columnNumber: 7
+        }, this)
+    }, void 0, false);
+};
+}}),
+"[project]/src/assets/icons/Services_one.tsx [app-ssr] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, z: __turbopack_require_stub__ } = __turbopack_context__;
+{
+__turbopack_esm__({
+    "Services_one": (()=>Services_one)
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$contexts$2f$ResponsiveContext$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/contexts/ResponsiveContext.tsx [app-ssr] (ecmascript)");
+;
+;
+const Services_one = ()=>{
+    const { isMobile } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$contexts$2f$ResponsiveContext$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useResponsive"])();
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
+        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+            width: isMobile ? '55' : '124',
+            height: isMobile ? '55' : '124',
+            viewBox: "0 0 55 55",
+            fill: "none",
+            xmlns: "http://www.w3.org/2000/svg",
+            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                d: "M45.833 34.3737V22.9154M9.16632 34.3737V16.0404C9.16632 11.7183 9.16632 9.55953 10.5092 8.21661C11.8522 6.8737 14.0109 6.8737 18.333 6.8737H26.3538M32.083 13.7487C32.083 13.7487 34.3747 13.7487 36.6663 18.332C36.6663 18.332 43.9469 6.8737 50.4163 4.58203M8.0159 36.6997L9.21215 34.3737H45.723L46.9834 36.6997C50.2903 42.8002 51.1153 45.8504 49.8572 48.1329C48.599 50.4154 45.2692 50.4154 38.6051 50.4154H16.3942C9.72778 50.4154 6.39569 50.4154 5.13986 48.1329C3.88173 45.8504 4.70673 42.8002 8.0159 36.6997Z",
+                stroke: "black",
+                strokeWidth: "3",
+                strokeLinecap: "round",
+                strokeLinejoin: "round"
+            }, void 0, false, {
+                fileName: "[project]/src/assets/icons/Services_one.tsx",
+                lineNumber: 15,
+                columnNumber: 9
+            }, this)
+        }, void 0, false, {
+            fileName: "[project]/src/assets/icons/Services_one.tsx",
+            lineNumber: 8,
+            columnNumber: 7
+        }, this)
+    }, void 0, false);
+};
+}}),
+"[project]/src/assets/icons/Services_two.tsx [app-ssr] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, z: __turbopack_require_stub__ } = __turbopack_context__;
+{
+__turbopack_esm__({
+    "Services_two": (()=>Services_two)
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$contexts$2f$ResponsiveContext$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/contexts/ResponsiveContext.tsx [app-ssr] (ecmascript)");
+;
+;
+const Services_two = ()=>{
+    const { isMobile } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$contexts$2f$ResponsiveContext$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useResponsive"])();
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
+        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+            width: isMobile ? '67' : '124',
+            height: isMobile ? '67' : '124',
+            viewBox: "0 0 67 67",
+            fill: "none",
+            xmlns: "http://www.w3.org/2000/svg",
+            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                d: "M43.2401 59.3774L33.3074 49.4447L35.2839 47.4682L43.2401 55.4244L59.1191 39.5455L61.0956 41.5192L43.2401 59.3774ZM33.5 30.707L54.9735 16.7487H12.0265L33.5 30.707ZM33.5 33.8225L11.1667 19.2193V48.5318C11.1667 49.0325 11.3277 49.4438 11.6496 49.7657C11.9716 50.0877 12.3838 50.2487 12.8863 50.2487H26.2417L29.0333 53.0404H12.8863C11.6003 53.0404 10.5274 52.6105 9.66754 51.7506C8.80771 50.8908 8.37686 49.8169 8.375 48.529V18.4684C8.375 17.1823 8.80585 16.1094 9.66754 15.2496C10.5292 14.3897 11.6012 13.9589 12.8835 13.957H54.1165C55.4006 13.957 56.4726 14.3879 57.3325 15.2496C58.1923 16.1113 58.6231 17.1842 58.625 18.4684V32.2201L55.8333 35.0118V19.2193L33.5 33.8225Z",
+                fill: "black",
+                strokeWidth: "3",
+                strokeLinecap: "round",
+                strokeLinejoin: "round"
+            }, void 0, false, {
+                fileName: "[project]/src/assets/icons/Services_two.tsx",
+                lineNumber: 15,
+                columnNumber: 9
+            }, this)
+        }, void 0, false, {
+            fileName: "[project]/src/assets/icons/Services_two.tsx",
+            lineNumber: 8,
+            columnNumber: 7
+        }, this)
+    }, void 0, false);
+};
+}}),
+"[project]/src/assets/icons/Services_three.tsx [app-ssr] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, z: __turbopack_require_stub__ } = __turbopack_context__;
+{
+__turbopack_esm__({
+    "Services_three": (()=>Services_three)
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$contexts$2f$ResponsiveContext$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/contexts/ResponsiveContext.tsx [app-ssr] (ecmascript)");
+;
+;
+const Services_three = ()=>{
+    const { isMobile } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$contexts$2f$ResponsiveContext$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useResponsive"])();
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
+        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+            width: isMobile ? '67' : '124',
+            height: isMobile ? '67' : '124',
+            viewBox: "0 0 53 53",
+            fill: "none",
+            xmlns: "http://www.w3.org/2000/svg",
+            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                fillRule: "evenodd",
+                clipRule: "evenodd",
+                d: "M22.0833 3.3125C18.4837 3.3125 16.0104 6.31583 16.0104 9.69458C16.0104 13.7579 18.7046 16.8717 21.0233 18.815C22.3583 19.9316 23.8094 20.9014 25.3517 21.7079C25.4842 21.7742 25.5946 21.8404 25.6829 21.8625L25.7712 21.9067H25.7933C26.235 22.1275 26.765 22.1275 27.2067 21.9287H27.2287L27.3171 21.8625C27.4054 21.8404 27.5158 21.7742 27.6483 21.7079C29.1906 20.9014 30.6417 19.9316 31.9767 18.815C34.2954 16.8717 36.9896 13.7579 36.9896 9.69458C36.9896 6.31583 34.5162 3.3125 30.9167 3.3125C29.6137 3.3125 28.4433 3.59958 27.3833 4.24C27.0742 4.43875 26.765 4.68167 26.5 4.92458C26.235 4.68167 25.9258 4.43875 25.6167 4.24C24.5567 3.59958 23.3862 3.3125 22.0833 3.3125ZM27.03 18.2629C26.8312 18.3733 26.6546 18.4837 26.5 18.5721C26.3454 18.4837 26.1688 18.3733 25.97 18.2629C24.9773 17.6753 24.0322 17.0107 23.1433 16.2754C21.0454 14.5308 19.3229 12.2562 19.3229 9.69458C19.3229 7.86167 20.5817 6.625 22.0833 6.625C22.8783 6.625 23.4304 6.80167 23.85 7.04458C24.2696 7.30958 24.6671 7.75125 25.0204 8.45792C25.3075 9.01 25.8817 9.36333 26.5 9.36333C27.1183 9.36333 27.6925 9.01 27.9796 8.45792C28.3329 7.75125 28.7304 7.30958 29.15 7.04458C29.5696 6.80167 30.1217 6.625 30.9167 6.625C32.4183 6.625 33.6771 7.86167 33.6771 9.69458C33.6771 12.2562 31.9546 14.5308 29.8567 16.2754C28.8408 17.1367 27.8029 17.7992 27.03 18.2629ZM18.7708 26.5C12.985 26.5 8.28125 31.2037 8.28125 36.9896C8.28125 42.7754 12.985 47.4792 18.7708 47.4792C20.6258 47.4792 22.3925 46.9933 23.8942 46.1321C21.6526 43.6152 20.4181 40.3599 20.4271 36.9896C20.4271 33.4783 21.73 30.2762 23.8942 27.8471C22.3925 26.9858 20.6258 26.5 18.7708 26.5ZM18.7708 50.7917C21.6417 50.7917 24.2917 49.9304 26.5 48.4287C28.7083 49.9304 31.3583 50.7917 34.2292 50.7917C41.8479 50.7917 48.0312 44.6083 48.0312 36.9896C48.0312 29.3708 41.8479 23.1875 34.2292 23.1875C31.3583 23.1875 28.7083 24.0487 26.5 25.5504C24.2917 24.0487 21.6417 23.1875 18.7708 23.1875C11.1521 23.1875 4.96875 29.3708 4.96875 36.9896C4.96875 44.6083 11.1521 50.7917 18.7708 50.7917ZM34.2292 26.5C32.3742 26.5 30.6075 26.9858 29.1058 27.8471C31.27 30.2762 32.5729 33.4783 32.5729 36.9896C32.5729 40.5008 31.27 43.7029 29.1058 46.1321C30.6075 46.9933 32.3742 47.4792 34.2292 47.4792C40.015 47.4792 44.7188 42.7754 44.7188 36.9896C44.7188 31.2037 40.015 26.5 34.2292 26.5ZM29.2604 36.9896C29.2604 34.2512 28.2225 31.7558 26.5 29.9008C24.7775 31.7558 23.7396 34.2512 23.7396 36.9896C23.7396 39.7279 24.7775 42.2233 26.5 44.0783C28.2225 42.2233 29.2604 39.7279 29.2604 36.9896Z",
+                fill: "black"
+            }, void 0, false, {
+                fileName: "[project]/src/assets/icons/Services_three.tsx",
+                lineNumber: 15,
+                columnNumber: 9
+            }, this)
+        }, void 0, false, {
+            fileName: "[project]/src/assets/icons/Services_three.tsx",
+            lineNumber: 8,
+            columnNumber: 7
+        }, this)
+    }, void 0, false);
+};
+}}),
+"[project]/src/assets/icons/Services_seven.tsx [app-ssr] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, z: __turbopack_require_stub__ } = __turbopack_context__;
+{
+__turbopack_esm__({
+    "Services_seven": (()=>Services_seven)
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$contexts$2f$ResponsiveContext$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/contexts/ResponsiveContext.tsx [app-ssr] (ecmascript)");
+;
+;
+const Services_seven = ()=>{
+    const { isMobile } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$contexts$2f$ResponsiveContext$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useResponsive"])();
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+        width: isMobile ? '60' : '124',
+        height: isMobile ? '60' : '124',
+        viewBox: "0 0 127 106",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+            d: "M55.5625 46.375H47.625V39.75H55.5625V46.375ZM79.375 46.375H71.4375V39.75H79.375V46.375ZM55.5625 59.625H47.625V53H55.5625V59.625ZM31.75 59.625H23.8125V53H31.75V59.625ZM71.4375 53H79.375V59.625H71.4375V53ZM103.188 46.375H95.25V39.75H103.188V46.375ZM95.25 53H103.188V59.625H95.25V53ZM71.4375 66.25H79.375V72.875H71.4375V66.25ZM55.5625 72.875H47.625V66.25H55.5625V72.875ZM31.75 72.875H23.8125V66.25H31.75V72.875ZM47.625 79.5H55.5625V86.125H47.625V79.5ZM23.8125 79.5H31.75V86.125H23.8125V79.5ZM127 6.625V78.0508C125.842 77.1536 124.602 76.3945 123.279 75.7734C121.956 75.1523 120.551 74.6003 119.062 74.1172V33.125H7.9375V92.75H77.3906L85.3281 99.375H0V6.625H23.8125V0H31.75V6.625H95.25V0H103.188V6.625H127ZM119.062 26.5V13.25H103.188V19.875H95.25V13.25H31.75V19.875H23.8125V13.25H7.9375V26.5H119.062ZM92.9556 79.5C95.0226 79.5 97.2964 79.4655 99.7769 79.3965C102.257 79.3275 104.779 79.3275 107.342 79.3965C109.905 79.4655 112.345 79.707 114.66 80.1211C116.975 80.5352 119.062 81.2253 120.923 82.1914C122.783 83.1576 124.251 84.5033 125.326 86.2285C126.401 87.9538 126.959 90.1276 127 92.75C127 94.5788 126.587 96.2868 125.76 97.874C124.933 99.4613 123.796 100.859 122.349 102.066C120.902 103.274 119.207 104.223 117.264 104.913C115.321 105.603 113.275 105.965 111.125 106V99.375C112.241 99.375 113.275 99.2025 114.226 98.8574C115.176 98.5124 116.003 98.0465 116.706 97.46C117.409 96.8734 117.988 96.166 118.442 95.3379C118.897 94.5098 119.104 93.6471 119.062 92.75C119.062 91.8184 118.856 90.9557 118.442 90.1621C118.029 89.3685 117.471 88.6784 116.768 88.0918C116.065 87.5052 115.218 87.0221 114.226 86.6426C113.233 86.263 112.2 86.0905 111.125 86.125H92.9556L103.001 94.5615L97.4204 99.2197L77.7627 82.8125L97.4204 66.4053L103.001 71.0635L92.9556 79.5Z",
+            fill: "none",
+            stroke: "black",
+            strokeWidth: isMobile ? 1 : 3
+        }, void 0, false, {
+            fileName: "[project]/src/assets/icons/Services_seven.tsx",
+            lineNumber: 15,
+            columnNumber: 7
+        }, this)
+    }, void 0, false, {
+        fileName: "[project]/src/assets/icons/Services_seven.tsx",
+        lineNumber: 8,
+        columnNumber: 5
+    }, this);
+};
+}}),
+"[project]/src/components/HairstylingExperience/HairstylingExperience.tsx [app-ssr] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, z: __turbopack_require_stub__ } = __turbopack_context__;
+{
+__turbopack_esm__({
+    "HairstylingExperience": (()=>HairstylingExperience)
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$HairstylingExperience$2f$Styled$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/components/HairstylingExperience/Styled.tsx [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$icons$2f$WeddingDaySchedule$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/assets/icons/WeddingDaySchedule.tsx [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$icons$2f$WeddingQuestionnaire$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/assets/icons/WeddingQuestionnaire.tsx [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$contexts$2f$ResponsiveContext$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/contexts/ResponsiveContext.tsx [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$icons$2f$Services_one$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/assets/icons/Services_one.tsx [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$icons$2f$Services_two$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/assets/icons/Services_two.tsx [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$icons$2f$Services_three$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/assets/icons/Services_three.tsx [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$icons$2f$Services_seven$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/assets/icons/Services_seven.tsx [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Container$2f$Container$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Container$3e$__ = __turbopack_import__("[project]/node_modules/@mui/material/Container/Container.js [app-ssr] (ecmascript) <export default as Container>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Button$2f$Button$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Button$3e$__ = __turbopack_import__("[project]/node_modules/@mui/material/Button/Button.js [app-ssr] (ecmascript) <export default as Button>");
+'use client';
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+const config = [
+    {
+        title: 'icon1',
+        component: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$icons$2f$Services_one$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Services_one"], {}, void 0, false, {
+            fileName: "[project]/src/components/HairstylingExperience/HairstylingExperience.tsx",
+            lineNumber: 29,
+            columnNumber: 16
+        }, this),
+        text: 'Reach out',
+        gridArea: '1 / 1 / 2 / 4',
+        gridMobile: '1 / 1 / 2 / 6'
+    },
+    {
+        title: 'icon2',
+        component: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$icons$2f$Services_two$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Services_two"], {}, void 0, false, {
+            fileName: "[project]/src/components/HairstylingExperience/HairstylingExperience.tsx",
+            lineNumber: 36,
+            columnNumber: 16
+        }, this),
+        text: 'Receive the proposal',
+        gridArea: '1 / 5 / 2 / 8',
+        gridMobile: '1 / 6 / 2 / 11'
+    },
+    {
+        title: 'icon3',
+        component: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$icons$2f$Services_three$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Services_three"], {}, void 0, false, {
+            fileName: "[project]/src/components/HairstylingExperience/HairstylingExperience.tsx",
+            lineNumber: 43,
+            columnNumber: 16
+        }, this),
+        text: 'Make it official',
+        gridArea: '1 / 9 / 2 / 12',
+        gridMobile: '1 / 11 / 2 / 16'
+    },
+    {
+        title: 'icon4',
+        component: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$icons$2f$Services_one$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Services_one"], {}, void 0, false, {
+            fileName: "[project]/src/components/HairstylingExperience/HairstylingExperience.tsx",
+            lineNumber: 50,
+            columnNumber: 16
+        }, this),
+        text: 'Bridal preview experience',
+        gridArea: '1 / 13 / 2 / 16',
+        gridMobile: '2 / 1 / 3 / 6'
+    },
+    {
+        title: 'icon5',
+        component: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$icons$2f$WeddingQuestionnaire$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["WeddingQuestionnaire"], {}, void 0, false, {
+            fileName: "[project]/src/components/HairstylingExperience/HairstylingExperience.tsx",
+            lineNumber: 57,
+            columnNumber: 16
+        }, this),
+        text: 'Wedding questionaire',
+        gridArea: '2 / 3 / 3 / 6',
+        gridMobile: '2 / 6 / 3 / 11'
+    },
+    {
+        title: 'icon6',
+        component: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$icons$2f$WeddingDaySchedule$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["WeddingDaySchedule"], {}, void 0, false, {
+            fileName: "[project]/src/components/HairstylingExperience/HairstylingExperience.tsx",
+            lineNumber: 64,
+            columnNumber: 16
+        }, this),
+        text: 'Wedding day schedule',
+        gridArea: '2 / 7 / 3 / 10',
+        gridMobile: '2 / 11 / 3 / 16'
+    },
+    {
+        title: 'icon7',
+        component: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$icons$2f$Services_seven$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Services_seven"], {}, void 0, false, {
+            fileName: "[project]/src/components/HairstylingExperience/HairstylingExperience.tsx",
+            lineNumber: 71,
+            columnNumber: 16
+        }, this),
+        text: 'Dream wedding hair',
+        gridArea: '2 / 11 / 3 / 14',
+        gridMobile: '3 / 5 / 4 / 12'
+    }
+];
+const HairstylingExperience = ()=>{
+    const { isMobile } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$contexts$2f$ResponsiveContext$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useResponsive"])();
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$HairstylingExperience$2f$Styled$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["StyledSection"], {
+        isMobile: isMobile,
+        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Container$2f$Container$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Container$3e$__["Container"], {
+            maxWidth: "xl",
+            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$HairstylingExperience$2f$Styled$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["StyledWrapper"], {
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$HairstylingExperience$2f$Styled$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["StyledH2"], {
+                        variant: "h2",
+                        isMobile: isMobile,
+                        children: "let's make your bridal hairstyling experience easy and fun"
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/HairstylingExperience/HairstylingExperience.tsx",
+                        lineNumber: 84,
+                        columnNumber: 11
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$HairstylingExperience$2f$Styled$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["StyledH3"], {
+                        variant: "h3",
+                        isMobile: isMobile,
+                        children: "here’s how it works"
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/HairstylingExperience/HairstylingExperience.tsx",
+                        lineNumber: 87,
+                        columnNumber: 11
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$HairstylingExperience$2f$Styled$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["StyledUl"], {
+                        isMobile: isMobile,
+                        children: config.map((item)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$HairstylingExperience$2f$Styled$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["StyledLi"], {
+                                gridArea: item.gridArea,
+                                gridMobile: item.gridMobile,
+                                isMobile: isMobile,
+                                children: [
+                                    item.component,
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$HairstylingExperience$2f$Styled$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["StyledP"], {
+                                        variant: "body2",
+                                        isMobile: isMobile,
+                                        children: item.text
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/HairstylingExperience/HairstylingExperience.tsx",
+                                        lineNumber: 93,
+                                        columnNumber: 17
+                                    }, this)
+                                ]
+                            }, item.title, true, {
+                                fileName: "[project]/src/components/HairstylingExperience/HairstylingExperience.tsx",
+                                lineNumber: 91,
+                                columnNumber: 15
+                            }, this))
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/HairstylingExperience/HairstylingExperience.tsx",
+                        lineNumber: 89,
+                        columnNumber: 11
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Button$2f$Button$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Button$3e$__["Button"], {
+                        variant: "contained",
+                        href: "/contact#form",
+                        children: "ok, let's do this"
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/HairstylingExperience/HairstylingExperience.tsx",
+                        lineNumber: 97,
+                        columnNumber: 11
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/src/components/HairstylingExperience/HairstylingExperience.tsx",
+                lineNumber: 83,
+                columnNumber: 9
+            }, this)
+        }, void 0, false, {
+            fileName: "[project]/src/components/HairstylingExperience/HairstylingExperience.tsx",
+            lineNumber: 82,
+            columnNumber: 7
+        }, this)
+    }, void 0, false, {
+        fileName: "[project]/src/components/HairstylingExperience/HairstylingExperience.tsx",
+        lineNumber: 81,
+        columnNumber: 5
+    }, this);
+};
+}}),
+"[project]/src/components/Faqs/Styled.tsx [app-ssr] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, z: __turbopack_require_stub__ } = __turbopack_context__;
+{
+__turbopack_esm__({
+    "StyledArrowWrapper": (()=>StyledArrowWrapper),
+    "StyledH1": (()=>StyledH1),
+    "StyledHiddenContainer": (()=>StyledHiddenContainer),
+    "StyledLi": (()=>StyledLi),
+    "StyledP": (()=>StyledP),
+    "StyledSection": (()=>StyledSection),
+    "StyledTextContainer": (()=>StyledTextContainer),
+    "StyledTextWrapper": (()=>StyledTextWrapper),
+    "StyledUl": (()=>StyledUl)
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__ = __turbopack_import__("[project]/node_modules/@mui/material/styles/styled.js [app-ssr] (ecmascript) <locals> <export default as styled>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@mui/material/Typography/Typography.js [app-ssr] (ecmascript)");
+;
+;
+const StyledSection = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__["styled"])('section')(({ isMobile })=>({
+        backgroundColor: '#F5F5F5',
+        paddingBottom: isMobile ? '0' : '20px',
+        paddingTop: isMobile ? '0' : '50px'
+    }));
+const StyledH1 = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__["styled"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"])(()=>({
+        fontFamily: 'Playfair Display',
+        //   textTransform: 'uppercase',
+        color: '#000000',
+        textAlign: 'center'
+    }));
+const StyledP = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__["styled"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"])(()=>({
+        fontFamily: 'Montserrat',
+        fontWeight: 400,
+        lineHeight: '120%',
+        color: '#000000',
+        textAlign: 'left',
+        position: 'relative',
+        paddingLeft: '2rem'
+    }));
+const StyledUl = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__["styled"])('ul')(()=>({
+        display: 'flex',
+        flexDirection: 'column',
+        margin: '30px 0',
+        gap: '20px',
+        listStyle: 'none',
+        padding: 0
+    }));
+const StyledLi = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__["styled"])('li')(({ isActive })=>({
+        display: 'grid',
+        gridTemplateColumns: '1fr 25px',
+        maxWidth: '1085px'
+    }));
+const StyledHiddenContainer = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__["styled"])('div')(()=>({
+        marginTop: '15px',
+        paddingTop: '15px'
+    }));
+const StyledTextContainer = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__["styled"])('div')(()=>({}));
+const StyledArrowWrapper = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__["styled"])('div')(({ isActive })=>({
+        right: '100px',
+        top: '0',
+        width: '25px',
+        height: '25px',
+        cursor: 'pointer',
+        transform: isActive ? 'rotate(180deg)' : 'rotate(0deg)',
+        transition: 'transform 0.3s ease'
+    }));
+const StyledTextWrapper = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__["styled"])('div')(()=>({
+        display: 'flex',
+        flexDirection: 'column',
+        gap: '10px'
+    }));
+}}),
+"[project]/src/assets/icons/FilledArrow.tsx [app-ssr] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, z: __turbopack_require_stub__ } = __turbopack_context__;
+{
+__turbopack_esm__({
+    "FilledArrow": (()=>FilledArrow)
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
+;
+const FilledArrow = ()=>{
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
+        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+            width: "29",
+            height: "29",
+            viewBox: "0 0 29 29",
+            fill: "none",
+            xmlns: "http://www.w3.org/2000/svg",
+            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                d: "M25.5925 6.25894L3.95492 5.77247C3.73583 5.76823 3.51974 5.82382 3.3299 5.93326C3.14006 6.0427 2.98366 6.20184 2.87754 6.39356C2.77141 6.58527 2.71958 6.8023 2.72763 7.02128C2.73567 7.24026 2.80329 7.45289 2.9232 7.6363L13.3907 23.5067C13.8245 24.1647 14.9039 24.189 15.3681 23.5511L26.5382 8.16723C26.6675 7.9898 26.7457 7.78034 26.7643 7.56159C26.7829 7.34285 26.7412 7.12319 26.6437 6.92649C26.5462 6.72979 26.3967 6.56356 26.2114 6.44587C26.026 6.32818 25.812 6.26353 25.5925 6.25894Z",
+                fill: "#8E7A74"
+            }, void 0, false, {
+                fileName: "[project]/src/assets/icons/FilledArrow.tsx",
+                lineNumber: 13,
+                columnNumber: 9
+            }, this)
+        }, void 0, false, {
+            fileName: "[project]/src/assets/icons/FilledArrow.tsx",
+            lineNumber: 6,
+            columnNumber: 7
+        }, this)
+    }, void 0, false);
+};
+}}),
+"[project]/src/components/Faqs/Faqs.tsx [app-ssr] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, z: __turbopack_require_stub__ } = __turbopack_context__;
+{
+__turbopack_esm__({
+    "Faqs": (()=>Faqs)
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Faqs$2f$Styled$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/components/Faqs/Styled.tsx [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$icons$2f$FilledArrow$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/assets/icons/FilledArrow.tsx [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$contexts$2f$ResponsiveContext$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/contexts/ResponsiveContext.tsx [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Container$2f$Container$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Container$3e$__ = __turbopack_import__("[project]/node_modules/@mui/material/Container/Container.js [app-ssr] (ecmascript) <export default as Container>");
+'use client';
+;
+;
+;
+;
+;
+;
+const config = [
+    {
+        title: 'faq1',
+        textQuestion: 'HOW DO I RESERVE MY WEDDING DATE?',
+        textAnswer: 'To secure your date, I require a prepayment of €100. This amount is deducted from the total cost on your wedding day. Once the invoice is paid, your date is officially booked in my calendar.'
+    },
+    {
+        title: 'faq2',
+        textQuestion: 'WHAT HAPPENS IF WE DON\'T "CLICK" AT THE TRIAL?',
+        textAnswer: 'The trial is not only for testing the look, but also to ensure we feel aligned. If you feel it\'s not the right match, I respect your decision and return your prepayment. Your peace of mind matters most.'
+    },
+    {
+        title: 'faq3',
+        textQuestion: 'DO YOU USE PROFESSIONAL AND HYGIENIC PRODUCTS?',
+        textAnswer: 'Absolutely. I work only with high-end, professional cosmetics and follow strict hygiene protocols. All brushes and tools are carefully disinfected before each use. Additionally, I bring a full kit (40+ kg!) and often buy extra products tailored to your skin tone, hair type, or personal preferences — so your look is truly custom.'
+    },
+    {
+        title: 'faq4',
+        textQuestion: 'CAN I GET A REFUND IF I CANCEL?',
+        textAnswer: 'To secure your date, I require a prepayment of €100. This amount is deducted from the total cost on your wedding day. Once the invoice is paid, your date is officially booked in my calendar.'
+    },
+    {
+        title: 'faq5',
+        textQuestion: 'HOW LONG DO YOU STAY ON THE WEDDING DAY?',
+        textAnswer: 'My standard bridal package includes my presence until you\'re fully dressed and ready to walk out the door. However, many brides choose my *Full-Day Personal Beauty Assistant* service, where I stay with you throughout the entire day — for touch-ups, look changes, photos, and emotional support. This is the ultimate peace-of-mind option for brides who want to feel effortlessly flawless at every moment.'
+    },
+    {
+        title: 'faq6',
+        textQuestion: 'CAN YOU HELP ME CHOOSE THE RIGHT HAIRSTYLE AND MAKEUP?',
+        textAnswer: 'Yes, that\'s part of my signature approach. During the trial, I guide you through all options based on your dress, face shape, hair texture, and most importantly — how you want to feel. I\'m not here to impose trends, but to help you find the look that reflects you.'
+    },
+    {
+        title: 'faq7',
+        textQuestion: 'DO YOU TRAVEL TO OTHER CITIES OR COUNTRIES?',
+        textAnswer: 'Yes, I do. Travel and parking costs are calculated based on your wedding location. I\'m based in the Netherlands but often travel for destination weddings across Europe.'
+    }
+];
+const Faqs = ()=>{
+    const { isMobile } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$contexts$2f$ResponsiveContext$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useResponsive"])();
+    const [active, setActive] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])({
+        faq1: false,
+        faq2: false,
+        faq3: false,
+        faq4: false,
+        faq5: false,
+        faq6: false,
+        faq7: false
+    });
+    const handleToggle = (title)=>{
+        setActive((prev)=>({
+                ...prev,
+                [title]: !prev[title]
+            }));
+    };
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Faqs$2f$Styled$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["StyledSection"], {
+        id: "faqs",
+        isMobile: isMobile,
+        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Container$2f$Container$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Container$3e$__["Container"], {
+            children: [
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Faqs$2f$Styled$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["StyledH1"], {
+                    variant: "h2",
+                    children: "FAQs"
+                }, void 0, false, {
+                    fileName: "[project]/src/components/Faqs/Faqs.tsx",
+                    lineNumber: 81,
+                    columnNumber: 11
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Faqs$2f$Styled$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["StyledUl"], {
+                    children: config.map((item)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Faqs$2f$Styled$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["StyledLi"], {
+                            isActive: active[item.title],
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Faqs$2f$Styled$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["StyledTextWrapper"], {
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Faqs$2f$Styled$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["StyledP"], {
+                                            variant: "body1",
+                                            children: item.textQuestion
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/Faqs/Faqs.tsx",
+                                            lineNumber: 89,
+                                            columnNumber: 17
+                                        }, this),
+                                        active[item.title] && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Faqs$2f$Styled$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["StyledHiddenContainer"], {
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Faqs$2f$Styled$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["StyledP"], {
+                                                variant: "body1",
+                                                children: item.textAnswer
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/components/Faqs/Faqs.tsx",
+                                                lineNumber: 93,
+                                                columnNumber: 21
+                                            }, this)
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/Faqs/Faqs.tsx",
+                                            lineNumber: 92,
+                                            columnNumber: 19
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/src/components/Faqs/Faqs.tsx",
+                                    lineNumber: 88,
+                                    columnNumber: 17
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Faqs$2f$Styled$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["StyledArrowWrapper"], {
+                                    onClick: ()=>handleToggle(item.title),
+                                    isActive: active[item.title],
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$icons$2f$FilledArrow$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["FilledArrow"], {}, void 0, false, {
+                                        fileName: "[project]/src/components/Faqs/Faqs.tsx",
+                                        lineNumber: 104,
+                                        columnNumber: 19
+                                    }, this)
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/Faqs/Faqs.tsx",
+                                    lineNumber: 97,
+                                    columnNumber: 19
+                                }, this)
+                            ]
+                        }, item.title, true, {
+                            fileName: "[project]/src/components/Faqs/Faqs.tsx",
+                            lineNumber: 84,
+                            columnNumber: 15
+                        }, this))
+                }, void 0, false, {
+                    fileName: "[project]/src/components/Faqs/Faqs.tsx",
+                    lineNumber: 82,
+                    columnNumber: 11
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "[project]/src/components/Faqs/Faqs.tsx",
+            lineNumber: 80,
+            columnNumber: 9
+        }, this)
+    }, void 0, false, {
+        fileName: "[project]/src/components/Faqs/Faqs.tsx",
+        lineNumber: 79,
+        columnNumber: 7
+    }, this);
+};
+}}),
+"[project]/src/components/MenuOpen.tsx/Styled.tsx [app-ssr] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, z: __turbopack_require_stub__ } = __turbopack_context__;
+{
+__turbopack_esm__({
+    "StyledLi": (()=>StyledLi),
+    "StyledLink": (()=>StyledLink),
+    "StyledMenu": (()=>StyledMenu),
+    "StyledUl": (()=>StyledUl)
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/client/app-dir/link.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__ = __turbopack_import__("[project]/node_modules/@mui/material/styles/styled.js [app-ssr] (ecmascript) <locals> <export default as styled>");
+;
+;
+const StyledMenu = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__["styled"])('div')(()=>({
+        position: 'fixed',
+        top: '75px',
+        left: 0,
+        width: '100%',
+        height: '100%',
+        backgroundColor: 'rgba(0, 0, 0, 0.5)',
+        zIndex: 1000
+    }));
+const StyledUl = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__["styled"])('ul')(()=>({
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'center',
+        gap: '15px',
+        padding: '30px',
+        backgroundColor: 'white'
+    }));
+const StyledLi = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__["styled"])('li')(()=>({}));
+const StyledLink = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__["styled"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"])(()=>({
+        fontFamily: 'Playfair Display',
+        textTransform: 'uppercase',
+        fontWeight: 400,
+        fontSize: '20px',
+        lineHeight: '120%',
+        letterSpacing: '6%',
+        color: 'black'
+    }));
+}}),
+"[project]/src/components/MenuOpen.tsx/MenuOpen.tsx [app-ssr] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, z: __turbopack_require_stub__ } = __turbopack_context__;
+{
+__turbopack_esm__({
+    "MenuOpen": (()=>MenuOpen)
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$MenuOpen$2e$tsx$2f$Styled$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/components/MenuOpen.tsx/Styled.tsx [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$contexts$2f$MenuContext$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/contexts/MenuContext.tsx [app-ssr] (ecmascript)");
+'use client';
+;
+;
+;
+const navItems = [
+    {
+        label: 'Home',
+        url: '/'
+    },
+    {
+        label: 'About',
+        url: '/about'
+    },
+    {
+        label: 'Services',
+        url: '/services'
+    },
+    {
+        label: 'Portfolio',
+        url: '/portfolio'
+    },
+    {
+        label: 'FAQS',
+        url: '/services#faqs'
+    },
+    {
+        label: 'Contact',
+        url: '/contact'
+    }
+];
+const MenuOpen = ()=>{
+    const { setIsMenuOpen } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$contexts$2f$MenuContext$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useMenuOpen"])();
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$MenuOpen$2e$tsx$2f$Styled$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["StyledMenu"], {
+        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$MenuOpen$2e$tsx$2f$Styled$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["StyledUl"], {
+            children: navItems.map((item)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$MenuOpen$2e$tsx$2f$Styled$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["StyledLi"], {
+                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$MenuOpen$2e$tsx$2f$Styled$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["StyledLink"], {
+                        href: item.url,
+                        onClick: ()=>setIsMenuOpen(false),
+                        children: item.label
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/MenuOpen.tsx/MenuOpen.tsx",
+                        lineNumber: 41,
+                        columnNumber: 15
+                    }, this)
+                }, item.label, false, {
+                    fileName: "[project]/src/components/MenuOpen.tsx/MenuOpen.tsx",
+                    lineNumber: 40,
+                    columnNumber: 13
+                }, this))
+        }, void 0, false, {
+            fileName: "[project]/src/components/MenuOpen.tsx/MenuOpen.tsx",
+            lineNumber: 38,
+            columnNumber: 9
+        }, this)
+    }, void 0, false, {
+        fileName: "[project]/src/components/MenuOpen.tsx/MenuOpen.tsx",
+        lineNumber: 37,
+        columnNumber: 7
+    }, this);
+};
+}}),
+"[project]/src/components/Pages/ServicesPage/ServicesPage.tsx [app-ssr] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, z: __turbopack_require_stub__ } = __turbopack_context__;
+{
+__turbopack_esm__({
+    "ServicesPage": (()=>ServicesPage)
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$WeddingMorning$2f$WeddingMorning$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/components/WeddingMorning/WeddingMorning.tsx [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$WhatYouCanExpect$2f$WhatYouCanExpect$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/components/WhatYouCanExpect/WhatYouCanExpect.tsx [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$BridalPackages$2f$BridalPackages$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/components/BridalPackages/BridalPackages.tsx [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$AdditionalServices$2f$AdditionalServices$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/components/AdditionalServices/AdditionalServices.tsx [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$HairstylingExperience$2f$HairstylingExperience$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/components/HairstylingExperience/HairstylingExperience.tsx [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Faqs$2f$Faqs$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/components/Faqs/Faqs.tsx [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$contexts$2f$MenuContext$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/contexts/MenuContext.tsx [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$MenuOpen$2e$tsx$2f$MenuOpen$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/components/MenuOpen.tsx/MenuOpen.tsx [app-ssr] (ecmascript)");
+'use client';
+;
+;
+;
+;
+;
+;
+;
+;
+;
+const ServicesPage = ()=>{
+    const { isMenuOpen } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$contexts$2f$MenuContext$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useMenuOpen"])();
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("main", {
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$WeddingMorning$2f$WeddingMorning$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["WeddingMorning"], {}, void 0, false, {
+                fileName: "[project]/src/components/Pages/ServicesPage/ServicesPage.tsx",
+                lineNumber: 16,
+                columnNumber: 9
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$WhatYouCanExpect$2f$WhatYouCanExpect$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["WhatYouCanExpect"], {}, void 0, false, {
+                fileName: "[project]/src/components/Pages/ServicesPage/ServicesPage.tsx",
+                lineNumber: 17,
+                columnNumber: 9
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$BridalPackages$2f$BridalPackages$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["BridalPackages"], {}, void 0, false, {
+                fileName: "[project]/src/components/Pages/ServicesPage/ServicesPage.tsx",
+                lineNumber: 18,
+                columnNumber: 9
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$AdditionalServices$2f$AdditionalServices$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["AdditionalServices"], {}, void 0, false, {
+                fileName: "[project]/src/components/Pages/ServicesPage/ServicesPage.tsx",
+                lineNumber: 19,
+                columnNumber: 9
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$HairstylingExperience$2f$HairstylingExperience$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["HairstylingExperience"], {}, void 0, false, {
+                fileName: "[project]/src/components/Pages/ServicesPage/ServicesPage.tsx",
+                lineNumber: 20,
+                columnNumber: 9
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Faqs$2f$Faqs$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Faqs"], {}, void 0, false, {
+                fileName: "[project]/src/components/Pages/ServicesPage/ServicesPage.tsx",
+                lineNumber: 21,
+                columnNumber: 9
+            }, this),
+            isMenuOpen && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$MenuOpen$2e$tsx$2f$MenuOpen$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["MenuOpen"], {}, void 0, false, {
+                fileName: "[project]/src/components/Pages/ServicesPage/ServicesPage.tsx",
+                lineNumber: 22,
+                columnNumber: 24
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/src/components/Pages/ServicesPage/ServicesPage.tsx",
+        lineNumber: 15,
+        columnNumber: 5
+    }, this);
+};
+}}),
+"[project]/src/app/[locale]/services/page.tsx [app-rsc] (ecmascript, Next.js server component, client modules ssr)": ((__turbopack_context__) => {
+
+var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, t: __turbopack_require_real__ } = __turbopack_context__;
+{
+}}),
+
+};
+
+//# sourceMappingURL=src_c16bc4._.js.map

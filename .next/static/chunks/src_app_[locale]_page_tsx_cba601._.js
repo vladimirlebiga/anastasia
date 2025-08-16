@@ -1,0 +1,13 @@
+(globalThis.TURBOPACK = globalThis.TURBOPACK || []).push([
+    "static/chunks/src_app_[locale]_page_tsx_cba601._.js",
+    {},
+]);
+(globalThis.TURBOPACK_CHUNK_LISTS = globalThis.TURBOPACK_CHUNK_LISTS || []).push({
+  "path": "static/chunks/src_app_[locale]_page_tsx_cba601._.js",
+  "chunks": [
+    "static/chunks/src_893e8d._.js",
+    "static/chunks/node_modules_swiper_00abcd._.js",
+    "static/chunks/node_modules_swiper_b3908b._.css"
+  ],
+  "source": "dynamic"
+});

@@ -4,8 +4,8 @@ export const TelegramIcon = () => {
   return (
     <>
       <svg
-        width='23'
-        height='20'
+        width='28'
+        height='28'
         viewBox='0 0 23 20'
         fill='none'
         xmlns='http://www.w3.org/2000/svg'
@@ -18,3 +18,7 @@ export const TelegramIcon = () => {
     </>
   );
 };
+
+
+
+
