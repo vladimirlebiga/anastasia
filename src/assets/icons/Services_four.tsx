@@ -3,11 +3,12 @@ import { useResponsive } from '@/contexts/ResponsiveContext';
 
 export const Services_four = () => {
   const { isMobile } = useResponsive();
+
   return (
     <>
       <svg
-       width={isMobile ? '60' : '140'}
-       height={isMobile ? '60' : '140'}
+        width={isMobile ? '65' : '124'}
+        height={isMobile ? '65' : '124'}
         viewBox='0 0 125 133'
         fill='none'
         xmlns='http://www.w3.org/2000/svg'

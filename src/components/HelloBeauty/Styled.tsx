@@ -22,8 +22,8 @@ export const StyledSection = styled('section', {
     shouldForwardProp: (prop) => prop !== 'isMobile',
   })<{ isMobile: boolean }>(({ isMobile }) => ({
     gridArea: isMobile ? '2 / 1 / 7 / 2' : '1 / 1 / 6 / 2',
-    width: isMobile ? '264px' : 'auto',
-    height: isMobile ? '264px' : 'auto',
+    width: isMobile ? 'auto' : 'auto',
+    height: isMobile ? 'auto' : 'auto',
     margin: isMobile ? '0 auto' : '0',
     
   }));

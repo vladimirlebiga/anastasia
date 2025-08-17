@@ -85,7 +85,7 @@ export const TrustedBy = () => {
                 isMobile={isMobile}
               />
               {isMobile && (
-                <StyledImgText>
+                <StyledImgText variant='body2'>
                   “ You deserve to feel calm, stunning and truly like a queen”
                 </StyledImgText>
               )}

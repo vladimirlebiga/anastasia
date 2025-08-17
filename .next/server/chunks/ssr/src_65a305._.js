@@ -39,8 +39,8 @@ const StyledWrapperLeft = (0, __TURBOPACK__imported__module__$5b$project$5d2f$no
     shouldForwardProp: (prop)=>prop !== 'isMobile'
 })(({ isMobile })=>({
         gridArea: isMobile ? '2 / 1 / 7 / 2' : '1 / 1 / 6 / 2',
-        width: isMobile ? '264px' : 'auto',
-        height: isMobile ? '264px' : 'auto',
+        width: isMobile ? 'auto' : 'auto',
+        height: isMobile ? 'auto' : 'auto',
         margin: isMobile ? '0 auto' : '0'
     }));
 const StyledWrapperRight = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__["styled"])('div', {
@@ -331,7 +331,7 @@ const swiperConfiguration = {
         ],
         height: '250px',
         imgHeight: '210px',
-        imgWidth: '160px'
+        imgWidth: '100%'
     },
     // hairstyles: {
     //   navigation: false,
@@ -389,7 +389,7 @@ const swiperConfiguration = {
         slidesPerView: 1.5,
         centeredSlides: false,
         freeMode: false,
-        spaceBetween: 10,
+        spaceBetween: 1,
         loop: true,
         pagination: {
             clickable: true
@@ -406,7 +406,7 @@ const swiperConfiguration = {
         slidesPerView: 2.3,
         centeredSlides: false,
         freeMode: false,
-        spaceBetween: 0,
+        spaceBetween: 5,
         loop: true,
         pagination: {
             clickable: true
@@ -416,7 +416,7 @@ const swiperConfiguration = {
         ],
         height: '380px',
         imgHeight: '350px',
-        imgWidth: '480px'
+        imgWidth: '100%'
     }
 };
 const SwiperComponent = ({ config, id })=>{

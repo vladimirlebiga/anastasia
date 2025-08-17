@@ -60,7 +60,7 @@ export const StyledLi = styled('li', {
   width: '100%',
   height: isMobile ? '200px' : '500px',
   backgroundImage: `url(${url})`,
-  backgroundSize: '130% 150%',
+  backgroundSize: '100% 100%',
   backgroundPosition: 'center',
   backgroundRepeat: 'no-repeat',
   borderRadius: '10px',

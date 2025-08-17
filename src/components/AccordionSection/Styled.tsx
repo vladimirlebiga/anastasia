@@ -85,12 +85,12 @@ export const StyledLi = styled('li')<{ isActive: boolean; isMobile: boolean }>(
   ({ isActive, isMobile }) => ({
     display: 'flex',
     flexDirection: 'column',
-    // minHeight: isActive ? '1206px' : 'auto',
     minHeight: isMobile ? '300px' : isActive ? '1206px' : 'auto',
     borderRadius: '10px',
     border: '1px solid #AEA8A8',
     backgroundColor: '#F5F5F5',
     padding: '20px',
+    alignItems: 'center',
   })
 );
 
@@ -98,6 +98,7 @@ export const StyledImage = styled('img')<{ isMobile: boolean }>(
   ({ isMobile }) => ({
     width: '100%',
     height: isMobile ? '150px' : '230px',
+    maxWidth: isMobile ? '150px' : '230px',
     marginBottom: '10px',
     borderRadius: '10px',
   })

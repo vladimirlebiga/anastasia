@@ -19,11 +19,12 @@ import {
 } from './Styled';
 import { Arrow } from '../../assets/icons/Arrow';
 import { useResponsive } from '@/contexts/ResponsiveContext';
+import { useTablet } from '@/contexts/TabletContext';
 
 const config = [
   {
     title: 'Accordion1',
-    image: '/img/homepage/Homepage9.jpg',
+    image: '/img/services/basic.jpg',
     name: 'Basic',
     name2: 'Package',
     price: '€ 800',
@@ -38,7 +39,7 @@ const config = [
   },
   {
     title: 'Accordion2',
-    image: '/img/homepage/Homepage10.jpg',
+    image: '/img/services/basic2guest.png',
     name: 'Basic',
     spanName: ' +2guests',
     name2: 'Package',
@@ -55,7 +56,7 @@ const config = [
   },
   {
     title: 'Accordion3',
-    image: '/img/homepage/Homepage11.jpg',
+    image: '/img/services/luxe.jpg',
     name: 'Luxe',
     name2: 'Package',
     price: '€ 1200',
@@ -71,7 +72,7 @@ const config = [
   },
   {
     title: 'Accordion4',
-    image: '/img/homepage/Homepage12.png',
+    image: '/img/services/2grooms.jpg',
     name: '2 grooms',
     name2: 'Package',
     price: '€ 400',
@@ -95,7 +96,8 @@ export const AccordionSection = () => {
   const handleToggle = (title: keyof typeof active) => {
     setActive((prev) => ({ ...prev, [title]: !prev[title] }));
   };
-  const { isMobile } = useResponsive();
+  // const { isMobile } = useResponsive();
+  const { isTablet : isMobile} = useTablet();
 
   return (
     <StyledSection isMobile={isMobile}>

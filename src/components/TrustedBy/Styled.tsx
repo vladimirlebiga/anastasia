@@ -103,7 +103,6 @@ export const StyledImgWrapper = styled('div')(({ isMobile }: { isMobile: boolean
 
 export const StyledImgText = styled(Typography)(() => ({
   fontFamily: 'IM FELL Great Primer',
-  fontSize: '32px',
   color: '#000000',
   backgroundColor: 'rgba(178 149 132 / 0.87)',
   position: 'absolute',

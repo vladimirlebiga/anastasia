@@ -8,7 +8,7 @@ export const StyledHeroTextWrapper = styled('div', {
   paddingTop: isMobile ? '5rem' : services ? '150px' : '300px', // Reduced from 100px/300px to move higher
   // top: services ? '50px' : '150px', // Alternative using top instead of paddingTop
   // bottom: services ? '0' : '200px',
-  left: isMobile ? '5%' : '-10%',
+  // left: isMobile ? '5%' : '-10%',
   width: services ? '600px' : 'auto',
   zIndex: 100,
 }));

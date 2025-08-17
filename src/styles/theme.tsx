@@ -143,16 +143,19 @@ const theme = createTheme({
     },
     h3: {
       // fontFamily: 'Great Vibes',
-      fontSize: 48,
-      fontWeight: 400,
-      letterSpacing: '6%',
-      lineHeight: '120%',
-      marginBottom: 0,
-      // color: '#000000',
-      // textAlign: 'right',
-      [`@media (max-width:600px)`]: {
-        fontSize: 22,
-      },
+        fontSize: 48,
+        fontWeight: 400,
+        letterSpacing: '6%',
+        lineHeight: '120%',
+        marginBottom: 0,
+        // color: '#000000',
+        // textAlign: 'right',
+        [`@media (max-width:600px)`]: {
+          fontSize: 22,
+        },
+        [`@media (max-width:950px)`]: {
+          fontSize: 32,
+        },
     },
     h4: {
       fontFamily: 'Great Vibes',

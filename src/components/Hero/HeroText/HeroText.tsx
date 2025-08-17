@@ -40,16 +40,21 @@ export const HeroText = ({ page }: { page: string }) => {
     const { title, description, services } = config[page as keyof typeof config];
   return (
     <StyledHeroTextWrapper services={services} isMobile={isMobile}>
-        {isMobile && !services && (
+        {!isMobile && !services && (
             <>
             <StyledH1 variant='h1' services={services}>{title}</StyledH1>
             <StyledH3 variant='h6' services={services}>{description}</StyledH3>
             </>
         )}
-        {services &&
-        <StyledButtonContainer>
-        {!isMobile && <Button variant='contained' href='/contact#form'>lets' work together</Button>}
-        </StyledButtonContainer>}
+        {services && !isMobile && (
+            <>
+            <StyledH1 variant='h1' services={services}>{title}</StyledH1>
+            <StyledH3 variant='h6' services={services}>{description}</StyledH3>
+            <StyledButtonContainer>
+        <Button variant='contained' href='/contact#form'>lets' work together</Button>
+        </StyledButtonContainer>
+            </>
+        )}
     </StyledHeroTextWrapper>
   )
 }

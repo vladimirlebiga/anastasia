@@ -79,7 +79,7 @@ export const StyledLi = styled('li')<{ gridArea: string; gridMobile: string; isM
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
-    justifyContent: 'center',
+    justifyContent: 'flex-start',
     columnGap: '40px',
     gridArea: isMobile ? gridMobile : gridArea,
     maxHeight: '300px',

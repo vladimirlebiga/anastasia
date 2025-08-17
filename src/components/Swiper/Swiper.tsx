@@ -32,7 +32,7 @@ const swiperConfiguration = {
     modules: [Pagination],
     height: '250px',
     imgHeight: '210px',
-    imgWidth: '160px',
+    imgWidth: '100%',
   },
   // hairstyles: {
   //   navigation: false,
@@ -84,7 +84,7 @@ const swiperConfiguration = {
     slidesPerView: 1.5,
     centeredSlides: false,
     freeMode: false,
-    spaceBetween: 10,
+    spaceBetween: 1,
     loop: true,
     pagination: {
       clickable: true,
@@ -99,7 +99,7 @@ const swiperConfiguration = {
     slidesPerView: 2.3,
     centeredSlides: false,
     freeMode: false,
-    spaceBetween: 0,
+    spaceBetween: 5,
     loop: true,
     pagination: {
       clickable: true,
@@ -107,7 +107,7 @@ const swiperConfiguration = {
     modules: [Pagination],
     height: '380px',
     imgHeight: '350px',
-    imgWidth: '480px',
+    imgWidth: '100%',
   },
 };
 

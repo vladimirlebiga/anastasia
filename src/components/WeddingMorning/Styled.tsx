@@ -52,7 +52,7 @@ export const StyledP = styled(Typography, {
   fontFamily: 'Montserrat',
   fontStyle: isMobile ? 'normal' : 'italic',
   color: '#000000',
-  lineHeight: isMobile ? '15px' : '30px',
+  lineHeight: 'auto',
   textAlign: isMobile ? 'left' : 'center',
   marginTop: '10px',
   marginBottom: isMobile ? '10px' : '30px',

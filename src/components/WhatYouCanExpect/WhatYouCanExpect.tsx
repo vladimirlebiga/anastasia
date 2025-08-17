@@ -24,15 +24,15 @@ const config = {
   hairstyles: [
     {
       title: 'Hairstyle 1',
-      image: '/img/homepage/Homepage3.jpg',
+      image: '/img/services/serviceshair1.jpg',
     },
     {
       title: 'Hairstyle 2',
-      image: '/img/homepage/Homepage4.jpg',
+      image: '/img/services/serviceshair2.jpg',
     },
     {
       title: 'Hairstyle 3',
-      image: '/img/homepage/Homepage5.jpg',
+      image: '/img/services/serviceshair3.jpg',
     },
   ],
 };
