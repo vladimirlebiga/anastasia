@@ -34,7 +34,7 @@ export const StyledText = styled(Typography, {
   lineHeight: '136%',
   color: '#000000',
   textAlign: 'center',
-  height: isMobile ? '120px' : '240px',
+  height: isMobile ? '200px' : '400px',
 }));
 
 export const StyledSwiperWrapper = styled('div')(({ theme }) => ({
